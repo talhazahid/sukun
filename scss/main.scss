@@ -61,7 +61,7 @@ header {
  }
 }
 
-.ms-viewing-second {
+.ms-viewing-fifth {
  .main-bottle {
   img {
    position: absolute;
@@ -70,7 +70,7 @@ header {
  }
 }
 
-.ms-viewing-third {
+.ms-viewing-sixth {
  .main-bottle {
   img {
    position: absolute;
@@ -82,4 +82,28 @@ header {
 .ss-container {
  height: 100vh;
  padding: 40px;
+}
+
+#left1 {
+ background-color: #f0f6ff;
+}
+
+#right1 {
+ background: #cbccce;
+}
+
+footer {
+ position: absolute;
+ z-index: 3;
+ bottom: 0px;
+ width: 100%;
+
+ ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 60px;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+ }
 }

@@ -44,16 +44,35 @@ header #menu {
     transition: all 1s ease-in-out;
     z-index: 2; }
 
-.ms-viewing-second .main-bottle img {
+.ms-viewing-fifth .main-bottle img {
   position: absolute;
   right: calc(100% - 20%); }
 
-.ms-viewing-third .main-bottle img {
+.ms-viewing-sixth .main-bottle img {
   position: absolute;
   left: calc(100% - 20%); }
 
 .ss-container {
   height: 100vh;
   padding: 40px; }
+
+#left1 {
+  background-color: #f0f6ff; }
+
+#right1 {
+  background: #cbccce; }
+
+footer {
+  position: absolute;
+  z-index: 3;
+  bottom: 0px;
+  width: 100%; }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 60px;
+    margin: 0;
+    list-style: none;
+    align-items: center; }
 
 /*# sourceMappingURL=main.css.map */
