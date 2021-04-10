@@ -61,35 +61,50 @@ header {
  }
 }
 
-.ms-viewing-fifth {
+.ms-viewing-shop {
  .main-bottle {
   img {
    position: absolute;
-   right: calc(100% - 20%);
+   right: calc(100% - 60%);
   }
  }
 }
 
-.ms-viewing-sixth {
+.ms-viewing-philosphy {
  .main-bottle {
   img {
    position: absolute;
-   left: calc(100% - 20%);
+   left: calc(100% - 60%);
   }
  }
 }
 
 .ss-container {
  height: 100vh;
- padding: 40px;
 }
 
-#left1 {
- background-color: #f0f6ff;
-}
-
-#right1 {
+.dark-section {
  background: #cbccce;
+}
+
+.light-section {
+ background: #f0f6ff;
+}
+
+.philosphy-right {
+ background: #f0f6ff;
+}
+
+.philosphy-left {
+ background: #cbccce;
+}
+
+.shop-left {
+ background: #cbccce;
+}
+
+.shop-right {
+ background: #f0f6ff;
 }
 
 footer {
@@ -105,5 +120,54 @@ footer {
   margin: 0;
   list-style: none;
   align-items: center;
+ }
+}
+
+.content-center-wrapper {
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+}
+
+.content-heading {
+ width: 100%;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 24px;
+ line-height: 29px;
+ color: #0b1437;
+}
+
+.wrapper-center {
+ align-items: center;
+ justify-content: center;
+ align-content: center;
+ text-align: center;
+}
+
+a {
+ text-decoration: none;
+ color: inherit;
+}
+
+.page-content {
+ width: 450px;
+}
+
+.ms-viewing-shop {
+ .ms-left {
+  width: 30% !important;
+ }
+ .ms-right {
+  width: 70% !important;
+ }
+}
+
+.ms-viewing-philosphy {
+ .ms-left {
+  width: 70% !important;
+ }
+ .ms-right {
+  width: 30% !important;
  }
 }

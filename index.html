@@ -23,11 +23,11 @@
 
  <header>
   <ul id="menu">
-   <li data-menuanchor="first" class="bottle-controller-first"><a href="#first">Ingredients</a></li>
-   <li data-menuanchor="second" class=""><a href="#second">Formula</a></li>
-   <li data-menuanchor="first" class="bottle-controller-first"><a href="#first"><img src="images/logo.svg"></a></li>
-   <li data-menuanchor="third" class=""><a href="#third">Ideal For</a></li>
-   <li data-menuanchor="fourth" class="bottle-controller-fourth"><a href="#fourth">How to Use</a></li>
+   <li data-menuanchor="first" class="bottle-controller-first"><a href="#ingredients">Ingredients</a></li>
+   <li data-menuanchor="second" class=""><a href="#formula">Formula</a></li>
+   <li data-menuanchor="first" class="bottle-controller-first"><a href="#home"><img src="images/logo.svg"></a></li>
+   <li data-menuanchor="third" class=""><a href="#ideal-for">Ideal For</a></li>
+   <li data-menuanchor="fourth" class="bottle-controller-fourth"><a href="#how-to-use">How to Use</a></li>
   </ul>
  </header>
 
@@ -42,15 +42,23 @@
   </div>
 
   <div class="ms-left">
-   <div class="ms-section" id="left1">
-    <h1>Left 1</h1>
+   <div class="ms-section light-section" id="left1">
+    <div class="content-center-wrapper wrapper-center ">
+     <div class="content-heading">
+      Brightens, tightens and strengthens your skin.
+     </div>
+    </div>
    </div>
 
-   <div class="ms-section" id="left2">
-    <h1>Left 2 </h1>
+   <div class="ms-section dark-section" id="left2">
+    <div class="content-center-wrapper wrapper-center ">
+     <div class="content-heading">
+      For all skin types
+     </div>
+    </div>
    </div>
 
-   <div class="ms-section" id="left3">
+   <div class="ms-section light-section " id="left3">
     <h1>Left 3</h1>
    </div>
    <div class="ms-section" id="left4">
@@ -59,86 +67,117 @@
    <div class="ms-section" id="left5">
     <h1>FIfth Slide</h1>
    </div>
-   <div class="ms-section" id="left6">
-    <h1>Sixth Slide</h1>
+   <div class="ms-section philosphy-left" id="left6">
+    <h1>Philosphy left</h1>
+   </div>
+   <div class="ms-section shop-left" id="left7">
+    <h1>Shop left</h1>
    </div>
   </div>
 
 
   <div class="ms-right">
-   <div class="ms-section" id="right1">
-    <h1>Right 1dsfsdffsdfdsfsdfdsfsdfsfsdfsfsd</h1>
+   <div class="ms-section dark-section" id="right1">
+    <div class="content-center-wrapper wrapper-center ">
+     <div class="content-heading">
+      For all skin types
+     </div>
+    </div>
    </div>
 
-   <div class="ms-section" id="right2">
+   <div class="ms-section dark-section" id="right2">
     <div ss-container>
 
-     <h3>
-      New Content for page 2
-     </h3>
+
+     <div class="content-center-wrapper wrapper-center ">
+      <div class="content-heading">
+       Mangifera Indica (Mango)
+       Seed Oil
+      </div>
+
+      <div class="page-content">
+
+       <p> A primary source of nutrients essential for your skin, Mangifera Indica (Mango) Seed Oil provides several
+        bene_ts
+        like that perfect glow and moisture while helping the skin _ght against dryness and eczema.</p>
+
+       <p>
+        Rich in ferulic acid, beta-carotene, phytochemicals Mango Seed Oil removes blackheads, clears blemishes for
+        lasting illumination.
+       </p>
+
+      </div>
+     </div>
 
 
-     <br>
 
     </div>
    </div>
-   <div class="ms-section" id="right3">
+   <div class="ms-section " id="right3">
     <h1>Rfsffdsf</h1>
    </div>
-   <div class="ms-section" id="right4">
+   <div class="ms-section dark-section" id="right4">
     <h1>Rfsffdsf</h1>
    </div>
    <div class="ms-section" id="right5">
     <h1>Fifth</h1>
    </div>
-   <div class="ms-section" id="right6">
-    <h1>Sixth</h1>
+
+   <div class="ms-section " id="right6">
+    <h1>Philosphy right</h1>
+   </div>
+
+
+   <div class="ms-section philosphy-right" id="right7">
+
+    <div class="ms-section ">
+     <h1>Shop Right</h1>
+    </div>
    </div>
   </div>
- </div>
 
 
 
 
- <footer>
+  <footer>
 
 
 
-  <ul id="menu">
-   <li data-menuanchor="fifth" class="bottle-controller-second">
-    <a href="#fifth">
-     <img src="images/philosophy-icon.svg">
-     Philosphy
-    </a>
-   </li>
-   <li data-menuanchor="sixth" class="bottle-controller-third">
+   <ul id="menu">
+    <li data-menuanchor="philosphy" class="bottle-controller-second">
+     <a href="#philosphy">
+      <img src="images/philosophy-icon.svg">
+      Philosphy
+     </a>
+    </li>
+    <li data-menuanchor="shop" class="bottle-controller-third">
 
-    <a href="#sixth">
-     <img src="images/shop-icon.svg">
-     Shop Now
-    </a>
-   </li>
-  </ul>
-
-
-
- </footer>
+     <a href="#shop">
+      <img src="images/shop-icon.svg">
+      Shop Now
+     </a>
+    </li>
+   </ul>
 
 
 
- <script type="text/javascript">
+  </footer>
 
-  $(document).ready(function () {
-   $('#myContainer').multiscroll({
-    // sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-    anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'],
-    menu: '#menu',
-    css3: true
+
+
+  <script type="text/javascript">
+
+   $(document).ready(function () {
+    $('#myContainer').multiscroll({
+     // sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+     anchors: ['home', 'ingredients', 'formula', 'ideal-for', 'how-to-use', 'philosphy', 'shop'],
+     menu: '#menu',
+     css3: true
+    });
+
+    $.fn.multiscroll.setMouseWheelScrolling(false);
    });
-
-   $.fn.multiscroll.setMouseWheelScrolling(false);
-  });
- </script>
+  </script>
 
 
 
