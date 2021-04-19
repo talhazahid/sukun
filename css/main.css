@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 header #menu li {
   display: flex;
   margin: 10px 20px;
-  color: #000;
-  -webkit-border-radius: 10px; }
+  color: #000; }
 header #menu li.active {
   background: #666;
   background: white;
@@ -44,23 +44,31 @@ header #menu {
     transition: all 1s ease-in-out;
     z-index: 2; }
 
-.ms-viewing-fifth .main-bottle img {
+.ms-viewing-shop .main-bottle img {
   position: absolute;
-  right: calc(100% - 20%); }
+  right: calc(100% - 60%); }
 
-.ms-viewing-sixth .main-bottle img {
+.ms-viewing-philosphy .main-bottle img {
   position: absolute;
-  left: calc(100% - 20%); }
+  left: calc(100% - 60%); }
 
-.ss-container {
-  height: 100vh;
-  padding: 40px; }
-
-#left1 {
-  background-color: #f0f6ff; }
-
-#right1 {
+.dark-section {
   background: #cbccce; }
+
+.light-section {
+  background: #f0f6ff; }
+
+.philosphy-right {
+  background: #f0f6ff; }
+
+.philosphy-left {
+  background: #cbccce; }
+
+.shop-left {
+  background: #cbccce; }
+
+.shop-right {
+  background: #f0f6ff; }
 
 footer {
   position: absolute;
@@ -74,5 +82,186 @@ footer {
     margin: 0;
     list-style: none;
     align-items: center; }
+
+.content-center-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.content-heading {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0b1437; }
+
+.wrapper-center {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.page-content {
+  width: 450px; }
+
+.ms-viewing-shop .ms-left {
+  width: 30% !important; }
+.ms-viewing-shop .ms-right {
+  width: 70% !important; }
+
+.ms-viewing-philosphy .ms-left {
+  width: 70% !important; }
+.ms-viewing-philosphy .ms-right {
+  width: 30% !important; }
+
+.bottle-bg-shade {
+  position: absolute;
+  z-index: 1; }
+
+.shade {
+  width: 100vw;
+  height: 100vh; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+p {
+  line-height: 1.7rem; }
+
+.ms-tableCell {
+  padding: 0px 20%; }
+
+.philosphy-wrapper {
+  width: 80%;
+  text-align: left; }
+
+.small-heading-with-icon {
+  display: flex;
+  align-items: center; }
+  .small-heading-with-icon img {
+    margin-right: 5px; }
+  .small-heading-with-icon .small-heading-img {
+    display: flex; }
+  .small-heading-with-icon .small-heading-text {
+    color: #0b1437; }
+
+h4 {
+  font-size: 18px; }
+
+h3 {
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #0b1437; }
+
+.founder {
+  display: flex;
+  align-items: center; }
+  .founder .founder-heading {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0b1437;
+    display: flex; }
+  .founder .founder-name {
+    font-size: 14px;
+    /* line-height: 17px; */
+    color: #0b1437;
+    /* display: flex; */
+    /* height: 22px; */
+    margin-left: 10px;
+    position: relative;
+    top: 1px; }
+
+.scroller-wrap {
+  max-height: 600px;
+  display: flex; }
+  .scroller-wrap .wrapper-center {
+    justify-content: flex-start; }
+
+.ss-scroll {
+  background: #838383 !important; }
+
+.accordion {
+  padding: 0px; }
+  .accordion .accordion-item {
+    border-bottom: 1px solid #a0a0a0; }
+    .accordion .accordion-item button[aria-expanded="true"] {
+      border-bottom: 1px solid #a0a0a0; }
+  .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #0b1437;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none; }
+    .accordion button:hover, .accordion button:focus {
+      cursor: pointer;
+      color: #0b1437; }
+      .accordion button:hover::after, .accordion button:focus::after {
+        cursor: pointer;
+        color: #0b1437;
+        border: 1px solid #03b5d2; }
+    .accordion button .accordion-title {
+      padding: 1em 0 1em 2em; }
+    .accordion button .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 22px; }
+      .accordion button .icon::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 10px;
+        left: 6px;
+        width: 10px;
+        height: 2px;
+        background: currentColor; }
+      .accordion button .icon::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 6px;
+        left: 10px;
+        width: 2px;
+        height: 10px;
+        background: currentColor; }
+  .accordion button[aria-expanded="true"] {
+    color: #0b1437; }
+    .accordion button[aria-expanded="true"] .icon::after {
+      width: 0; }
+    .accordion button[aria-expanded="true"] + .accordion-content {
+      opacity: 1;
+      max-height: 250px;
+      transition: all 200ms linear;
+      will-change: opacity, max-height; }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    text-align: left;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height; }
+    .accordion .accordion-content p {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,263 @@
+header {
+ #menu li {
+  display: flex;
+  margin: 10px 20px;
+  color: #000;
+  // background: rgba(255, 255, 255, 0.3);
+ }
+ #menu li.active {
+  background: #666;
+  background: rgba(255, 255, 255, 1);
+  color: #000;
+ }
+ #menu li a {
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+  padding: 5px 10px;
+  align-items: center;
+  display: flex;
+ }
+ #menu li.active a:hover {
+  color: #000;
+ }
+ #menu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+ }
+
+ #menu li.active a {
+  color: #000;
+ }
+ #menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+ }
+}
+
+.main-bottle {
+ // position: absolute;
+ // z-index: 2;
+ transition: all 1s ease-in-out;
+
+ img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  margin: auto;
+  transition: all 1s ease-in-out;
+  z-index: 2;
+ }
+}
+
+.ms-viewing-shop {
+ .main-bottle {
+  img {
+   position: absolute;
+   right: calc(100% - 60%);
+  }
+ }
+}
+
+.ms-viewing-philosphy {
+ .main-bottle {
+  img {
+   position: absolute;
+   left: calc(100% - 60%);
+  }
+ }
+}
+
+.ss-container {
+}
+
+.dark-section {
+ background: #cbccce;
+}
+
+.light-section {
+ background: #f0f6ff;
+}
+
+.philosphy-right {
+ background: #f0f6ff;
+}
+
+.philosphy-left {
+ background: #cbccce;
+}
+
+.shop-left {
+ background: #cbccce;
+}
+
+.shop-right {
+ background: #f0f6ff;
+}
+
+footer {
+ position: absolute;
+ z-index: 3;
+ bottom: 0px;
+ width: 100%;
+
+ ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 60px;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+ }
+}
+
+.content-center-wrapper {
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+}
+
+.content-heading {
+ width: 100%;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 24px;
+ line-height: 29px;
+ color: #0b1437;
+}
+
+.wrapper-center {
+ align-items: center;
+ justify-content: center;
+ align-content: center;
+ text-align: center;
+}
+
+a {
+ text-decoration: none;
+ color: inherit;
+}
+
+.page-content {
+ width: 450px;
+}
+
+.ms-viewing-shop {
+ .ms-left {
+  width: 30% !important;
+ }
+ .ms-right {
+  width: 70% !important;
+ }
+}
+
+.ms-viewing-philosphy {
+ .ms-left {
+  width: 70% !important;
+ }
+ .ms-right {
+  width: 30% !important;
+ }
+}
+
+.bottle-bg-shade {
+ position: absolute;
+ z-index: 1;
+}
+
+.shade {
+ width: 100vw;
+ height: 100vh;
+}
+
+.text-left {
+ text-align: left;
+}
+.text-center {
+ text-align: center;
+}
+
+p {
+ line-height: 1.7rem;
+}
+
+.ms-tableCell {
+ padding: 0px 20%;
+}
+
+.philosphy-wrapper {
+ width: 80%;
+ text-align: left;
+}
+
+.small-heading-with-icon {
+ display: flex;
+ align-items: center;
+ img {
+  margin-right: 5px;
+ }
+
+ .small-heading-img {
+  display: flex;
+ }
+ .small-heading-text {
+  color: #0b1437;
+ }
+}
+
+h4 {
+ font-size: 18px;
+}
+
+h3 {
+ font-size: 24px;
+ line-height: 29px;
+ /* identical to box height */
+
+ color: #0b1437;
+}
+
+.founder {
+ display: flex;
+ align-items: center;
+ .founder-heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0b1437;
+  display: flex;
+ }
+
+ .founder-name {
+  font-size: 14px;
+  /* line-height: 17px; */
+  color: #0b1437;
+  /* display: flex; */
+  /* height: 22px; */
+  margin-left: 10px;
+  position: relative;
+  top: 1px;
+ }
+}
+
+.scroller-wrap {
+ max-height: 600px;
+ display: flex;
+ .wrapper-center {
+  justify-content: flex-start;
+ }
+}
+
+.ss-scroll {
+ background: #838383 !important;
+}
