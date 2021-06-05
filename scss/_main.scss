@@ -231,7 +231,7 @@ h3 {
  display: flex;
  align-items: center;
  .founder-heading {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   color: #0b1437;
@@ -247,6 +247,7 @@ h3 {
   margin-left: 10px;
   position: relative;
   top: 1px;
+  font-weight: 600;
  }
 }
 
@@ -260,4 +261,137 @@ h3 {
 
 .ss-scroll {
  background: #838383 !important;
+}
+
+.shop-wrapper {
+ width: 80%;
+ text-align: left;
+}
+
+.shop-price-quantity {
+ display: flex;
+ align-items: center;
+ margin-top: 30px;
+}
+
+.price {
+ font-weight: 500;
+ font-size: 36px;
+ line-height: 45px;
+ color: #0b1437;
+ margin-right: 15px;
+}
+.quantity {
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 17px;
+ /* identical to box height */
+
+ color: #0b1437;
+}
+
+.item-description {
+ font-family: Lato;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 188.3%;
+ /* or 26px */
+
+ color: #0b1437;
+}
+
+.add-item-box {
+ width: 130px;
+ height: 36px;
+ background: rgba(255, 255, 255, 0.5);
+ display: grid;
+ grid-template-columns: auto 1fr auto;
+ justify-content: center;
+ align-items: center;
+
+ button {
+  border: 0px;
+  background-color: none;
+ }
+}
+
+.minus-item {
+ position: relative;
+ cursor: pointer;
+ width: 30px;
+ display: flex;
+ background: none;
+ align-items: center;
+ justify-content: center;
+ &::before {
+  position: absolute;
+  background-image: url(../images/minus.svg);
+  content: "";
+  height: 2px;
+  width: 12px;
+  background-position: center;
+  left: 0;
+  right: 0px;
+  margin: auto;
+ }
+}
+
+.plus-item {
+ position: relative;
+ cursor: pointer;
+ width: 30px;
+ display: flex;
+ background: none;
+ align-items: center;
+ justify-content: center;
+ &::before {
+  position: absolute;
+  background-image: url(../images/plus.svg);
+  content: "";
+  height: 12px;
+  width: 12px;
+  background-position: center;
+  left: 0;
+  right: 0px;
+  margin: auto;
+ }
+}
+
+.value {
+ text-align: center;
+}
+
+.add-to-bag {
+ height: 36px;
+ background: #0b1437;
+ text-align: center;
+ color: white;
+ display: flex;
+ margin-top: 30px;
+ vertical-align: middle;
+ width: 140px;
+ align-items: center;
+ justify-content: center;
+ border: 0px;
+ cursor: pointer;
+}
+
+h3.bottom-margin {
+ padding: 0px;
+ margin: 0px;
+}
+
+.small-space {
+ padding: 10px;
+ margin: 0px;
+}
+
+.medium-text {
+ font-style: normal;
+ font-weight: 500;
+ font-size: 20px;
+ line-height: 24px;
+ text-align: center;
+ color: #0b1437;
 }
