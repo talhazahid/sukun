@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
  .main-bottle-img {
   width: 115px;
  }
@@ -11,5 +11,26 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
+ }
+
+ header .desktop-menu {
+  display: none !important;
+ }
+
+ .mobile-menu {
+  display: block;
+ }
+
+ footer #menu {
+  display: none !important;
+ }
+
+ .mm-spn.mm-spn--navbar ul {
+  top: 0 !important;
+ }
+}
+@media only screen and (min-width: 768px) and (max-width: 9999px) {
+ .mobile-menu-btn {
+  display: none;
  }
 }

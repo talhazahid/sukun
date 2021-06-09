@@ -28,18 +28,19 @@ header {
  #menu li.active a {
   color: #000;
  }
- #menu {
-  position: fixed;
-  top: 0;
-  left: 0;
+}
 
-  z-index: 70;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
- }
+#menu {
+ position: fixed;
+ top: 0;
+ left: 0;
+
+ z-index: 70;
+ width: 100%;
+ padding: 0;
+ margin: 0;
+ display: flex;
+ justify-content: center;
 }
 
 .main-bottle {
@@ -394,4 +395,19 @@ h3.bottom-margin {
  line-height: 24px;
  text-align: center;
  color: #0b1437;
+}
+
+.menu-trigger {
+ position: relative;
+}
+
+.mobile-menu-btn {
+ position: absolute;
+ z-index: 9999;
+ right: 15px;
+ top: 10px;
+}
+
+.main-bottle {
+ height: 100vh;
 }
