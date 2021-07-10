@@ -411,3 +411,17 @@ h3.bottom-margin {
 .main-bottle {
  height: 100vh;
 }
+
+.rev_slider_wrapper {
+ background: #c4c4c4;
+ opacity: 1;
+ height: 100vh !important;
+ width: 100vw;
+ z-index: 999999;
+ position: relative;
+}
+
+.tp-revslider-mainul {
+ margin: 0;
+ padding: 0;
+}
