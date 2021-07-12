@@ -6,8 +6,8 @@ header {
   // background: rgba(255, 255, 255, 0.3);
  }
  #menu li.active {
-  background: #666;
-  background: rgba(255, 255, 255, 1);
+  // background: #666;
+  // background: rgba(255, 255, 255, 1);
   color: #000;
  }
  #menu li a {
@@ -17,12 +17,16 @@ header {
   padding: 5px 10px;
   align-items: center;
   display: flex;
+  text-transform: uppercase;
  }
  #menu li.active a:hover {
   color: #000;
  }
  #menu li:hover {
-  background: rgba(255, 255, 255, 0.8);
+  // background: rgba(255, 255, 255, 0.8);
+  a {
+   font-weight: bold;
+  }
  }
 
  #menu li.active a {
@@ -424,4 +428,8 @@ h3.bottom-margin {
 .tp-revslider-mainul {
  margin: 0;
  padding: 0;
+}
+
+.desk-menu.active {
+ font-weight: bold;
 }

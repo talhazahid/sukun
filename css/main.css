@@ -4,8 +4,6 @@ header #menu li {
   margin: 10px 20px;
   color: #000; }
 header #menu li.active {
-  background: #666;
-  background: white;
   color: #000; }
 header #menu li a {
   text-decoration: none;
@@ -13,11 +11,12 @@ header #menu li a {
   border-radius: 10px;
   padding: 5px 10px;
   align-items: center;
-  display: flex; }
+  display: flex;
+  text-transform: uppercase; }
 header #menu li.active a:hover {
   color: #000; }
-header #menu li:hover {
-  background: rgba(255, 255, 255, 0.8); }
+header #menu li:hover a {
+  font-weight: bold; }
 header #menu li.active a {
   color: #000; }
 
@@ -330,6 +329,9 @@ h3.bottom-margin {
 .tp-revslider-mainul {
   margin: 0;
   padding: 0; }
+
+.desk-menu.active {
+  font-weight: bold; }
 
 .accordion {
   padding: 0px; }
