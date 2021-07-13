@@ -9,10 +9,10 @@ $blue: #03b5d2;
 .accordion {
  padding: 0px;
  .accordion-item {
-  border-bottom: 1px solid #a0a0a0;
-  button[aria-expanded="true"] {
-   border-bottom: 1px solid #a0a0a0;
-  }
+  // border-bottom: 1px solid #a0a0a0;
+  // button[aria-expanded="true"] {
+  //  border-bottom: 1px solid #a0a0a0;
+  // }
  }
  button {
   position: relative;
@@ -26,6 +26,8 @@ $blue: #03b5d2;
   border: none;
   background: none;
   outline: none;
+
+  padding-bottom: 10px;
   &:hover,
   &:focus {
    cursor: pointer;
@@ -96,6 +98,9 @@ $blue: #03b5d2;
    font-size: 1rem;
    font-weight: 300;
    line-height: 1.5rem;
+   margin-top: 0px;
+   padding-left: 35px;
+   color: #0b1437;
   }
  }
 }

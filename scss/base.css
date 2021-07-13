@@ -4,20 +4,20 @@ header #menu li {
   margin: 10px 20px;
   color: #000; }
 header #menu li.active {
-  background: #666;
-  background: white;
   color: #000; }
 header #menu li a {
   text-decoration: none;
-  color: #000;
+  color: #0b1437;
   border-radius: 10px;
   padding: 5px 10px;
   align-items: center;
-  display: flex; }
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 400; }
 header #menu li.active a:hover {
   color: #000; }
-header #menu li:hover {
-  background: rgba(255, 255, 255, 0.8); }
+header #menu li:hover a {
+  font-weight: bold; }
 header #menu li.active a {
   color: #000; }
 
@@ -93,7 +93,7 @@ footer {
   width: 100%;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 36px;
   line-height: 29px;
   color: #0b1437; }
 
@@ -141,7 +141,7 @@ p {
   padding: 0px 20%; }
 
 .philosphy-wrapper {
-  width: 80%;
+  width: 90%;
   text-align: left; }
 
 .small-heading-with-icon {
@@ -297,14 +297,15 @@ h3.bottom-margin {
 
 .small-space {
   padding: 10px;
-  margin: 0px; }
+  margin: 0px;
+  padding-left: 0px; }
 
 .medium-text {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
   color: #0b1437; }
 
 .menu-trigger {
@@ -319,12 +320,26 @@ h3.bottom-margin {
 .main-bottle {
   height: 100vh; }
 
+.rev_slider_wrapper {
+  background: #c4c4c4;
+  opacity: 1;
+  height: 100vh !important;
+  width: 100vw;
+  z-index: 999999;
+  position: relative; }
+
+.tp-revslider-mainul {
+  margin: 0;
+  padding: 0; }
+
+.desk-menu.active {
+  font-weight: bold; }
+
+.text-left {
+  text-align: left; }
+
 .accordion {
   padding: 0px; }
-  .accordion .accordion-item {
-    border-bottom: 1px solid #a0a0a0; }
-    .accordion .accordion-item button[aria-expanded="true"] {
-      border-bottom: 1px solid #a0a0a0; }
   .accordion button {
     position: relative;
     display: block;
@@ -336,7 +351,8 @@ h3.bottom-margin {
     font-weight: 400;
     border: none;
     background: none;
-    outline: none; }
+    outline: none;
+    padding-bottom: 10px; }
     .accordion button:hover, .accordion button:focus {
       cursor: pointer;
       color: #0b1437; }
@@ -391,7 +407,10 @@ h3.bottom-margin {
     .accordion .accordion-content p {
       font-size: 1rem;
       font-weight: 300;
-      line-height: 1.5rem; }
+      line-height: 1.5rem;
+      margin-top: 0px;
+      padding-left: 35px;
+      color: #0b1437; }
 
 body {
   font-family: "Lato", sans-serif; }

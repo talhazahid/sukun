@@ -10,7 +10,7 @@
 
  <link rel="stylesheet" type="text/css" href="css/mmenu-light.css" />
 
-
+ <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css">
  <link rel="preconnect" href="https://fonts.gstatic.com">
  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
  <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
  <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
 
- <title>Sukun</title>
+ <title>Pure Sukun</title>
 </head>
 
 
@@ -173,8 +173,8 @@
     <li data-menuanchor="second" class="desk-menu"><a href="#formula">Formula</a></li>
 
     <!-- <li data-menuanchor="shop" class="bottle-controller-third"><a href="#shop">Shop</a></li> -->
-    <li data-menuanchor="first" class="bottle-controller-first desk-menu"><a href="#home"><img
-       src="images/logo.svg"></a></li>
+    <li data-menuanchor="first" class="bottle-controller-first desk-menu"><a href="#home">
+      <img src="images/logo.svg" class="main-logo"></a></li>
     <li data-menuanchor="third" class="desk-menu"><a href="#ideal-for">Ideal For</a></li>
     <li data-menuanchor="fourth" class="bottle-controller-fourth desk-menu"><a href="#how-to-use">How to Use</a>
     </li>
@@ -195,6 +195,7 @@
    <div class="main-bottle">
     <!-- <img src="images/shade.png" class="main-bottle-img shade"> -->
     <img src="images/main-bottle-with-bg.png" class="main-bottle-img">
+
    </div>
 
    <div class="ms-left">
@@ -247,7 +248,11 @@
 
 
     <div class="ms-section  light-section" id="left5">
-     <h1>How to use</h1>
+     <div class="content-center-wrapper wrapper-center ">
+      <div class="content-heading">
+       How to use
+      </div>
+     </div>
     </div>
     <div class="ms-section philosphy-left" id="left6">
 
@@ -525,48 +530,52 @@
 
       <div class="page-content">
 
-       <h3 class="bottom-margin">
-        Multiple signs of aging
-       </h3>
 
-       <p class="small-space">
-        Firms and replenishes skin to lessen fine lines
-       </p>
+       <div class="text-left">
+        <h3 class="bottom-margin">
+         Multiple signs of aging
+        </h3>
 
-
-       <h3 class="bottom-margin">
-        Loss of firmness
-       </h3>
-
-       <p class="small-space">
-        Smooths uneven texture so skin is soft and supple
-       </p>
+        <p class="small-space">
+         Firms and replenishes skin to lessen fine lines
+        </p>
 
 
-       <h3 class="bottom-margin">
-        Dryness, dehydration
-       </h3>
+        <h3 class="bottom-margin">
+         Loss of firmness
+        </h3>
 
-       <p class="small-space">
-        Hydrates skin giving it a fresh, dewy appearance
-       </p>
+        <p class="small-space">
+         Smooths uneven texture so skin is soft and supple
+        </p>
 
 
-       <h3 class="bottom-margin">
-        Dullness, loss of radiance
-       </h3>
+        <h3 class="bottom-margin">
+         Dryness, dehydration
+        </h3>
 
-       <p class="small-space">
-        Reinvigorates skin so it’s glowing and radiant
-       </p>
+        <p class="small-space">
+         Hydrates skin giving it a fresh, dewy appearance
+        </p>
 
-       <h3 class="bottom-margin">
-        Uneven skin tone
-       </h3>
 
-       <p class="small-space">
-        Evens out skin tone for a healthy, hydrated look
-       </p>
+        <h3 class="bottom-margin">
+         Dullness, loss of radiance
+        </h3>
+
+        <p class="small-space">
+         Reinvigorates skin so it’s glowing and radiant
+        </p>
+
+        <h3 class="bottom-margin">
+         Uneven skin tone
+        </h3>
+
+        <p class="small-space">
+         Evens out skin tone for a healthy, hydrated look
+        </p>
+       </div>
+
 
 
       </div>
@@ -694,7 +703,7 @@
 
    <ul>
     <li data-menuanchor="philosphy" class="bottle-controller-second">
-     <a href="#philosphy">
+     <a href="#philosphy" id="phil">
       <img src="images/philosophy-icon.svg">
       Philosphy
      </a>
@@ -770,6 +779,23 @@
    // adding classname 'active' to current click li 
    $(this).addClass("active");
   });
+
+
+
+
+
+  $("#phil").click(function () {
+   $(".main-bottle-img").addClass("main-bottle-fix");
+  });
+
+
+  $(document).ready(function () {
+   $(".desk-menu").click(function () {
+    $(".main-bottle-img").removeClass("main-bottle-fix");
+   });
+  });
+
+
 //*
  </script>
  <script>
