@@ -710,7 +710,7 @@
     </li>
     <li data-menuanchor="shop" class="bottle-controller-third">
 
-     <a href="#shop">
+     <a href="#shop" id="shopy">
       <img src="images/shop-icon.svg">
       Shop Now
      </a>
@@ -791,6 +791,12 @@
 
   $(document).ready(function () {
    $(".desk-menu").click(function () {
+    $(".main-bottle-img").removeClass("main-bottle-fix");
+   });
+  });
+
+  $(document).ready(function () {
+   $("#shopy").click(function () {
     $(".main-bottle-img").removeClass("main-bottle-fix");
    });
   });
