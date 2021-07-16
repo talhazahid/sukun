@@ -28,9 +28,40 @@
  .mm-spn.mm-spn--navbar ul {
   top: 0 !important;
  }
+
+ .ms-viewing-shop .main-bottle img {
+  position: absolute;
+  right: calc(70vw - 520px);
+  left: -30vw;
+ }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 9999px) {
  .mobile-menu-btn {
   display: none;
+ }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+ .ms-viewing-shop .main-bottle img {
+  position: absolute;
+  right: calc(70vw - 520px);
+  left: -30vw;
+ }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+ .ms-viewing-shop .main-bottle img {
+  position: absolute;
+  right: calc(70vw - 520px);
+  left: -9vw;
+ }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 2000px) {
+ .ms-viewing-shop .main-bottle img {
+  position: absolute;
+  right: calc(70vw - 520px);
+  left: 2vw;
  }
 }

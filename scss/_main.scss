@@ -22,6 +22,7 @@ header {
   display: flex;
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 12px;
  }
  #menu li.active a:hover {
   color: #000;
@@ -54,15 +55,17 @@ header {
 .main-bottle {
  // position: absolute;
  // z-index: 2;
+ display: flex;
+ justify-content: center;
+ align-items: center;
  transition: all 1s ease-in-out;
 
  img {
   position: absolute;
-  top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  display: flex;
+  top: 0;
+  bottom: 0;
   margin: auto;
   transition: all 0.65s ease-in-out;
   z-index: 2;
@@ -73,7 +76,8 @@ header {
  .main-bottle {
   img {
    position: absolute;
-   right: calc(100% - 60%);
+   right: calc(70vw - 520px);
+   left: -4vw;
   }
  }
 }
@@ -82,7 +86,7 @@ header {
  .main-bottle {
   img {
    position: absolute;
-   left: calc(100% - 60%);
+   left: calc(70vw - 520px);
   }
  }
 }
@@ -95,7 +99,7 @@ header {
 }
 
 .light-section {
- background: #f0f6ff;
+ background: #ebecee;
 }
 
 .philosphy-right {
@@ -435,8 +439,10 @@ h3.bottom-margin {
  padding: 0;
 }
 
-.desk-menu.active {
- font-weight: bold;
+.desk-menu.active-menu {
+ a {
+  font-weight: bold !important ;
+ }
 }
 
 .text-left {
@@ -461,4 +467,26 @@ h3.bottom-margin {
 
 .main-bottle-fix {
  z-index: 4 !important;
+}
+
+.content-heading-medium {
+ width: 100%;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 24px;
+ line-height: 34px;
+ color: #0b1437;
+}
+
+.content-desc {
+ color: #0b1437;
+ font-size: 14px;
+ line-height: 22px;
+ font-weight: 400;
+}
+
+.philosphy-left {
+ .philosphy-wrapper {
+  margin-top: 60px;
+ }
 }

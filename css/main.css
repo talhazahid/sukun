@@ -16,7 +16,8 @@ header #menu li a {
   align-items: center;
   display: flex;
   text-transform: uppercase;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 12px; }
 header #menu li.active a:hover {
   color: #000; }
 header #menu li:hover a {
@@ -36,28 +37,31 @@ header #menu li.active a {
   justify-content: center; }
 
 .main-bottle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 1s ease-in-out; }
   .main-bottle img {
     position: absolute;
-    top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
-    display: flex;
+    top: 0;
+    bottom: 0;
     margin: auto;
     transition: all 0.65s ease-in-out;
     z-index: 2; }
 
 .ms-viewing-shop .main-bottle img {
   position: absolute;
-  right: calc(100% - 60%); }
+  right: calc(70vw - 520px);
+  left: -4vw; }
 
 .ms-viewing-philosphy .main-bottle img {
   position: absolute;
-  left: calc(100% - 60%); }
+  left: calc(70vw - 520px); }
 
 .light-section {
-  background: #f0f6ff; }
+  background: #ebecee; }
 
 .philosphy-right {
   background: #f0f6ff; }
@@ -332,8 +336,8 @@ h3.bottom-margin {
   margin: 0;
   padding: 0; }
 
-.desk-menu.active {
-  font-weight: bold; }
+.desk-menu.active-menu a {
+  font-weight: bold !important; }
 
 .text-left {
   text-align: left; }
@@ -346,6 +350,23 @@ h3.bottom-margin {
 
 .main-bottle-fix {
   z-index: 4 !important; }
+
+.content-heading-medium {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #0b1437; }
+
+.content-desc {
+  color: #0b1437;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400; }
+
+.philosphy-left .philosphy-wrapper {
+  margin-top: 60px; }
 
 .accordion {
   padding: 0px; }
@@ -444,9 +465,29 @@ body {
     display: none !important; }
 
   .mm-spn.mm-spn--navbar ul {
-    top: 0 !important; } }
+    top: 0 !important; }
+
+  .ms-viewing-shop .main-bottle img {
+    position: absolute;
+    right: calc(70vw - 520px);
+    left: -30vw; } }
 @media only screen and (min-width: 768px) and (max-width: 9999px) {
   .mobile-menu-btn {
     display: none; } }
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .ms-viewing-shop .main-bottle img {
+    position: absolute;
+    right: calc(70vw - 520px);
+    left: -30vw; } }
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+  .ms-viewing-shop .main-bottle img {
+    position: absolute;
+    right: calc(70vw - 520px);
+    left: -9vw; } }
+@media only screen and (min-width: 1700px) and (max-width: 2000px) {
+  .ms-viewing-shop .main-bottle img {
+    position: absolute;
+    right: calc(70vw - 520px);
+    left: 2vw; } }
 
 /*# sourceMappingURL=main.css.map */
