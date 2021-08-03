@@ -442,6 +442,42 @@ h3.bottom-margin {
       padding-left: 35px;
       color: #0b1437; }
 
+@-webkit-keyframes fade-content {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  70% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes fade-content {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  70% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+@-o-keyframes fade-content {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  70% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+@keyframes fade-content {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  70% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
 body {
   font-family: "Lato", sans-serif; }
 
