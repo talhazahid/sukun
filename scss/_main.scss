@@ -491,12 +491,12 @@ h3.bottom-margin {
  }
 }
 
-// .ms-table.active {
-//  .ms-tableCell {
-//   animation: fade-content 2s;
-//  }
-// }
-
-// .ms-tableCell {
-//  animation: fade-content 2s reverse;
-// }
+.ms-tableCell {
+ opacity: 0;
+}
+.ms-table.active {
+ .ms-tableCell {
+  animation: fade-content 1s;
+  opacity: 1;
+ }
+}
