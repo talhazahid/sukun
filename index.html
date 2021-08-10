@@ -18,11 +18,16 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
  <script src="js/simple-scrollbar.min.js"></script>
  <script type="text/javascript" src="../vendors/jquery.easings.min.js"></script>
- <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
+
 
  <!-- REVOLUTION JS FILES -->
  <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
  <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+
+
+ <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
+ <script type="text/javascript" src="js/multiscroll.responsiveExpand.min.js"></script>
+
 
  <title>Pure Sukun</title>
 </head>
@@ -222,7 +227,7 @@
    </div>
 
    <div class="ms-left">
-    <div class="ms-section light-section" id="left1">
+    <div class="ms-section light-section" id="left1" data-position="1">
      <div class="content-center-wrapper wrapper-center ">
       <div class="content-heading-medium">
        Brightens, tightens and
@@ -401,7 +406,7 @@
 
 
    <div class="ms-right">
-    <div class="ms-section dark-section" id="right1">
+    <div class="ms-section dark-section" id="right1" data-position="2">
      <div class="content-center-wrapper wrapper-center ">
       <div class="content-heading-medium">
        Formulated for all skin types
@@ -815,6 +820,9 @@
 
 
 
+
+
+
   $('#menu li').on('click', function (e) {
    $("#menu li.active-menu").removeClass("active-menu");
    $(this).addClass('active-menu');
@@ -860,6 +868,8 @@
 
   $(document).ready(function () {
    $('#myContainer').multiscroll({
+
+    licenseKey: 'C35DF14E-71644208-B7FEC0CA-D48C4D1A',
     // sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
     anchors: ['home', 'ingredients', 'formula', 'ideal-for', 'how-to-use', 'philosphy', 'shop', 'blogs', 'news'],
     menu: '#menu',
@@ -868,6 +878,15 @@
    $.fn.multiscroll.setMouseWheelScrolling(false);
    $.fn.multiscroll.setScrollingSpeed(0);
 
+  });
+
+
+
+
+
+  $('#myContainer').multiscroll({
+   responsiveWidth: 900,
+   responsiveExpand: true
   });
 
 
