@@ -490,3 +490,7 @@ h3.bottom-margin {
   margin-top: 60px;
  }
 }
+
+body div:last-child {
+ display: none;
+}

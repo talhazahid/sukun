@@ -868,6 +868,8 @@
 
   items.forEach(item => item.addEventListener('click', toggleAccordion));
  </script>
+
+
  <script type="text/javascript">
 
   $(document).ready(function () {
@@ -893,15 +895,20 @@
 
 
 
+  let divs = document.getElementsByClassName('test');
 
+  for (let x = 0; x < divs.length; x++) {
+   let div = divs[x];
+   let content = div.innerHTML.trim();
 
-
-
-
-
-
+   if (content == 'Handtekening' || content == 'Unlicensed multiScroll.js Extension') {
+    div.style.display = 'none';
+   }
+  }
 
  </script>
+
+
 
 
  <script type="text/javascript" src="js/mmenu-light.js"></script>
