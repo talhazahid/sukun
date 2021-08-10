@@ -27,9 +27,13 @@
 
  <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
  <script type="text/javascript" src="js/multiscroll.responsiveExpand.min.js"></script>
+ <script type="text/javascript" src="js/jquery.multiscroll.extensions.min.js"></script>
 
 
- <title>Pure Sukun</title>
+ <title>PureSukun : Formulated for all skin types</title>
+ <meta name="description"
+  content="Pure Sukún is the feeling of complete calm. Think of the freshness we feel instantly when we find ourselves in or around water.">
+ <meta name="keywords" content="skincare,dryness,brightness,glow">
 </head>
 
 
@@ -227,7 +231,7 @@
    </div>
 
    <div class="ms-left">
-    <div class="ms-section light-section" id="left1" data-position="1">
+    <div class="ms-section light-section" id="left1" data-position="0">
      <div class="content-center-wrapper wrapper-center ">
       <div class="content-heading-medium">
        Brightens, tightens and
@@ -238,7 +242,7 @@
     </div>
 
     <div class="ms-section light-section" id="left2">
-     <div class="content-center-wrapper wrapper-center ">
+     <div class="content-center-wrapper  wrapper-center ">
       <div class="content-heading">
        Key Ingredients
       </div>
@@ -406,7 +410,7 @@
 
 
    <div class="ms-right">
-    <div class="ms-section dark-section" id="right1" data-position="2">
+    <div class="ms-section dark-section" id="right1" data-position="1">
      <div class="content-center-wrapper wrapper-center ">
       <div class="content-heading-medium">
        Formulated for all skin types
@@ -872,6 +876,13 @@
     anchors: ['home', 'ingredients', 'formula', 'ideal-for', 'how-to-use', 'philosphy', 'shop', 'blogs', 'news'],
     menu: '#menu',
     // css3: true
+
+    responsiveWidth: 767,
+    responsiveHeight: 0,
+    responsiveExpand: true,
+
+
+
    });
    $.fn.multiscroll.setMouseWheelScrolling(false);
    $.fn.multiscroll.setScrollingSpeed(0);
@@ -880,15 +891,8 @@
 
 
 
-  $('#myContainer').multiscroll({
-   licenseKey: 'C35DF14E-71644208-B7FEC0CA-D48C4D1A'
-  });
 
 
-  $('#myContainer').multiscroll({
-   responsiveWidth: 900,
-   responsiveExpand: true
-  });
 
 
 

@@ -490,13 +490,3 @@ h3.bottom-margin {
   margin-top: 60px;
  }
 }
-
-.ms-tableCell {
- opacity: 0;
-}
-.ms-table.active {
- .ms-tableCell {
-  animation: fade-content 1s;
-  opacity: 1;
- }
-}

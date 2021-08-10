@@ -368,13 +368,6 @@ h3.bottom-margin {
 .philosphy-left .philosphy-wrapper {
   margin-top: 60px; }
 
-.ms-tableCell {
-  opacity: 0; }
-
-.ms-table.active .ms-tableCell {
-  animation: fade-content 1s;
-  opacity: 1; }
-
 .accordion {
   padding: 0px; }
   .accordion button {
@@ -516,7 +509,14 @@ body {
     left: -30vw; } }
 @media only screen and (min-width: 768px) and (max-width: 9999px) {
   .mobile-menu-btn {
-    display: none; } }
+    display: none; }
+
+  .ms-tableCell {
+    opacity: 0; }
+
+  .ms-table.active .ms-tableCell {
+    animation: fade-content 1s;
+    opacity: 1; } }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .ms-viewing-shop .main-bottle img {
     position: absolute;
