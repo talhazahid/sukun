@@ -506,7 +506,10 @@ body {
   .ms-viewing-shop .main-bottle img {
     position: absolute;
     right: calc(70vw - 520px);
-    left: -30vw; } }
+    left: -30vw; }
+
+  footer {
+    display: none; } }
 @media only screen and (min-width: 768px) and (max-width: 9999px) {
   .mobile-menu-btn {
     display: none; }
@@ -526,7 +529,10 @@ body {
   .ms-viewing-shop .main-bottle img {
     position: absolute;
     right: calc(70vw - 520px);
-    left: -9vw; } }
+    left: -9vw; }
+
+  .ms-tableCell {
+    padding: 0px 18%; } }
 @media only screen and (min-width: 1700px) and (max-width: 2000px) {
   .ms-viewing-shop .main-bottle img {
     position: absolute;

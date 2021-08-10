@@ -34,6 +34,10 @@
   right: calc(70vw - 520px);
   left: -30vw;
  }
+
+ footer {
+  display: none;
+ }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 9999px) {
@@ -65,6 +69,10 @@
   position: absolute;
   right: calc(70vw - 520px);
   left: -9vw;
+ }
+
+ .ms-tableCell {
+  padding: 0px 18%;
  }
 }
 
