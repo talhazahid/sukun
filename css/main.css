@@ -36,6 +36,52 @@ header #menu li.active a {
   display: flex;
   justify-content: center; }
 
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 45px;
+  height: 6px;
+  border-radius: 10px; }
+
+.hamburger-menu {
+  position: relative;
+  transform: translateY(30px);
+  background: #2c2c2c;
+  transition: all 0ms 300ms;
+  border-radius: 10px; }
+  .hamburger-menu.animate {
+    background: rgba(255, 255, 255, 0); }
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 11px;
+  background: #2c2c2c;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  background: #2c2c2c;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.mm-ocd-opened .mobile-menu-btn {
+  z-index: 10000;
+  right: 458px; }
+
 .main-bottle {
   display: flex;
   justify-content: center;
@@ -319,7 +365,11 @@ h3.bottom-margin {
   position: absolute;
   z-index: 9999;
   right: 15px;
-  top: 10px; }
+  top: 10px;
+  height: 63px;
+  -webkit-transition: left 0.3s ease 0s;
+  -o-transition: left 0.3s ease 0s;
+  transition: left 0.3s ease 0s; }
 
 .main-bottle {
   height: 100vh; }
@@ -368,8 +418,8 @@ h3.bottom-margin {
 .philosphy-left .philosphy-wrapper {
   margin-top: 60px; }
 
-body div:last-child {
-  display: none; }
+#right2 .ms-tableCell {
+  padding: 0px 30px 0px 20%; }
 
 .accordion {
   padding: 0px; }
@@ -486,7 +536,13 @@ body {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .main-bottle-img {
-    width: 115px; }
+    width: 100%; }
+
+  .hide-on-mobile {
+    display: none !important; }
+
+  .ms-tableCell {
+    padding: 0px 20px; }
 
   .content-heading {
     width: 100%;
@@ -523,6 +579,12 @@ body {
   .ms-table.active .ms-tableCell {
     animation: fade-content 1s;
     opacity: 1; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-bottle img {
+    width: 100%; } }
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .main-bottle img {
+    width: 86%; } }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .ms-viewing-shop .main-bottle img {
     position: absolute;

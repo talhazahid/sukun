@@ -1,9 +1,14 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
  .main-bottle-img {
-  width: 115px;
+  width: 100%;
+ }
+
+ .hide-on-mobile {
+  display: none !important;
  }
 
  .ms-tableCell {
+  padding: 0px 20px;
  }
 
  .content-heading {
@@ -53,6 +58,18 @@
    animation: fade-content 1s;
    opacity: 1;
   }
+ }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+ .main-bottle img {
+  width: 100%;
+ }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+ .main-bottle img {
+  width: 86%;
  }
 }
 

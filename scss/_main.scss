@@ -1,6 +1,7 @@
 body {
  background: #cbccce;
 }
+
 header {
  #menu li {
   display: flex;
@@ -50,6 +51,66 @@ header {
  margin: 0;
  display: flex;
  justify-content: center;
+}
+
+// Mobile menu
+$bar-width: 45px;
+$bar-height: 6px;
+$bar-spacing: 11px;
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+ width: $bar-width;
+ height: $bar-height;
+ border-radius: 10px;
+}
+
+.hamburger-menu {
+ position: relative;
+ transform: translateY(30px);
+ background: #2c2c2c;
+ transition: all 0ms 300ms;
+ border-radius: 10px;
+
+ &.animate {
+  background: rgba(255, 255, 255, 0);
+ }
+}
+
+.hamburger-menu:before {
+ content: "";
+ position: absolute;
+ left: 0;
+ bottom: $bar-spacing;
+ background: #2c2c2c;
+ transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+ content: "";
+ position: absolute;
+ left: 0;
+ top: $bar-spacing;
+ background: #2c2c2c;
+ transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+ top: 0;
+ transform: rotate(45deg);
+ transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:before {
+ bottom: 0;
+ transform: rotate(-45deg);
+ transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mm-ocd-opened .mobile-menu-btn {
+ z-index: 10000;
+ right: 458px;
 }
 
 .main-bottle {
@@ -419,6 +480,10 @@ h3.bottom-margin {
  z-index: 9999;
  right: 15px;
  top: 10px;
+ height: 63px;
+ -webkit-transition: left 0.3s ease 0s;
+ -o-transition: left 0.3s ease 0s;
+ transition: left 0.3s ease 0s;
 }
 
 .main-bottle {
@@ -491,6 +556,6 @@ h3.bottom-margin {
  }
 }
 
-body div:last-child {
- display: none;
+#right2 .ms-tableCell {
+ padding: 0px 30px 0px 20%;
 }

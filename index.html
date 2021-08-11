@@ -196,7 +196,15 @@
 
     </ul>
    </nav>
-   <a href="#mobile-menu" class="mobile-menu-btn">Mobile Menu</a>
+
+
+   <a href="#mobile-menu" class="mobile-menu-btn ">
+
+    <div class="hamburger-menu">
+
+    </div>
+
+   </a>
 
    <ul id="menu" class="desktop-menu">
     <li data-menuanchor="first" class="bottle-controller-first desk-menu">
@@ -395,7 +403,7 @@
 
 
     </div>
-    <div class="ms-section light-section" id="left7">
+    <div class="ms-section light-section hide-on-mobile" id="left7">
      <!-- <h1>Shop left</h1> -->
     </div>
 
@@ -422,7 +430,7 @@
      <div ss-container>
 
       <div class="content-center-wrapper wrapper-center ">
-       <div class="page-content">
+       <div class="">
 
         <div class="accordion">
          <div class="accordion-item">
@@ -671,7 +679,7 @@
 
      </div>
 
-     <div class="ms-section  light-section " id="right6" data-position="11">
+     <div class="ms-section  light-section hide-on-mobile " id="right6" data-position="11">
       <!-- <h1>Philosphy right</h1> -->
      </div>
 
@@ -879,7 +887,7 @@
     menu: '#menu',
     // css3: true
 
-    responsiveWidth: 767,
+    responsiveWidth: 1023,
     responsiveHeight: 0,
     responsiveExpand: true,
 
@@ -895,16 +903,7 @@
 
 
 
-  let divs = document.getElementsByClassName('test');
 
-  for (let x = 0; x < divs.length; x++) {
-   let div = divs[x];
-   let content = div.innerHTML.trim();
-
-   if (content == 'Handtekening' || content == 'Unlicensed multiScroll.js Extension') {
-    div.style.display = 'none';
-   }
-  }
 
  </script>
 
@@ -912,23 +911,8 @@
 
 
  <script type="text/javascript" src="js/mmenu-light.js"></script>
- <script>
-  // document.addEventListener(
-  //  "DOMContentLoaded", () => {
-  //   new Mmenu("nav#mobile-menu", {
-  //    "extensions": [
-  //     "position-back",
-  //     "position-right"
-  //    ]
-  //   });
-  //  }
-  // );
 
-
-
-
-
-  var menu = new MmenuLight(
+ <script>			var menu = new MmenuLight(
    document.querySelector('#mobile-menu'),
    'all'
   );
@@ -937,12 +921,11 @@
    // selectedClass: 'Selected',
    // slidingSubmenus: true,
    // theme: 'dark',
-   title: ''
+   // title: 'Menu'
   });
 
   var drawer = menu.offcanvas({
-   position: 'right',
-
+   position: 'right'
   });
 
   //	Open the menu.
@@ -950,11 +933,19 @@
    .addEventListener('click', evnt => {
     evnt.preventDefault();
     drawer.open();
-   });
+   }); drawer.close();
+
+
+  (function () {
+   $('.mobile-menu-btn, .mm-ocd__backdrop').on('click', function () {
+    $('.hamburger-menu').toggleClass('animate');
+   })
+  })();
+
+
 
 
  </script>
-
 
 </body>
 
