@@ -534,7 +534,7 @@ h3.bottom-margin {
 body {
   font-family: "Lato", sans-serif; }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
   .main-bottle-img {
     width: 100%; }
 
@@ -543,6 +543,38 @@ body {
 
   .ms-tableCell {
     padding: 0px 20px; }
+
+  .accordion-content p {
+    width: 90%; }
+
+  .small-space {
+    padding: 8px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-bottom: 20px; }
+
+  .content-center-wrapper {
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+
+  .ss-content {
+    width: calc(100% + -25px) !important; }
+
+  h3 {
+    font-size: 22px;
+    line-height: 20px;
+    color: #0b1437; }
+
+  .light-section-mobile {
+    background: #ebecee; }
+
+  .page-content {
+    width: 100%;
+    text-align: left; }
+
+  .mobile-margin-top-20 {
+    margin-top: 20px; }
 
   .content-heading {
     width: 100%;
@@ -556,6 +588,10 @@ body {
   .mobile-menu {
     display: block; }
 
+  .mobile-heading {
+    font-size: 30px;
+    text-align: left; }
+
   footer #menu {
     display: none !important; }
 
@@ -568,8 +604,11 @@ body {
     left: -30vw; }
 
   footer {
-    display: none; } }
-@media only screen and (min-width: 768px) and (max-width: 9999px) {
+    display: none; }
+
+  #right2 .ms-tableCell {
+    padding: 0px 20px; } }
+@media only screen and (min-width: 1024px) and (max-width: 9999px) {
   .mobile-menu-btn {
     display: none; }
 
@@ -603,5 +642,8 @@ body {
     position: absolute;
     right: calc(70vw - 520px);
     left: 2vw; } }
+@media only screen and (min-width: 1024px) and (max-width: 9000px) {
+  .hide-on-desktop {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
