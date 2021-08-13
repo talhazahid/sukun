@@ -39,14 +39,14 @@ header #menu li.active a {
 .hamburger-menu,
 .hamburger-menu:after,
 .hamburger-menu:before {
-  width: 45px;
-  height: 6px;
+  width: 32px;
+  height: 3px;
   border-radius: 10px; }
 
 .hamburger-menu {
   position: relative;
   transform: translateY(30px);
-  background: #2c2c2c;
+  background: #0b1437;
   transition: all 0ms 300ms;
   border-radius: 10px; }
   .hamburger-menu.animate {
@@ -56,16 +56,16 @@ header #menu li.active a {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 11px;
-  background: #2c2c2c;
+  bottom: 9px;
+  background: #0b1437;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 .hamburger-menu:after {
   content: "";
   position: absolute;
   left: 0;
-  top: 11px;
-  background: #2c2c2c;
+  top: 9px;
+  background: #0b1437;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 .hamburger-menu.animate:after {
@@ -421,6 +421,9 @@ h3.bottom-margin {
 #right2 .ms-tableCell {
   padding: 0px 30px 0px 20%; }
 
+.shopify-buy-frame iframe {
+  height: auto !important; }
+
 .accordion {
   padding: 0px; }
   .accordion button {
@@ -557,9 +560,6 @@ body {
     height: auto;
     display: flex;
     flex-direction: column; }
-
-  .ss-content {
-    width: calc(100% + -25px) !important; }
 
   h3 {
     font-size: 22px;

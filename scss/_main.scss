@@ -54,9 +54,9 @@ header {
 }
 
 // Mobile menu
-$bar-width: 45px;
-$bar-height: 6px;
-$bar-spacing: 11px;
+$bar-width: 32px;
+$bar-height: 3px;
+$bar-spacing: 9px;
 
 .hamburger-menu,
 .hamburger-menu:after,
@@ -69,7 +69,7 @@ $bar-spacing: 11px;
 .hamburger-menu {
  position: relative;
  transform: translateY(30px);
- background: #2c2c2c;
+ background: #0b1437;
  transition: all 0ms 300ms;
  border-radius: 10px;
 
@@ -83,7 +83,8 @@ $bar-spacing: 11px;
  position: absolute;
  left: 0;
  bottom: $bar-spacing;
- background: #2c2c2c;
+ background: #0b1437;
+
  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -92,7 +93,8 @@ $bar-spacing: 11px;
  position: absolute;
  left: 0;
  top: $bar-spacing;
- background: #2c2c2c;
+ background: #0b1437;
+
  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -558,4 +560,8 @@ h3.bottom-margin {
 
 #right2 .ms-tableCell {
  padding: 0px 30px 0px 20%;
+}
+
+.shopify-buy-frame iframe {
+ height: auto !important;
 }
