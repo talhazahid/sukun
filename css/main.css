@@ -587,10 +587,10 @@ body {
     overflow-x: hidden; }
 
   .main-bottle-img {
-    width: 100%;
-    position: relative !important;
-    bottom: auto !important;
-    left: 0 !important; }
+    display: none; }
+
+  .mobile-hero-bottle img {
+    width: 360px; }
 
   .hide-on-mobile {
     display: none !important; }
