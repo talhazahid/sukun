@@ -24,7 +24,7 @@ body.mm-ocd-opened {
  right: 0;
  bottom: 100%;
  left: 0;
- z-index: 9999999999;
+ z-index: 2147483646;
  overflow: hidden;
  -ms-scroll-chaining: none;
  overscroll-behavior: contain;
@@ -175,7 +175,7 @@ body.mm-ocd-opened {
  cursor: pointer;
 }
 .mm-spn li:before {
- content: "";
+ /* content: "";
  display: block;
  position: absolute;
  top: 25px;
@@ -190,14 +190,14 @@ body.mm-ocd-opened {
  -webkit-transform: rotate(45deg) translate(0, -50%);
  -ms-transform: rotate(45deg) translate(0, -50%);
  transform: rotate(45deg) translate(0, -50%);
- opacity: 0.4;
+ opacity: 0.4; */
 }
 .mm-spn li:after {
  content: "";
  display: block;
  margin-left: 20px;
  margin-left: var(--mm-spn-item-indent);
- border-top: 1px solid;
+ border-top: 0px solid;
  opacity: 0.15;
 }
 .mm-spn a,
@@ -296,8 +296,8 @@ body.mm-ocd-opened {
  opacity: 0.15;
 }
 .mm-spn.mm-spn--light {
- color: #444;
- background: #f3f3f3;
+ color: #fff;
+ background: #0b1437;
 }
 .mm-spn.mm-spn--dark {
  color: #ddd;

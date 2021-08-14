@@ -1,10 +1,16 @@
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
  .main-bottle-img {
   width: 100%;
+  top: -35px !important;
+  bottom: auto !important;
  }
 
  .hide-on-mobile {
   display: none !important;
+ }
+
+ .dark-section-mobile {
+  background: #cbccce;
  }
 
  .ms-tableCell {
@@ -15,6 +21,32 @@
   p {
    width: 90%;
   }
+ }
+
+ .section-one-mobile .ms-tableCell {
+  vertical-align: bottom;
+  .content-center-wrapper {
+   padding-bottom: 60px;
+  }
+ }
+
+ .mobile-small-headings {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #0b1437;
+  margin-top: 5px;
+ }
+
+ .mobile-logo-center {
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 30px;
+  text-align: center;
  }
 
  .small-space {
@@ -41,7 +73,7 @@
  }
 
  .light-section-mobile {
-  background: #ebecee;
+  background: #eef3fc;
  }
 
  .page-content {
@@ -53,6 +85,10 @@
   margin-top: 20px;
  }
 
+ .ms-tableCell {
+  vertical-align: top;
+  padding: 20px 30px;
+ }
  .content-heading {
   width: 100%;
   font-style: normal;
@@ -69,8 +105,13 @@
  }
 
  .mobile-heading {
-  font-size: 30px;
+  font-size: 18px;
   text-align: left;
+ }
+
+ .accordion button .accordion-title {
+  padding: 1em 0 1em 2em;
+  font-size: 13px;
  }
 
  footer #menu {
@@ -90,10 +131,6 @@
  footer {
   display: none;
  }
-
- #right2 .ms-tableCell {
-  padding: 0px 20px;
- }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 9999px) {
@@ -109,6 +146,10 @@
    animation: fade-content 1s;
    opacity: 1;
   }
+ }
+
+ #right2 .ms-tableCell {
+  padding: 0px 30px 0px 20%;
  }
 }
 

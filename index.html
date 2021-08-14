@@ -165,42 +165,82 @@
   <header>
    <nav id="mobile-menu">
     <ul>
-     <li data-menuanchor="first" class="bottle-controller-first">
-      <a class="menu-item" href="#home">Home</a>
+
+
+     <li>
+      <div class="mobile-logo">
+       <img src="images/puresukun-white.svg" alt="PureSukun">
+      </div>
      </li>
 
      <li data-menuanchor="first" class="bottle-controller-first">
-      <a class="menu-item" href="#ingredients">Key Ingredients</a>
+      <a class="menu-item" href="#right2">
+       <img src="images/mobile-ingre.svg" />
+       Ingredients</a>
      </li>
      <li data-menuanchor="second" class="">
-      <a class="menu-item" href="#formula">Formula</a>
+      <a class="menu-item" href="#formula">
+       <img src="images/mobile-formula.svg" />
+       Formula</a>
      </li>
 
      <!-- <li data-menuanchor="shop" class="bottle-controller-third"><a href="#shop">Shop</a></li> -->
-
-     <li data-menuanchor="third" class="">
-      <a class="menu-item" href="#ideal-for">Ideal For</a>
-     </li>
      <li data-menuanchor="fourth" class="bottle-controller-fourth">
-      <a class="menu-item" href="#how-to-use">How to Use</a>
+      <a class="menu-item" href="#how-to-use">
+       <img src="images/mobile-how-to-use.svg" />
+       How to Use</a>
      </li>
+     <li data-menuanchor="third" class="">
+      <a class="menu-item" href="#ideal-for">
+       <img src="images/mobile-ideal.svg" />
+       Ideal For</a>
+     </li>
+
 
      <li data-menuanchor="philosphy" class="bottle-controller-second">
       <a class="menu-item" href="#philosphy">
-       <img src="images/philosophy-icon.svg" />
+       <img src="images/mobile-philosophy.svg" />
        Philosphy
       </a>
      </li>
      <li data-menuanchor="shop" class="bottle-controller-third">
       <a class="menu-item" href="#shop">
-       <img src="images/shop-icon.svg" />
+       <img src="images/mobile-shop.svg" />
        Shop Now
       </a>
      </li>
-     <li data-menuanchor="first" class="bottle-controller-first">
-      <a href="#home"><img src="images/logo.svg" /></a>
+
+     <li class="social-media-mobile">
+
+
+      <a href="#">
+       <img src="images/facebook-icon.svg">
+      </a>
+
+      <a href="#">
+       <img src="images/twitter-icon.svg">
+      </a>
+
+      <a href="#">
+       <img src="images/instagram-icon.svg">
+      </a>
+
      </li>
+
+
+     <li class="mobile-menu-copyright">
+      <div>
+       © 2021 PureSukun All Rights Reserved
+      </div>
+     </li>
+
+
     </ul>
+
+
+
+
+
    </nav>
 
    <a href="#mobile-menu" class="mobile-menu-btn">
@@ -229,6 +269,11 @@
    <li data-menuanchor="fourth" class="bottle-controller-fourth"><a href="#blogs">Blogs</a></li>
    <li data-menuanchor="fourth" class="bottle-controller-second"><a href="#news">News</a></li> -->
    </ul>
+
+   <div class="mobile-logo-center">
+    <img src="images/logo-mobile-center.svg">
+   </div>
+
   </header>
 
   <div id="myContainer">
@@ -238,12 +283,17 @@
    </div>
 
    <div class="ms-left">
-    <div class="ms-section light-section" id="left1" data-position="0">
+    <div class="ms-section section-one-mobile light-section dark-section-mobile" id="left1" data-position="0">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading-medium">
        Brightens, tightens and
        <br />
        strengthens your skin.
+      </div>
+
+
+      <div class="mobile-small-headings hide-on-desktop">
+       Formulated for all skin types
       </div>
      </div>
     </div>
@@ -401,7 +451,7 @@
    </div>
 
    <div class="ms-right">
-    <div class="ms-section dark-section" id="right1" data-position="1">
+    <div class="ms-section  hide-on-mobile" id="right1" data-position="1">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading-medium">
        Formulated for all skin types
@@ -409,7 +459,7 @@
      </div>
     </div>
 
-    <div class="ms-section dark-section" id="right2" data-position="3">
+    <div class="ms-section dark-section light-section-mobile" id="right2" data-position="3">
      <div ss-container>
       <div class="content-center-wrapper wrapper-center">
        <div class="">
@@ -941,7 +991,6 @@
 
 
 
- slider loader
  <script type="text/javascript">
   var revapi1, tpj;
   (function () {
@@ -1055,7 +1104,7 @@
      "news",
     ],
     menu: "#menu",
-    // css3: true
+    // css3: true,
 
     responsiveWidth: 1023,
     responsiveHeight: 0,
