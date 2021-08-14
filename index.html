@@ -37,7 +37,7 @@
 </head>
 
 <body>
- <div id="animation">
+ <div id="animation" style="display:none">
   <!-- Start REVOLUTION SLIDER -->
 
   <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="test"
@@ -161,7 +161,7 @@
   <!-- END REVOLUTION SLIDER -->
  </div>
 
- <div id="page" style="display: none">
+ <div id="page">
   <header>
    <nav id="mobile-menu">
     <ul>
@@ -179,32 +179,32 @@
        Ingredients</a>
      </li>
      <li data-menuanchor="second" class="">
-      <a class="menu-item" href="#formula">
+      <a class="menu-item" href="#right3">
        <img src="images/mobile-formula.svg" />
        Formula</a>
      </li>
 
      <!-- <li data-menuanchor="shop" class="bottle-controller-third"><a href="#shop">Shop</a></li> -->
      <li data-menuanchor="fourth" class="bottle-controller-fourth">
-      <a class="menu-item" href="#how-to-use">
+      <a class="menu-item" href="#right4">
        <img src="images/mobile-how-to-use.svg" />
        How to Use</a>
      </li>
      <li data-menuanchor="third" class="">
-      <a class="menu-item" href="#ideal-for">
+      <a class="menu-item" href="#right5">
        <img src="images/mobile-ideal.svg" />
        Ideal For</a>
      </li>
 
 
      <li data-menuanchor="philosphy" class="bottle-controller-second">
-      <a class="menu-item" href="#philosphy">
+      <a class="menu-item" href="#left7">
        <img src="images/mobile-philosophy.svg" />
        Philosphy
       </a>
      </li>
      <li data-menuanchor="shop" class="bottle-controller-third">
-      <a class="menu-item" href="#shop">
+      <a class="menu-item" href="#right6">
        <img src="images/mobile-shop.svg" />
        Shop Now
       </a>
@@ -271,7 +271,7 @@
    </ul>
 
    <div class="mobile-logo-center">
-    <img src="images/logo-mobile-center.svg">
+    <a href="left1"><img src="images/logo-mobile-center.svg"></a>
    </div>
 
   </header>
@@ -283,7 +283,9 @@
    </div>
 
    <div class="ms-left">
-    <div class="ms-section section-one-mobile light-section dark-section-mobile" id="left1" data-position="0">
+
+
+    <div class="ms-section section-one-mobile light-section dark-section-mobile" id="left1">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading-medium">
        Brightens, tightens and
@@ -298,30 +300,36 @@
      </div>
     </div>
 
-    <div class="ms-section light-section hide-on-mobile" id="left2" data-position="2">
+    <div class="ms-section light-section hide-on-mobile" id="left2">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading hide-on-mobile">Key Ingredients</div>
      </div>
     </div>
 
-    <div class="ms-section light-section hide-on-mobile" id="left3" data-position="4">
+    <div class="ms-section light-section hide-on-mobile" id="left3">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading">Formula</div>
      </div>
     </div>
 
-    <div class="ms-section light-section hide-on-mobile" id="left4" data-position="6">
+    <div class="ms-section light-section hide-on-mobile" id="left4">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading">Ideal for addressing</div>
      </div>
     </div>
 
-    <div class="ms-section light-section" id="left5" data-position="8">
+    <div class="ms-section light-section hide-on-mobile" id="left5">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading">How to use</div>
      </div>
     </div>
-    <div class="ms-section philosphy-left" id="left6" data-position="10">
+
+
+    <div class="ms-section light-section hide-on-mobile " id="left6">
+     <!-- <h1>Shop left</h1> -->
+    </div>
+
+    <div class="ms-section philosphy-left ms-tableCell-mobile-height " id="left7">
      <div class="scroller-wrap">
       <div ss-container>
        <div class="content-center-wrapper wrapper-center">
@@ -437,9 +445,19 @@
       </div>
      </div>
     </div>
-    <div class="ms-section light-section hide-on-mobile" id="left7">
-     <!-- <h1>Shop left</h1> -->
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- <div class="ms-section light-section" id="left8">
      <h1>Blogs</h1>
@@ -451,7 +469,9 @@
    </div>
 
    <div class="ms-right">
-    <div class="ms-section  hide-on-mobile" id="right1" data-position="1">
+
+
+    <div class="ms-section  hide-on-mobile" id="right1">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading-medium">
        Formulated for all skin types
@@ -459,7 +479,8 @@
      </div>
     </div>
 
-    <div class="ms-section dark-section light-section-mobile" id="right2" data-position="3">
+
+    <div class="ms-section dark-section light-section-mobile ms-tableCell-mobile-height" id="right2">
      <div ss-container>
       <div class="content-center-wrapper wrapper-center">
        <div class="">
@@ -599,7 +620,9 @@
       </div>
      </div>
     </div>
-    <div class="ms-section dark-section light-section-mobile" id="right3" data-position="5">
+
+
+    <div class="ms-section dark-section  dark-section-mobile ms-tableCell-mobile-height" id="right3">
      <div class="scroller-wrap">
       <div ss-container>
        <div class="content-center-wrapper wrapper-center">
@@ -636,7 +659,9 @@
       </div>
      </div>
     </div>
-    <div class="ms-section dark-section" id="right4" data-position="7">
+
+
+    <div class="ms-section dark-section light-section-mobile ms-tableCell-mobile-height" id="right4">
      <div class="content-center-wrapper wrapper-center">
       <!-- <div class="content-heading">
 
@@ -683,8 +708,16 @@
       </div>
      </div>
     </div>
-    <div class="ms-section dark-section" id="right5" data-position="9">
+
+
+    <div class="ms-section dark-section ms-tableCell-mobile-height dark-section-mobile" id="right5">
      <div class="content-center-wrapper wrapper-center">
+
+      <div class="content-heading hide-on-desktop mobile-heading">
+       How to use
+      </div>
+
+
       <div class="page-content">
        <div class="medium-text">
         <p>
@@ -701,61 +734,69 @@
        </div>
       </div>
      </div>
+    </div>
 
-     <div class="ms-section light-section hide-on-mobile" id="right6" data-position="11">
-      <!-- <h1>Philosphy right</h1> -->
-     </div>
 
-     <div class="ms-section dark-section" id="right7">
-      <div class="shop-wrapper">
-       <div class="small-heading-with-icon">
-        <div class="small-heading-img">
-         <img src="images/shop-icon.svg" />
-        </div>
-        <div class="small-heading-text">Shop</div>
+    <div class="ms-section dark-section light-section-mobile ms-tableCell-mobile-height" id="right6">
+     <div class="shop-wrapper">
+      <div class="small-heading-with-icon">
+       <div class="small-heading-img">
+        <img src="images/shop-icon.svg" />
        </div>
-
-       <div class="shop-price-quantity">
-        <div class="price">$75.00</div>
-
-        <div class="quantity">1 fl. os /30ml</div>
-       </div>
-
-       <div class="item-description">
-        <p>
-         Our high-performance, vegan and cruelty-free formula is
-         designed to extract the most out of all the ingredients.
-         Brimming with vitamins and nutrients, containing natural
-         antioxidant extracts and essential oils Serum I is a
-         revolutionary skin booster which works like a concentrated
-         juice for your skin.
-        </p>
-
-        <p>
-         Containing Pomegranate seed oil, a plant-derived source of
-         Vitamin C, which decreases skin roughness and dryness, Serum
-         I helps brighten dark spots, hydrates and strengthens the
-         skin barrier function, giving you smooth, supple and radiant
-         skin.
-        </p>
-       </div>
-
-
-
-
-       <div id='product-component-1628767921498'></div>
-
+       <div class="small-heading-text">Shop</div>
       </div>
-     </div>
 
-     <!-- <div class="ms-section " id="right8">
+      <div class="shop-price-quantity">
+       <div class="price">$75.00</div>
+
+       <div class="quantity">1 fl. os /30ml</div>
+      </div>
+
+      <div class="item-description">
+       <p>
+        Our high-performance, vegan and cruelty-free formula is
+        designed to extract the most out of all the ingredients.
+        Brimming with vitamins and nutrients, containing natural
+        antioxidant extracts and essential oils Serum I is a
+        revolutionary skin booster which works like a concentrated
+        juice for your skin.
+       </p>
+
+       <p>
+        Containing Pomegranate seed oil, a plant-derived source of
+        Vitamin C, which decreases skin roughness and dryness, Serum
+        I helps brighten dark spots, hydrates and strengthens the
+        skin barrier function, giving you smooth, supple and radiant
+        skin.
+       </p>
+      </div>
+
+
+
+
+      <div id='product-component-1628767921498'></div>
+
+     </div>
+    </div>
+    <div class="ms-section light-section hide-on-mobile" id="right7">
+     <!-- <h1>Philosphy right</h1> -->
+    </div>
+
+
+
+
+
+
+
+   </div>
+   <!-- <div class="ms-section " id="right8">
       <h1>blogs right</h1>
      </div>
      <div class="ms-section dark-section " id="right9">
       <h1>news right</h1>
      </div> -->
-    </div>
-   </div>
+
+
   </div>
 
   <footer>
@@ -1098,8 +1139,8 @@
      "formula",
      "ideal-for",
      "how-to-use",
-     "philosphy",
      "shop",
+     "philosphy",
      "blogs",
      "news",
     ],
