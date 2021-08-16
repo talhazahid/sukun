@@ -3,6 +3,14 @@
   overflow-x: hidden;
  }
 
+ .mm-spn li {
+  margin-bottom: 15px;
+ }
+
+ .accordion button {
+  padding-bottom: 0px;
+ }
+
  .mobile-shop-bottle {
   text-align: center;
   display: flex;
@@ -41,6 +49,21 @@
  .accordion-content {
   p {
    width: 90%;
+  }
+ }
+
+ .mobile-hero-bottle {
+  img {
+   width: 100%;
+  }
+ }
+
+ .medium-text {
+  font-size: 14px;
+
+  p {
+   margin: 10px 0px;
+   line-height: 20px;
   }
  }
 
@@ -108,7 +131,7 @@
 
  .ms-tableCell-mobile-height .ms-tableCell {
   height: auto !important;
-  padding: 20px;
+  padding: 20px 35px;
  }
  .content-heading {
   width: 100%;
@@ -171,7 +194,7 @@
  }
 
  #right2 .ms-tableCell {
-  padding: 0px 30px 0px 20%;
+  padding: 0px 50px 0px 20%;
  }
 }
 

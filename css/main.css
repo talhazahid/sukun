@@ -414,8 +414,9 @@ h3.bottom-margin {
 .philosphy-left .philosphy-wrapper {
   margin-top: 60px; }
 
-.shopify-buy-frame iframe {
-  height: auto !important; }
+p {
+  line-height: 1.7rem;
+  font-size: 14px; }
 
 .mobile-menu-copyright {
   font-weight: 500;
@@ -430,7 +431,7 @@ h3.bottom-margin {
   padding: 20px 45px; }
 
 .mobile-logo {
-  padding: 35px 45px 10px; }
+  padding: 75px 45px 10px; }
 
 .mm-spn a {
   display: flex !important;
@@ -586,6 +587,12 @@ body {
   body {
     overflow-x: hidden; }
 
+  .mm-spn li {
+    margin-bottom: 15px; }
+
+  .accordion button {
+    padding-bottom: 0px; }
+
   .mobile-shop-bottle {
     text-align: center;
     display: flex;
@@ -616,6 +623,15 @@ body {
 
   .accordion-content p {
     width: 90%; }
+
+  .mobile-hero-bottle img {
+    width: 100%; }
+
+  .medium-text {
+    font-size: 14px; }
+    .medium-text p {
+      margin: 10px 0px;
+      line-height: 20px; }
 
   .section-one-mobile .ms-tableCell {
     vertical-align: bottom; }
@@ -667,7 +683,7 @@ body {
 
   .ms-tableCell-mobile-height .ms-tableCell {
     height: auto !important;
-    padding: 20px; }
+    padding: 20px 35px; }
 
   .content-heading {
     width: 100%;
@@ -714,7 +730,7 @@ body {
     opacity: 1; }
 
   #right2 .ms-tableCell {
-    padding: 0px 30px 0px 20%; } }
+    padding: 0px 50px 0px 20%; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .main-bottle img {
     width: 100%; } }

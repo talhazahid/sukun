@@ -161,7 +161,7 @@
   <!-- END REVOLUTION SLIDER -->
  </div>
 
- <div id="page" style="display:none">
+ <div id="page" style="opacity:0">
   <header>
    <nav id="mobile-menu">
     <ul>
@@ -185,11 +185,7 @@
      </li>
 
      <!-- <li data-menuanchor="shop" class="bottle-controller-third"><a href="#shop">Shop</a></li> -->
-     <li data-menuanchor="fourth" class="bottle-controller-fourth">
-      <a class="menu-item" href="#right5">
-       <img src="images/mobile-how-to-use.svg" />
-       How to Use</a>
-     </li>
+
      <li data-menuanchor="third" class="">
       <a class="menu-item" href="#right4">
        <img src="images/mobile-ideal.svg" />
@@ -197,18 +193,27 @@
      </li>
 
 
-     <li data-menuanchor="philosphy" class="bottle-controller-second">
-      <a class="menu-item" href="#left7">
-       <img src="images/mobile-philosophy.svg" />
-       Philosphy
-      </a>
+
+     <li data-menuanchor="fourth" class="bottle-controller-fourth">
+      <a class="menu-item" href="#right5">
+       <img src="images/mobile-how-to-use.svg" />
+       How to Use</a>
      </li>
+
+
      <li data-menuanchor="shop" class="bottle-controller-third">
       <a class="menu-item" href="#right6">
        <img src="images/mobile-shop.svg" />
        Shop Now
       </a>
      </li>
+     <li data-menuanchor="philosphy" class="bottle-controller-second">
+      <a class="menu-item" href="#left7">
+       <img src="images/mobile-philosophy.svg" />
+       Philosphy
+      </a>
+     </li>
+
 
      <li class="social-media-mobile">
 
@@ -277,7 +282,7 @@
   </header>
 
   <div id="myContainer">
-   <div class="main-bottle">
+   <div class="main-bottle hide-on-mobile">
     <!-- <img src="images/shade.png" class="main-bottle-img shade"> -->
     <img src="images/main-bottle-with-bg.png" class="main-bottle-img main-bottle-fix" />
    </div>
@@ -287,8 +292,8 @@
 
     <div class="ms-section section-one-mobile light-section dark-section-mobile" id="left1">
      <div class="content-center-wrapper wrapper-center">
-      <div class="mobile-hero-bottle hide-on-desktop
-       <img src=" images/main-bottle-with-bg.png">
+      <div class="mobile-hero-bottle hide-on-desktop">
+       <img src="images/bottle-responsive.png">
       </div>
 
 
@@ -587,7 +592,6 @@
            </p>
           </div>
          </div>
-
          <div class="accordion-item">
           <button id="accordion-button-6" aria-expanded="false">
            <span class="accordion-title"> Simulskin </span><span class="icon" aria-hidden="true"></span>
@@ -759,8 +763,12 @@
       </div>
 
       <div class="mobile-shop-bottle hide-on-desktop">
-       <img src="images/main-bottle-with-bg.png">
+       <img src="images/bottle-responsive.png">
       </div>
+
+
+      <div id='product-component-1629089840000' class="hide-on-desktop"></div>
+
 
       <div class="item-description">
        <p>
@@ -784,7 +792,7 @@
 
 
 
-      <div id='product-component-1628767921498'></div>
+      <div id='product-component-1629089840000' class="hide-on-mobile"></div>
 
      </div>
     </div>
@@ -827,8 +835,6 @@
   </footer>
  </div>
 
-
-
  <script type="text/javascript">
   /*<![CDATA[*/
   (function () {
@@ -857,7 +863,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
      ui.createComponent('product', {
       id: '7079550877847',
-      node: document.getElementById('product-component-1628767921498'),
+      node: document.getElementById('product-component-1629089840000'),
       moneyFormat: '%24%7B%7Bamount%7D%7D',
       options: {
        "product": {
@@ -1040,8 +1046,6 @@
   /*]]>*/
  </script>
 
-
-
  <script type="text/javascript">
   var revapi1, tpj;
   (function () {
@@ -1098,14 +1102,24 @@
  </script>
 
  <script>
+  document.addEventListener("click", function () {
+   if (!$(document.body).hasClass("mm-ocd-opened"))
+    $(".hamburger-menu").removeClass("animate");
+  });
   $("#menu li").on("click", function (e) {
+   $(".main-bottle-img").removeClass("main-bottle-fix");
    $("#menu li.active-menu").removeClass("active-menu");
    $(this).addClass("active-menu");
   });
 
-  $("#phil").click(function () {
+  // $("#phil").click(function () {
+  //  $(".main-bottle-img").addClass("main-bottle-fix");
+  // });
+
+  $("#phil").onload(function () {
    $(".main-bottle-img").addClass("main-bottle-fix");
   });
+
 
   $(document).ready(function () {
    $(".desk-menu").click(function () {
@@ -1128,7 +1142,7 @@
    const itemToggle = this.getAttribute("aria-expanded");
 
    for (i = 0; i < items.length; i++) {
-    items[i].setAttribute("aria-expanded", "true");
+    items[i].setAttribute("aria-expanded", "false");
    }
 
    if (itemToggle == "false") {
@@ -1168,11 +1182,26 @@
 
  <script>
   $(document).ready(function () {
-   setTimeout(function () {
-    $("#page").css("display", "block");
+   if (n == 0) {
+    setTimeout(function () {
+     $('#animation').addClass('fade-out');
+     $('#page').addClass('fade-in');
+     $('#page').css("opacity", "1");
+    }, 9000);
+    //adding fade transition 4s + animation time 9s 
+    setTimeout(function () {
+     $("#animation").css("display", "none");
+    }, 13000);
+   }
+   else {
+    $('#page').css("opacity", "1");
     $("#animation").css("display", "none");
-   }, 9000);
+   }
+
+
   });
+
+
  </script>
 
  <script type="text/javascript" src="js/mmenu-light.js"></script>
@@ -1192,16 +1221,18 @@
   });
 
   //	Open the menu.
-  document
-   .querySelector('a[href="#mobile-menu"]')
-   .addEventListener("click", (evnt) => {
-    evnt.preventDefault();
-    drawer.open();
-   });
+  // document
+  //  .querySelector('a[href="#mobile-menu"]')
+  //  .addEventListener("click", (evnt) => {
+  //   evnt.preventDefault();
+  //   drawer.open();
+  //  });
   drawer.close();
 
   (function () {
    $(".mobile-menu-btn").on("click", function () {
+    event.preventDefault();
+    drawer.open();
     if ($(".hamburger-menu").hasClass("animate")) {
      $(document.body).css("overflow", "visible");
      $(".mm-ocd").removeClass("mm-ocd--open");
@@ -1209,22 +1240,19 @@
      $(".hamburger-menu").removeClass("animate");
     } else {
      $(document.body).css("overflow", "hidden");
-     $(document.body).addClass("mm-ocd-opened");
-     $(".mm-ocd").addClass("mm-ocd--open");
      $(".hamburger-menu").addClass("animate");
     }
    });
   })();
   (function () {
-   $(".mm-ocd__backdrop").on("click", function () {
-    $(".hamburger-menu").removeClass("animate");
+   $(".mm-ocd__backdrop").click(function () {
     $(document.body).css("overflow", "visible");
+    $(".mm-ocd").removeClass("mm-ocd--open");
+    $(document.body).removeClass("mm-ocd-opened");
+    $(".hamburger-menu").removeClass("animate");
    });
   })();
  </script>
-
-
-
 
  <script>
   $(".menu-item").click(function () {
@@ -1234,6 +1262,17 @@
    $(".hamburger-menu").removeClass("animate");
   });
  </script>
+
+ <script>
+  var n = localStorage.getItem('on_load_counter');
+  if (n === null) {
+   n = 0;
+  }
+  n++;
+  localStorage.setItem("on_load_counter", n);
+ </script>
+
+
 </body>
 
 </html>

@@ -553,9 +553,14 @@ h3.bottom-margin {
  }
 }
 
-.shopify-buy-frame iframe {
- height: auto !important;
+p {
+ line-height: 1.7rem;
+ font-size: 14px;
 }
+
+// .shopify-buy-frame iframe {
+//  height: auto !important;
+// }
 
 .mobile-menu-copyright {
  font-weight: 500;
@@ -575,7 +580,7 @@ h3.bottom-margin {
 }
 
 .mobile-logo {
- padding: 35px 45px 10px;
+ padding: 75px 45px 10px;
 }
 
 .mm-spn a {
