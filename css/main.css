@@ -405,6 +405,10 @@ h3.bottom-margin {
   line-height: 34px;
   color: #0b1437; }
 
+.mobile-shop-cta {
+  display: table;
+  margin: 20px 0; }
+
 .content-desc {
   color: #0b1437;
   font-weight: 400; }
@@ -826,6 +830,6 @@ body {
     left: 2vw; } }
 @media only screen and (min-width: 1024px) and (max-width: 9000px) {
   .hide-on-desktop {
-    display: none; } }
+    display: none !important; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -254,6 +254,6 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 9000px) {
  .hide-on-desktop {
-  display: none;
+  display: none !important;
  }
 }
