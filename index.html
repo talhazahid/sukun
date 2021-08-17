@@ -17,7 +17,7 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
  <script src="js/simple-scrollbar.min.js"></script>
- <script type="text/javascript" src="../vendors/jquery.easings.min.js"></script>
+ <script type="text/javascript" src="../js/jquery.easings.min.js"></script>
 
  <!-- REVOLUTION JS FILES -->
  <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
@@ -311,36 +311,36 @@
      </div>
     </div>
 
-    <div class="ms-section light-section hide-on-mobile" id="left2">
+    <div class="ms-section light-section mobile-fix" id="left2">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading hide-on-mobile">Key Ingredients</div>
      </div>
     </div>
 
-    <div class="ms-section light-section hide-on-mobile" id="left3">
+    <div class="ms-section light-section mobile-fix" id="left3">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading">Formula</div>
      </div>
     </div>
 
-    <div class="ms-section light-section hide-on-mobile" id="left4">
+    <div class="ms-section light-section mobile-fix" id="left4">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading">Ideal for addressing</div>
      </div>
     </div>
 
-    <div class="ms-section light-section hide-on-mobile" id="left5">
+    <div class="ms-section light-section mobile-fix" id="left5">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading">How to use</div>
      </div>
     </div>
 
 
-    <div class="ms-section light-section hide-on-mobile " id="left6">
+    <div class="ms-section light-section mobile-fix" id="left6">
      <!-- <h1>Shop left</h1> -->
     </div>
 
-    <div class="ms-section philosphy-left ms-tableCell-mobile-height " id="left7">
+    <div class="ms-section philosphy-left ms-tableCell-mobile-height" id="left7">
      <div class="scroller-wrap">
       <div ss-container>
        <div class="content-center-wrapper wrapper-center">
@@ -461,15 +461,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
     <!-- <div class="ms-section light-section" id="left8">
      <h1>Blogs</h1>
     </div>
@@ -482,7 +473,7 @@
    <div class="ms-right">
 
 
-    <div class="ms-section  hide-on-mobile" id="right1">
+    <div class="ms-section  mobile-fix" id="right1">
      <div class="content-center-wrapper wrapper-center">
       <div class="content-heading-medium">
        Formulated for all skin types
@@ -766,10 +757,10 @@
        <img src="images/bottle-responsive.png">
       </div>
 
+
       <div class="mobile-shop-cta">
        <div id='product-component-1629089840000'></div>
       </div>
-
 
 
       <div class="item-description">
@@ -794,11 +785,11 @@
 
 
 
-      <!-- <div id='product-component-1629089840000' class="hide-on-mobile"></div> -->
+
 
      </div>
     </div>
-    <div class="ms-section light-section hide-on-mobile" id="right7">
+    <div class="ms-section light-section mobile-fix" id="right7">
      <!-- <h1>Philosphy right</h1> -->
     </div>
 
@@ -1108,19 +1099,33 @@
    if (!$(document.body).hasClass("mm-ocd-opened"))
     $(".hamburger-menu").removeClass("animate");
   });
+
   $("#menu li").on("click", function (e) {
    $(".main-bottle-img").removeClass("main-bottle-fix");
    $("#menu li.active-menu").removeClass("active-menu");
    $(this).addClass("active-menu");
   });
 
-  // $("#phil").click(function () {
-  //  $(".main-bottle-img").addClass("main-bottle-fix");
-  // });
+  $("#menu li").load(function (e) {
+   $(".main-bottle-img").removeClass("main-bottle-fix");
+   $("#menu li.active-menu").removeClass("active-menu");
+   $(this).addClass("active-menu");
+  });
 
-  $("#phil").onload(function () {
+  $("#phil").click(function () {
    $(".main-bottle-img").addClass("main-bottle-fix");
   });
+
+  $(document).ready(function () {
+   if (window.location.href.indexOf("philosphy") > -1) {
+    $(".main-bottle-img").addClass("main-bottle-fix");
+   }
+  });
+
+  // $("#phil").load(function () {
+  //   alert("ok");
+  //  $(".main-bottle-img").addClass("main-bottle-fix");
+  // });
 
 
   $(document).ready(function () {
@@ -1130,11 +1135,29 @@
   });
 
   $(document).ready(function () {
-   $("#shopy").click(function () {
+   if (window.location.href.indexOf("shop") > -1) {
     $(".main-bottle-img").removeClass("main-bottle-fix");
-   });
+   }
   });
-      //*
+
+  $("#shopy").click(function () {
+   $(".main-bottle-img").removeClass("main-bottle-fix");
+  });
+  //*
+
+  $(window).bind('hashchange', function () {
+   if (window.location.href.indexOf("shop") > -1) {
+    $(".main-bottle-img").removeClass("main-bottle-fix");
+   }
+   if (window.location.href.indexOf("philosphy") > -1) {
+    $(".main-bottle-img").addClass("main-bottle-fix");
+   }
+  });
+
+// $(window).bind('popstate', function() {
+//      //code
+//         alert("urlchange");
+// });
  </script>
 
  <script>
@@ -1270,7 +1293,7 @@
   if (n === null) {
    n = 0;
   }
-  // n++;
+  n++;
 
   localStorage.setItem("on_load_counter", n);
  </script>

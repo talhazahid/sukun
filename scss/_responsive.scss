@@ -189,6 +189,15 @@
  footer {
   display: none;
  }
+
+ body #myContainer .mobile-fix {
+  height: 0px !important;
+  display: flex !important;
+
+  .ms-tableCell {
+   height: 0px !important;
+  }
+ }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 9999px) {
