@@ -3,9 +3,20 @@
   overflow-x: hidden;
  }
 
+ .accordion .accordion-content p {
+  padding-left: 25px;
+ }
+
+ .accordion button[aria-expanded="true"] + .accordion-content {
+  padding: 0px 10px;
+  left: -10px;
+  position: relative;
+ }
+
  .content-desc {
   font-size: 14px;
   line-height: 22px;
+  padding: 0px 18px 0px 0px;
  }
 
  p {
@@ -101,13 +112,16 @@
   right: 0;
   top: 30px;
   text-align: center;
+  display: none;
  }
 
  .small-space {
   padding: 8px;
   margin: 0px;
   padding-left: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+  line-height: 16px;
+  font-size: 14px;
  }
 
  .content-center-wrapper {
@@ -121,7 +135,7 @@
  }
 
  h3 {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 20px;
   color: #0b1437;
  }
@@ -141,7 +155,7 @@
 
  .ms-tableCell-mobile-height .ms-tableCell {
   height: auto !important;
-  padding: 20px 35px;
+  padding: 35px;
  }
  .content-heading {
   width: 100%;
@@ -165,6 +179,11 @@
  .mobile-heading {
   font-size: 22px;
   text-align: left;
+  line-height: 22px;
+ }
+
+ .philosphy-left .philosphy-wrapper {
+  margin-top: 0px;
  }
 
  .accordion button .accordion-title {
@@ -213,7 +232,7 @@
  }
 
  #right2 .ms-tableCell {
-  padding: 0px 50px 0px 20%;
+  padding: 0px 50px 0px 70px;
  }
 }
 
@@ -225,7 +244,7 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1360px) {
  .main-bottle img {
-  width: 70%;
+  width: 62%;
  }
 
  .page-content {
@@ -264,5 +283,69 @@
 @media only screen and (min-width: 1024px) and (max-width: 9000px) {
  .hide-on-desktop {
   display: none !important;
+ }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+ .content-heading-medium {
+  font-size: 20px;
+  line-height: 26px;
+ }
+
+ .accordion button {
+  font-size: 15px;
+ }
+
+ .accordion button .icon {
+  top: 13px;
+ }
+
+ .content-center-wrapper {
+  padding: 0px 20px 0px 0px;
+ }
+
+ .content-heading {
+  font-size: 30px;
+ }
+
+ .ms-viewing-philosphy .main-bottle img {
+  position: absolute;
+  left: calc(70vw - 330px);
+ }
+
+ .ms-viewing-shop .main-bottle img {
+  position: absolute;
+  right: calc(70vw - 608px);
+  left: -30vw;
+ }
+
+ h3.bottom-margin {
+  font-size: 18px;
+ }
+
+ .small-space {
+  font-size: 14px;
+  line-height: 18px;
+ }
+
+ .ms-tableCell {
+  padding: 0px 18%;
+ }
+
+ .content-desc {
+  font-size: 14px;
+ }
+
+ .medium-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: #0b1437;
+
+  p {
+   margin: 0px !important;
+  }
  }
 }

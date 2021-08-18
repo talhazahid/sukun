@@ -28,7 +28,7 @@ header #menu li.active a {
 #menu {
   position: fixed;
   top: 20px;
-  left: 0;
+  left: -2px;
   z-index: 70;
   width: 100%;
   padding: 0;
@@ -429,7 +429,7 @@ h3.bottom-margin {
   padding: 20px 45px; }
 
 .mobile-logo {
-  padding: 75px 45px 10px; }
+  padding: 75px 0px 0px; }
 
 .mm-spn a {
   display: flex !important;
@@ -467,6 +467,10 @@ h3.bottom-margin {
 
 .shopify-buy-frame {
   height: 44px; }
+
+.rev_slider_wrapper {
+  position: relative;
+  top: -46px; }
 
 .accordion {
   padding: 0px; }
@@ -524,7 +528,7 @@ h3.bottom-margin {
       width: 0; }
     .accordion button[aria-expanded="true"] + .accordion-content {
       opacity: 1;
-      max-height: 250px;
+      max-height: 2500px;
       transition: all 200ms linear;
       will-change: opacity, max-height; }
   .accordion .accordion-content {
@@ -535,12 +539,13 @@ h3.bottom-margin {
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height; }
     .accordion .accordion-content p {
-      font-size: 1rem;
+      font-size: 14px;
       font-weight: 300;
       line-height: 1.5rem;
       margin-top: 0px;
       padding-left: 35px;
-      color: #0b1437; }
+      color: #0b1437;
+      margin-bottom: 0px; }
 
 @-webkit-keyframes fade-content {
   0% {
@@ -649,9 +654,18 @@ body {
   body {
     overflow-x: hidden; }
 
+  .accordion .accordion-content p {
+    padding-left: 25px; }
+
+  .accordion button[aria-expanded="true"] + .accordion-content {
+    padding: 0px 10px;
+    left: -10px;
+    position: relative; }
+
   .content-desc {
     font-size: 14px;
-    line-height: 22px; }
+    line-height: 22px;
+    padding: 0px 18px 0px 0px; }
 
   p {
     line-height: 1.7rem;
@@ -723,13 +737,16 @@ body {
     left: 0;
     right: 0;
     top: 30px;
-    text-align: center; }
+    text-align: center;
+    display: none; }
 
   .small-space {
     padding: 8px;
     margin: 0px;
     padding-left: 0px;
-    padding-bottom: 20px; }
+    padding-bottom: 15px;
+    line-height: 16px;
+    font-size: 14px; }
 
   .content-center-wrapper {
     height: auto;
@@ -737,7 +754,7 @@ body {
     flex-direction: column; }
 
   h3 {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 20px;
     color: #0b1437; }
 
@@ -753,7 +770,7 @@ body {
 
   .ms-tableCell-mobile-height .ms-tableCell {
     height: auto !important;
-    padding: 20px 35px; }
+    padding: 35px; }
 
   .content-heading {
     width: 100%;
@@ -772,7 +789,11 @@ body {
 
   .mobile-heading {
     font-size: 22px;
-    text-align: left; }
+    text-align: left;
+    line-height: 22px; }
+
+  .philosphy-left .philosphy-wrapper {
+    margin-top: 0px; }
 
   .accordion button .accordion-title {
     padding: 1em 0 1em 2em;
@@ -806,13 +827,13 @@ body {
     opacity: 1; }
 
   #right2 .ms-tableCell {
-    padding: 0px 50px 0px 20%; } }
+    padding: 0px 50px 0px 70px; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .main-bottle img {
     width: 100%; } }
 @media only screen and (min-width: 1024px) and (max-width: 1360px) {
   .main-bottle img {
-    width: 70%; }
+    width: 62%; }
 
   .page-content {
     width: auto; } }
@@ -837,5 +858,53 @@ body {
 @media only screen and (min-width: 1024px) and (max-width: 9000px) {
   .hide-on-desktop {
     display: none !important; } }
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .content-heading-medium {
+    font-size: 20px;
+    line-height: 26px; }
+
+  .accordion button {
+    font-size: 15px; }
+
+  .accordion button .icon {
+    top: 13px; }
+
+  .content-center-wrapper {
+    padding: 0px 20px 0px 0px; }
+
+  .content-heading {
+    font-size: 30px; }
+
+  .ms-viewing-philosphy .main-bottle img {
+    position: absolute;
+    left: calc(70vw - 330px); }
+
+  .ms-viewing-shop .main-bottle img {
+    position: absolute;
+    right: calc(70vw - 608px);
+    left: -30vw; }
+
+  h3.bottom-margin {
+    font-size: 18px; }
+
+  .small-space {
+    font-size: 14px;
+    line-height: 18px; }
+
+  .ms-tableCell {
+    padding: 0px 18%; }
+
+  .content-desc {
+    font-size: 14px; }
+
+  .medium-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #0b1437; }
+    .medium-text p {
+      margin: 0px !important; } }
 
 /*# sourceMappingURL=main.css.map */

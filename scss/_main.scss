@@ -43,8 +43,7 @@ header {
 #menu {
  position: fixed;
  top: 20px;
- left: 0;
-
+ left: -2px;
  z-index: 70;
  width: 100%;
  padding: 0;
@@ -578,7 +577,7 @@ h3.bottom-margin {
 }
 
 .mobile-logo {
- padding: 75px 45px 10px;
+ padding: 75px 0px 0px;
 }
 
 .mm-spn a {
@@ -628,4 +627,9 @@ h3.bottom-margin {
 
 .shopify-buy-frame {
  height: 44px;
+}
+
+.rev_slider_wrapper {
+ position: relative;
+ top: -46px;
 }

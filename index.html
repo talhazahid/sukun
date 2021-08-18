@@ -30,7 +30,7 @@
  <script type="text/javascript" src="js/extensions/revolution.extension.slideanims.min.js"></script>
  <script type="text/javascript" src="js/extensions/revolution.extension.layeranimation.min.js"></script>
 
- <title>pure sukun : Formulated for all skin types</title>
+ <title>PureSukun : Formulated for all skin types</title>
  <meta name="description"
   content="Pure Sukún is the feeling of complete calm. Think of the freshness we feel instantly when we find ourselves in or around water." />
  <meta name="keywords" content="skincare,dryness,brightness,glow" />
@@ -78,7 +78,7 @@
       <!-- LAYER NR. 2 -->
       <div class="tp-caption tp-resizeme" id="slide-1-layer-11" data-x="['left','left','center','center']"
        data-hoffset="['427','427','0','0']" data-y="['middle','middle','middle','middle']"
-       data-voffset="['-4','-4','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
+       data-voffset="['95','95','5','40']" data-width="none" data-height="none" data-whitespace="nowrap"
        data-type="image" data-responsive_offset="on"
        data-frames='[{"delay":6700,"speed":1170,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"+1570","speed":510,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
@@ -89,7 +89,7 @@
 
       <!-- LAYER NR. 3 -->
       <div class="tp-caption tp-resizeme" id="slide-1-layer-7" data-x="['center','center','center','center']"
-       data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['170','170','170','140']"
+       data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['270','270','270','240']"
        data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
        data-frames='[{"delay":2470,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"+2090","speed":910,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
@@ -110,7 +110,7 @@
 
       <!-- LAYER NR. 5 -->
       <div class="tp-caption tp-resizeme" id="slide-1-layer-9" data-x="['center','center','center','center']"
-       data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['170','170','170','140']"
+       data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['270','270','270','240']"
        data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
        data-frames='[{"delay":4380,"speed":1240,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"+3820","speed":510,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
@@ -134,7 +134,7 @@
       <!-- LAYER NR. 7 -->
       <div class="tp-caption tp-resizeme" id="slide-1-layer-8" data-x="['center','center','center','center']"
        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-       data-voffset="['-160','-160','-200','-163']" data-fontsize="['48','48','36','33']"
+       data-voffset="['-60','-60','-100','-63']" data-fontsize="['48','48','36','33']"
        data-lineheight="['50','50','40','36']" data-width="none" data-height="none" data-whitespace="nowrap"
        data-type="text" data-responsive_offset="on"
        data-frames='[{"delay":1740,"speed":1230,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"+3920","speed":990,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -168,9 +168,19 @@
 
 
      <li>
-      <div class="mobile-logo">
-       <img src="images/puresukun-white.svg" alt="PureSukun">
-      </div>
+
+      <a class="menu-item" href="#left1">
+
+
+       <div class="mobile-logo">
+        <img src="images/puresukun-white.svg" alt="PureSukun">
+       </div>
+
+
+      </a>
+
+
+
      </li>
 
      <li data-menuanchor="first" class="bottle-controller-first">
@@ -1146,6 +1156,10 @@
   //*
 
   $(window).bind('hashchange', function () {
+   removeLiscense();
+   removeLiscense();
+   removeLiscense();
+   removeLiscense();
    if (window.location.href.indexOf("shop") > -1) {
     $(".main-bottle-img").removeClass("main-bottle-fix");
    }
@@ -1159,6 +1173,53 @@
 //         alert("urlchange");
 // });
  </script>
+
+
+ <script>
+
+
+  $("document").ready(function () {
+
+   removeLiscense();
+  });
+  //  document.addEventListener("click", function () {
+  //   // $(document).ready(function() {
+
+
+  // //     $(window).bind("load", function() {
+  //       for (let j = 0; j < 3; j++) {
+  //         var divs = document.getElementsByTagName("div");
+  //         for(var i = 0; i < divs.length; i++){
+  //         //do something to each div like
+  //           if (divs[i].innerHTML.search("alvarotrigo")>0) {
+  //             divs[i].style.display="none";
+  //             }
+  //           }
+  //       }
+  //  })
+
+
+  function removeLiscense() {
+
+   setTimeout(function () {
+    for (let j = 0; j < 3; j++) {
+     var divs = document.getElementsByTagName("div");
+     for (var i = 0; i < divs.length; i++) {
+      //do something to each div like
+      if (divs[i].innerHTML.search("alvarotrigo") > 0 && divs[i].style.display != "none") {
+       divs[i].style.display = "none";
+       // alert(i);
+      }
+     }
+    }
+   }, 500);
+  }
+
+
+
+
+ </script>
+
 
  <script>
   const items = document.querySelectorAll(".accordion button");
@@ -1208,17 +1269,30 @@
  <script>
   $(document).ready(function () {
    if (n == 0) {
+    removeLiscense();
+    removeLiscense();
     setTimeout(function () {
      $('#animation').addClass('fade-out');
      $('#page').addClass('fade-in');
      $('#page').css("opacity", "1");
     }, 9000);
     //adding fade transition 4s + animation time 9s 
+    removeLiscense();
+    removeLiscense();
     setTimeout(function () {
+     removeLiscense();
+     removeLiscense();
      $("#animation").css("display", "none");
     }, 13000);
+    removeLiscense();
+    removeLiscense();
    }
    else {
+    removeLiscense();
+    removeLiscense();
+    removeLiscense();
+    removeLiscense();
+    removeLiscense();
     $('#page').css("opacity", "1");
     $("#animation").css("display", "none");
    }
@@ -1293,7 +1367,8 @@
   if (n === null) {
    n = 0;
   }
-  n++;
+  n = 0;
+  // n++;
 
   localStorage.setItem("on_load_counter", n);
  </script>
