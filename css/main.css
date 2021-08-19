@@ -414,7 +414,10 @@ h3.bottom-margin {
   font-weight: 400; }
 
 .philosphy-left .philosphy-wrapper {
-  margin-top: 60px; }
+  margin-top: 60px;
+  color: #0b1437; }
+.philosphy-left h4 {
+  color: #0b1437; }
 
 .mobile-menu-copyright {
   font-weight: 500;
@@ -467,10 +470,6 @@ h3.bottom-margin {
 
 .shopify-buy-frame {
   height: 44px; }
-
-.rev_slider_wrapper {
-  position: relative;
-  top: -46px; }
 
 .accordion {
   padding: 0px; }
@@ -654,6 +653,15 @@ body {
   body {
     overflow-x: hidden; }
 
+  .shop-price-quantity {
+    justify-content: center; }
+
+  .mobile-shop-cta {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    width: 194px; }
+
   .accordion .accordion-content p {
     padding-left: 25px; }
 
@@ -795,9 +803,16 @@ body {
   .philosphy-left .philosphy-wrapper {
     margin-top: 0px; }
 
+  .accordion button .icon::after {
+    top: 8px; }
+
+  .accordion button .icon::before {
+    top: 12px; }
+
   .accordion button .accordion-title {
     padding: 1em 0 1em 2em;
-    font-size: 13px; }
+    font-size: 13px;
+    font-weight: 600; }
 
   footer #menu {
     display: none !important; }
@@ -824,10 +839,7 @@ body {
 
   .ms-table.active .ms-tableCell {
     animation: fade-content 1s;
-    opacity: 1; }
-
-  #right2 .ms-tableCell {
-    padding: 0px 50px 0px 70px; } }
+    opacity: 1; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .main-bottle img {
     width: 100%; } }
@@ -857,7 +869,12 @@ body {
     left: 2vw; } }
 @media only screen and (min-width: 1024px) and (max-width: 9000px) {
   .hide-on-desktop {
-    display: none !important; } }
+    display: none !important; }
+
+  .rev_slider_wrapper {
+    position: relative;
+    top: -46px;
+    left: 12px; } }
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .content-heading-medium {
     font-size: 20px;
@@ -904,6 +921,8 @@ body {
     line-height: 20px;
     text-align: left;
     color: #0b1437; }
+    .medium-text #right3 .content-desc {
+      font-size: 13px; }
     .medium-text p {
       margin: 0px !important; } }
 
