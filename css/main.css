@@ -471,6 +471,12 @@ h3.bottom-margin {
 .shopify-buy-frame {
   height: 44px; }
 
+.trademark {
+  font-size: 9px;
+  position: relative;
+  top: -5px;
+  margin-right: 4px; }
+
 .accordion {
   padding: 0px; }
   .accordion button {
@@ -654,13 +660,15 @@ body {
     overflow-x: hidden; }
 
   .shop-price-quantity {
-    justify-content: center; }
+    justify-content: center;
+    order: 2; }
 
   .mobile-shop-cta {
     display: flex;
     margin: 20px auto;
     justify-content: center;
-    width: 194px; }
+    width: 198px;
+    order: 2; }
 
   .accordion .accordion-content p {
     padding-left: 25px; }
@@ -690,13 +698,22 @@ body {
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: center; }
+    justify-content: center;
+    order: 1; }
     .mobile-shop-bottle img {
       max-width: 80%; }
 
   .shop-wrapper {
     width: 100%;
-    text-align: left; }
+    text-align: left;
+    display: flex;
+    flex-direction: column; }
+    .shop-wrapper .item-description {
+      order: 4; }
+
+  .shopify-buy-frame--product {
+    display: block;
+    order: 3; }
 
   .main-bottle-img {
     width: 100%;

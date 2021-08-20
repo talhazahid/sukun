@@ -12,13 +12,15 @@
 
  .shop-price-quantity {
   justify-content: center;
+  order: 2;
  }
 
  .mobile-shop-cta {
   display: flex;
   margin: 20px auto;
   justify-content: center;
-  width: 194px;
+  width: 198px;
+  order: 2;
  }
 
  .accordion .accordion-content p {
@@ -56,6 +58,7 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  order: 1;
   img {
    max-width: 80%;
   }
@@ -64,6 +67,17 @@
  .shop-wrapper {
   width: 100%;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+
+  .item-description {
+   order: 4;
+  }
+ }
+
+ .shopify-buy-frame--product {
+  display: block;
+  order: 3;
  }
 
  .main-bottle-img {
