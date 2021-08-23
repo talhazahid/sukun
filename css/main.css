@@ -659,6 +659,13 @@ body {
   body {
     overflow-x: hidden; }
 
+  #animation {
+    height: 100vh;
+    display: flex;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center; }
+
   .shop-price-quantity {
     justify-content: center;
     order: 2; }
