@@ -644,12 +644,13 @@ h3.bottom-margin {
 .social-media-copyright {
  display: flex;
  flex-direction: column;
- position: absolute;
- margin: auto;
+ /* position: absolute; */
+ /* margin: auto; */
  left: 0;
  right: 0;
  align-items: center;
- bottom: 30px;
+ /* bottom: 30px; */
+ text-align: center;
 }
 .footer-copyright {
  font-family: Lato;
