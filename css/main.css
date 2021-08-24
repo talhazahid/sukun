@@ -480,10 +480,9 @@ h3.bottom-margin {
 .social-media-copyright {
   display: flex;
   flex-direction: column;
-  /* position: absolute; */
+  position: relative;
   /* margin: auto; */
-  left: 0;
-  right: 0;
+  left: 5px;
   align-items: center;
   /* bottom: 30px; */
   text-align: center; }
