@@ -477,6 +477,30 @@ h3.bottom-margin {
   top: -5px;
   margin-right: 4px; }
 
+.social-media-copyright {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  align-items: center;
+  bottom: 30px; }
+
+.footer-copyright {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: #0b1437; }
+
+.footer-social-desktop {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px; }
+
 .accordion {
   padding: 0px; }
   .accordion button {
