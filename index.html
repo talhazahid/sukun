@@ -1286,6 +1286,12 @@
    $.fn.multiscroll.setMouseWheelScrolling(false);
    $.fn.multiscroll.setScrollingSpeed(0);
   });
+
+  window.onresize = setInterval(resize, 1000);
+  function resize() {  
+  $.fn.multiscroll.setMouseWheelScrolling(false);
+   $.fn.multiscroll.setScrollingSpeed(0);  
+}
  </script>
 
  <script>
