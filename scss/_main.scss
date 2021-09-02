@@ -615,10 +615,11 @@ h3.bottom-margin {
 }
 
 .social-media-mobile {
- display: flex !important;
+ display: grid !important;
  margin-left: 42px !important;
  gap: 20px;
  margin-top: 20px !important;
+ grid-template-columns: repeat(3, 42px);
 
  a {
   width: auto !important;
