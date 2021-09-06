@@ -404,3 +404,19 @@
   }
  }
 }
+
+@media only screen and (min-height: 200px) and (max-height: 800px) {
+ footer ul {
+  padding: 10px 60px;
+ }
+
+ .ms-viewing-philosphy .scroller-wrap {
+  // height: calc(100% - 26%) !important;
+  padding-top: 90px;
+  padding-bottom: 90px;
+ }
+
+ .ms-viewing-philosphy .ms-tableCell {
+  height: 70%;
+ }
+}
