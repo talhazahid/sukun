@@ -101,17 +101,17 @@ header #menu li.active a {
   right: calc(70vw - 520px);
   left: -4vw; }
 
-.ms-viewing-philosphy .main-bottle img {
+.ms-viewing-Philosophy .main-bottle img {
   position: absolute;
   left: calc(70vw - 520px); }
 
 .light-section {
   background: #ebecee; }
 
-.philosphy-right {
+.Philosophy-right {
   background: #f0f6ff; }
 
-.philosphy-left {
+.Philosophy-left {
   background: #cbccce; }
 
 .shop-left {
@@ -164,9 +164,9 @@ a {
 .ms-viewing-shop .ms-right {
   width: 70% !important; }
 
-.ms-viewing-philosphy .ms-left {
+.ms-viewing-Philosophy .ms-left {
   width: 70% !important; }
-.ms-viewing-philosphy .ms-right {
+.ms-viewing-Philosophy .ms-right {
   width: 30% !important; }
 
 .bottle-bg-shade {
@@ -189,7 +189,7 @@ p {
 .ms-tableCell {
   padding: 0px 20%; }
 
-.philosphy-wrapper {
+.Philosophy-wrapper {
   width: 90%;
   text-align: left; }
 
@@ -416,9 +416,9 @@ h3.bottom-margin {
   color: #0b1437;
   font-weight: 400; }
 
-.philosphy-left .philosphy-wrapper {
+.Philosophy-left .Philosophy-wrapper {
   color: #0b1437; }
-.philosphy-left h4 {
+.Philosophy-left h4 {
   color: #0b1437; }
 
 .mobile-menu-copyright {
@@ -504,10 +504,10 @@ h3.bottom-margin {
   gap: 15px;
   margin-bottom: 10px; }
 
-.philosphy-left .ms-tableCell {
+.Philosophy-left .ms-tableCell {
   position: relative;
   z-index: 10; }
-  .philosphy-left .ms-tableCell .ss-content {
+  .Philosophy-left .ms-tableCell .ss-content {
     height: calc(100% - 70px); }
 
 .accordion {
@@ -854,7 +854,7 @@ h3.bottom-margin {
     text-align: left;
     line-height: 22px; }
 
-  .philosphy-left .philosphy-wrapper {
+  .Philosophy-left .Philosophy-wrapper {
     margin-top: 0px; }
 
   .accordion button .icon::after {
@@ -946,7 +946,7 @@ h3.bottom-margin {
   .content-heading {
     font-size: 30px; }
 
-  .ms-viewing-philosphy .main-bottle img {
+  .ms-viewing-Philosophy .main-bottle img {
     position: absolute;
     left: calc(70vw - 330px); }
 
@@ -983,11 +983,11 @@ h3.bottom-margin {
   footer ul {
     padding: 10px 60px; }
 
-  .ms-viewing-philosphy .scroller-wrap {
+  .ms-viewing-Philosophy .scroller-wrap {
     padding-top: 90px;
     padding-bottom: 90px; }
 
-  .ms-viewing-philosphy .ms-tableCell {
+  .ms-viewing-Philosophy .ms-tableCell {
     height: 70%; } }
 
 /*# sourceMappingURL=main.css.map */
