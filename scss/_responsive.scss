@@ -3,6 +3,14 @@
   overflow-x: hidden;
  }
 
+ mobile-shop-cta {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  width: 150px;
+  order: 2;
+ }
+
  #animation {
   height: 100vh;
   display: flex;
@@ -27,7 +35,7 @@
   display: flex;
   margin: 20px auto;
   justify-content: center;
-  width: 198px;
+  width: 150px;
   order: 2;
  }
 

@@ -411,7 +411,7 @@ h3.bottom-margin {
 
 .mobile-shop-cta {
   display: table;
-  margin: 20px 0; }
+  margin: 20px 0 40px; }
 
 .content-desc {
   color: #0b1437;
@@ -690,6 +690,13 @@ h3.bottom-margin {
   body {
     overflow-x: hidden; }
 
+  mobile-shop-cta {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    width: 150px;
+    order: 2; }
+
   #animation {
     height: 100vh;
     display: flex;
@@ -705,7 +712,7 @@ h3.bottom-margin {
     display: flex;
     margin: 20px auto;
     justify-content: center;
-    width: 198px;
+    width: 150px;
     order: 2; }
 
   .accordion .accordion-content p {
