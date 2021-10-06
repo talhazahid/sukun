@@ -486,7 +486,7 @@ h3.bottom-margin {
   flex-direction: column;
   position: relative;
   /* margin: auto; */
-  left: 5px;
+  left: -2px;
   align-items: center;
   /* bottom: 30px; */
   text-align: center; }
