@@ -1195,10 +1195,7 @@
   //*
 
   $(window).bind('hashchange', function () {
-   removeLiscense();
-   removeLiscense();
-   removeLiscense();
-   removeLiscense();
+
    if (window.location.href.indexOf("shop") > -1) {
     $(".main-bottle-img").removeClass("main-bottle-fix");
    }
@@ -1217,10 +1214,7 @@
  <script>
 
 
-  $("document").ready(function () {
 
-   removeLiscense();
-  });
   //  document.addEventListener("click", function () {
   //   // $(document).ready(function() {
 
@@ -1238,21 +1232,7 @@
   //  })
 
 
-  function removeLiscense() {
 
-   setTimeout(function () {
-    for (let j = 0; j < 3; j++) {
-     var divs = document.getElementsByTagName("div");
-     for (var i = 0; i < divs.length; i++) {
-      //do something to each div like
-      if (divs[i].innerHTML.search("alvarotrigo") > 0 && divs[i].style.display != "none") {
-       divs[i].style.display = "none";
-       // alert(i);
-      }
-     }
-    }
-   }, 500);
-  }
 
 
 
@@ -1334,11 +1314,7 @@
    //   removeLiscense();
    //  }
    //  else {
-   removeLiscense();
-   removeLiscense();
-   removeLiscense();
-   removeLiscense();
-   removeLiscense();
+
    $('#page').css("opacity", "1");
    $("#animation").css("display", "none");
    //  }
