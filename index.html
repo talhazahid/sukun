@@ -1193,6 +1193,8 @@
   // });
 
 
+
+
   $(document).ready(function () {
    $(".desk-menu").click(function () {
     $(".main-bottle-img").removeClass("main-bottle-fix");
@@ -1200,9 +1202,25 @@
   });
 
   $(document).ready(function () {
-   if (window.location.href.indexOf("shop") > -1) {
+    let i;
+    let arrList = [ 
+     "home",
+     "ingredients",
+     "formula",
+     "ideal-for",
+     "how-to-use",
+     "shop"]
+
+  for(i=0;i<arrList.length;i++){
+    if (window.location.href.indexOf(arrList[i]) > -1) {
     $(".main-bottle-img").removeClass("main-bottle-fix");
    }
+  }
+
+  //  if (window.location.href.indexOf("shop") > -1) {
+  //   $(".main-bottle-img").removeClass("main-bottle-fix");
+  //  }
+
   });
 
   $("#shopy").click(function () {
