@@ -501,9 +501,10 @@ h3.bottom-margin {
   color: #0b1437; }
 
 .footer-social-desktop {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 40px);
+  grid-gap: 15px; }
 
 .Philosophy-left .ms-tableCell {
   position: relative;
