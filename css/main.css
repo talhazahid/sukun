@@ -501,16 +501,13 @@ h3.bottom-margin {
   color: #0b1437; }
 
 .footer-social-desktop {
-  margin-bottom: 10px;
-  display: grid;
-  grid-template-columns: repeat(6, 40px);
-  grid-gap: 15px; }
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px; }
 
 .Philosophy-left .ms-tableCell {
   position: relative;
   z-index: 10; }
-  .Philosophy-left .ms-tableCell .ss-content {
-    height: calc(100% - 70px); }
 
 .accordion {
   padding: 0px; }
