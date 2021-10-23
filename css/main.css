@@ -991,6 +991,9 @@ h3.bottom-margin {
   footer ul {
     padding: 10px 60px; }
 
+  .Philosophy-left .ms-tableCell .ss-content {
+    height: calc(100% - 10px); }
+
   .ms-viewing-Philosophy .ms-tableCell {
     height: 70%; } }
 
