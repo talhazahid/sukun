@@ -690,6 +690,12 @@ h3.bottom-margin {
   body {
     overflow-x: hidden; }
 
+  .Philosophy-left .scroller-wrap {
+    max-height: 2000px; }
+    .Philosophy-left .scroller-wrap .ss-scroll {
+      display: none;
+      top: 0px !important; }
+
   mobile-shop-cta {
     display: flex;
     margin: 20px auto;
@@ -992,7 +998,7 @@ h3.bottom-margin {
     padding: 10px 60px; }
 
   .Philosophy-left .ms-tableCell .ss-content {
-    height: calc(100% - 10px); }
+    height: calc(100% - 0px); }
 
   .ms-viewing-Philosophy .ms-tableCell {
     height: 70%; } }
