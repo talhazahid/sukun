@@ -11,6 +11,18 @@
   }
  }
 
+ .ingredients {
+  .ss-content {
+   overflow: visible !important;
+  }
+  .ss-scroll {
+   display: none !important;
+   top: 0px !important;
+   bottom: 0px !important;
+   height: 100% !important;
+  }
+ }
+
  mobile-shop-cta {
   display: flex;
   margin: 20px auto;

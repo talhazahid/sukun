@@ -30,26 +30,40 @@
  <script type="text/javascript" src="js/extensions/revolution.extension.slideanims.min.js"></script>
  <script type="text/javascript" src="js/extensions/revolution.extension.layeranimation.min.js"></script>
 
-<!-- Primary Meta Tags -->
-<title>Pure Sukún: The Next Generation of Super Serum</title>
-<meta name="title" content="Pure Sukún: The Next Generation of Super Serum">
-<meta name="description" content="Pure Sukún is the ultimate skincare solution for healthy and glowing skin, formulated for all skin types">
+ <!-- Primary Meta Tags -->
+ <title>Pure Sukún: The Next Generation of Super Serum</title>
+ <meta name="title" content="Pure Sukún: The Next Generation of Super Serum">
+ <meta name="description"
+  content="Pure Sukún is the ultimate skincare solution for healthy and glowing skin, formulated for all skin types">
 
-<meta name="keywords" content="Skincare serum tips,Skincare serum order,Skincare antioxidant serum,Ageless skincare serum,Natural skincare ingredients,Good science skin care,Where to buy good science beauty products,Good science beauty hydrating,Pure sukun skincare,vegan skincare,skin care products,facial serum,best facial serum, best skin care routine for women" />
+ <meta name="keywords"
+  content="Skincare serum tips,Skincare serum order,Skincare antioxidant serum,Ageless skincare serum,Natural skincare ingredients,Good science skin care,Where to buy good science beauty products,Good science beauty hydrating,Pure sukun skincare,vegan skincare,skin care products,facial serum,best facial serum, best skin care routine for women" />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://puresukun.com/">
-<meta property="og:title" content="Pure Sukún: The Next Generation of Super Serum">
-<meta property="og:description" content="Pure Sukún is the ultimate skincare solution for healthy and glowing skin, formulated for all skin types">
-<meta property="og:image" content="http://puresukun.com/images/og-ps2.png">
+ <!-- Open Graph / Facebook -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="http://puresukun.com/">
+ <meta property="og:title" content="Pure Sukún: The Next Generation of Super Serum">
+ <meta property="og:description"
+  content="Pure Sukún is the ultimate skincare solution for healthy and glowing skin, formulated for all skin types">
+ <meta property="og:image" content="http://puresukun.com/images/og-ps2.png">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://puresukun.com/">
-<meta property="twitter:title" content="Pure Sukún: The Next Generation of Super Serum">
-<meta property="twitter:description" content="Pure Sukún is the ultimate skincare solution for healthy and glowing skin, formulated for all skin types">
-<meta property="twitter:image" content="http://puresukun.com/images/og-ps2.png">
+ <!-- Twitter -->
+ <meta property="twitter:card" content="summary_large_image">
+ <meta property="twitter:url" content="http://puresukun.com/">
+ <meta property="twitter:title" content="Pure Sukún: The Next Generation of Super Serum">
+ <meta property="twitter:description"
+  content="Pure Sukún is the ultimate skincare solution for healthy and glowing skin, formulated for all skin types">
+ <meta property="twitter:image" content="http://puresukun.com/images/og-ps2.png">
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-4JQ19ZW8Z6"></script>
+ <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-4JQ19ZW8Z6');
+ </script>
 
 
 </head>
@@ -527,7 +541,7 @@
     </div>
 
 
-    <div class="ms-section dark-section light-section-mobile ms-tableCell-mobile-height" id="right2">
+    <div class="ms-section dark-section light-section-mobile ms-tableCell-mobile-height ingredients" id="right2">
      <div ss-container>
       <div class="content-center-wrapper wrapper-center">
        <div class="">
@@ -1202,24 +1216,24 @@
   });
 
   $(document).ready(function () {
-    let i;
-    let arrList = [ 
-     "home",
-     "ingredients",
-     "formula",
-     "ideal-for",
-     "how-to-use",
-     "shop"]
+   let i;
+   let arrList = [
+    "home",
+    "ingredients",
+    "formula",
+    "ideal-for",
+    "how-to-use",
+    "shop"]
 
-  for(i=0;i<arrList.length;i++){
+   for (i = 0; i < arrList.length; i++) {
     if (window.location.href.indexOf(arrList[i]) > -1) {
-    $(".main-bottle-img").removeClass("main-bottle-fix");
+     $(".main-bottle-img").removeClass("main-bottle-fix");
+    }
    }
-  }
 
-  //  if (window.location.href.indexOf("shop") > -1) {
-  //   $(".main-bottle-img").removeClass("main-bottle-fix");
-  //  }
+   //  if (window.location.href.indexOf("shop") > -1) {
+   //   $(".main-bottle-img").removeClass("main-bottle-fix");
+   //  }
 
   });
 
