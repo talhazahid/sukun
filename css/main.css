@@ -508,6 +508,8 @@ h3.bottom-margin {
 .Philosophy-left .ms-tableCell {
   position: relative;
   z-index: 10; }
+  .Philosophy-left .ms-tableCell .ss-content {
+    height: calc(100% - 70px); }
 
 .accordion {
   padding: 0px; }
@@ -988,10 +990,6 @@ h3.bottom-margin {
 @media only screen and (min-height: 200px) and (max-height: 800px) {
   footer ul {
     padding: 10px 60px; }
-
-  .ms-viewing-Philosophy .scroller-wrap {
-    padding-top: 90px;
-    padding-bottom: 90px; }
 
   .ms-viewing-Philosophy .ms-tableCell {
     height: 70%; } }
