@@ -515,6 +515,20 @@ h3.bottom-margin {
   .Philosophy-left .ms-tableCell .ss-content {
     height: calc(100% - 70px); }
 
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75); }
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: rgba(107, 107, 107, 0.9) !important; }
+
+.Philosophy-wrapper {
+  max-height: 600px; }
+
+.malibu-scroll {
+  max-height: 500px; }
+
 .accordion {
   padding: 0px; }
   .accordion button {
