@@ -302,6 +302,12 @@
  .main-bottle img {
   width: 100%;
  }
+
+ .Philosophy-left .Philosophy-wrapper {
+  color: #0b1437;
+  max-height: 600px;
+  overflow: auto;
+ }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 9999px) {
