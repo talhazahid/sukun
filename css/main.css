@@ -690,12 +690,6 @@ h3.bottom-margin {
   body {
     overflow-x: hidden; }
 
-  .Philosophy-left .scroller-wrap {
-    max-height: 2000px; }
-    .Philosophy-left .scroller-wrap .ss-scroll {
-      display: none;
-      top: 0px !important; }
-
   .ingredients .ss-content {
     overflow: visible !important; }
   .ingredients .ss-scroll {
@@ -909,6 +903,15 @@ h3.bottom-margin {
     display: flex !important; }
     body #myContainer .mobile-fix .ms-tableCell {
       height: 0px !important; } }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .Philosophy-left .scroller-wrap {
+    max-height: 2000px; }
+    .Philosophy-left .scroller-wrap .ss-scroll {
+      display: none;
+      top: 0px !important; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-bottle img {
+    width: 100%; } }
 @media only screen and (min-width: 1024px) and (max-width: 9999px) {
   .mobile-menu-btn {
     display: none; }
@@ -916,9 +919,6 @@ h3.bottom-margin {
   .ms-table.active .ms-tableCell {
     animation: fade-content 1s;
     opacity: 1; } }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .main-bottle img {
-    width: 100%; } }
 @media only screen and (min-width: 1024px) and (max-width: 1360px) {
   .main-bottle img {
     width: 62%; }
