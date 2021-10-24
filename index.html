@@ -1274,10 +1274,9 @@
    });
   })(jQuery);
 
-
   (function ($) {
    $(window).resize(function () {
-    if ($(this).width() > 768) {
+    if ($(this).width() < 768) {
      $(selector).mCustomScrollbar(); //apply scrollbar with your options 
     } else {
      $(selector).mCustomScrollbar("destroy"); //destroy scrollbar 
@@ -1285,12 +1284,7 @@
    }).trigger("resize");
   })(jQuery);
 
-  if (!isMobile.any()) {
-   // Initialize custom scrollbar
-   $(".selector").mCustomScrollbar({
-    autoHideScrollbar: true
-   });
-  }
+
  </script>
 
 
