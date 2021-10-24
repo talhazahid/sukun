@@ -235,9 +235,13 @@ h3 {
 
 .scroller-wrap {
   max-height: 600px;
-  display: flex; }
+  display: flex;
+  position: relative; }
   .scroller-wrap .wrapper-center {
     justify-content: flex-start; }
+
+.ss-container {
+  position: relative; }
 
 .ss-scroll {
   background: #838383 !important; }

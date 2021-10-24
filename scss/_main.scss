@@ -325,9 +325,13 @@ h3 {
 .scroller-wrap {
  max-height: 600px;
  display: flex;
+ position: relative;
  .wrapper-center {
   justify-content: flex-start;
  }
+}
+.ss-container {
+ position: relative;
 }
 
 .ss-scroll {
