@@ -701,3 +701,23 @@ h3.bottom-margin {
 .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
  opacity: 0;
 }
+
+#menu {
+ position: fixed;
+ top: 30px;
+}
+
+.shipping-detail-row {
+ background: #04091e;
+ color: white;
+ position: fixed;
+ z-index: 2;
+ width: 100%;
+ line-height: 30px;
+ text-align: center;
+ top: 0;
+}
+
+.mobile-menu-btn {
+ top: 25px;
+}
