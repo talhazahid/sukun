@@ -326,27 +326,23 @@
     <div class="hamburger-menu"></div>
    </a>
 
-   <div class="shipping-detail-row">
-    FREE SHIPPING on orders over $100
-   </div>
    <ul id="menu" class="desktop-menu">
     <li data-menuanchor="first" class="bottle-controller-first desk-menu">
-     <a href="" ; onclick="reloadCSS('#ingredients'); return false;">Key Ingredients</a>
+     <a href="";  onclick="reloadCSS('#ingredients'); return false;">Key Ingredients</a>
     </li>
     <li data-menuanchor="second" class="desk-menu">
-     <a href="" ; onclick="reloadCSS('#formula'); return false;">Formula</a>
+     <a href="";  onclick="reloadCSS('#formula'); return false;">Formula</a>
     </li>
 
     <!-- <li data-menuanchor="shop" class="bottle-controller-third"><a href="#shop">Shop</a></li> -->
     <li data-menuanchor="first" class="bottle-controller-first desk-menu">
-     <a href="" onclick="reloadCSS('#home'); return false;"> <img src="images/logo.svg" class="main-logo"
-       alt="pure sukún logo " /></a>
+     <a href=""onclick="reloadCSS('#home'); return false;"> <img src="images/logo.svg" class="main-logo" alt="pure sukún logo " /></a>
     </li>
     <li data-menuanchor="third" class="desk-menu">
-     <a href="" onclick="reloadCSS('#ideal-for'); return false;">Ideal For</a>
+     <a href=""onclick="reloadCSS('#ideal-for'); return false;">Ideal For</a>
     </li>
     <li data-menuanchor="fourth" class="bottle-controller-fourth desk-menu">
-     <a href="" onclick="reloadCSS('#how-to-use'); return false;">How to Use</a>
+     <a href=""onclick="reloadCSS('#how-to-use'); return false;">How to Use</a>
     </li>
     <!-- <li data-menuanchor="Philosophy" class="bottle-controller-second"><a href="#Philosophy">Philosophy</a></li>
    <li data-menuanchor="fourth" class="bottle-controller-fourth"><a href="#blogs">Blogs</a></li>
@@ -1250,7 +1246,7 @@
   $(window).bind('hashchange', function () {
 
 
-   //  removeLiscense();
+  //  removeLiscense();
    // removeLiscense();
    // removeLiscense();
    // removeLiscense();
@@ -1393,31 +1389,31 @@
    // removeLiscense();
 
 
-   $('#page').css("opacity", "1");
-   $("#animation").css("display", "none");
+    $('#page').css("opacity", "1");
+    $("#animation").css("display", "none");
 
 
-   (function ($) {
-    $(window).resize(function () {
-     if ($(this).width() < 768) {
-      try {
-       var divs = document.getElementsByTagName("div");
-       for (var i = 0; i < divs.length; i++) {
-        //do something to each div like
-        if ($(divs[i]).hasClass("mCustomScrollbar")) {
-         $(divs[i]).removeClass("mCustomScrollbar");
-        }
-       }
-      }
+    (function ($) {
+      $(window).resize(function () {
+        if ($(this).width() < 768) {
+                  try{
+                    var divs = document.getElementsByTagName("div");
+                      for (var i = 0; i < divs.length; i++) {
+                        //do something to each div like
+                      if ($(divs[i]).hasClass("mCustomScrollbar")) {
+                        $(divs[i]).removeClass("mCustomScrollbar");
+                      }
+                    }
+            }
+            
+            catch(Exception){
+            }
+        } 
+      }).trigger("resize");
+    })(jQuery);
 
-      catch (Exception) {
-      }
-     }
-    }).trigger("resize");
-   })(jQuery);
-
-
-   //  }
+   
+     //  }
 
 
   });
@@ -1476,15 +1472,19 @@
  </script>
 
  <script>
-  function reloadCSS(s) {
-   try {
-    window.location.assign('#shop');
-    setTimeout(function () { window.location.assign(s) }, 20);
+   function reloadCSS(s) {
+     try{
+
+      currentLocation = window.location.href.toString();
+      if(currentLocation.split('#')[1] == 'Philosophy'){
+        window.location.assign('#shop');
+      }
+      setTimeout(function() {window.location.assign(s)},20 );
+     }
+     catch(Exception){
+       alert(Exception);
+     }  
    }
-   catch (Exception) {
-    alert(Exception);
-   }
-  }
   $(".menu-item").click(function () {
    $(document.body).css("overflow", "visible");
    $(".mm-ocd").removeClass("mm-ocd--open");
