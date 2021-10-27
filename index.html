@@ -25,6 +25,8 @@
  <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
 
  <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
+ <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+ <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
  <script type="text/javascript" src="js/multiscroll.responsiveExpand.min.js"></script>
  <script type="text/javascript" src="js/jquery.multiscroll.extensions.min.js"></script>
 
@@ -472,7 +474,7 @@
 
         <p>
          kind of self-care comes from the daily ritual of taking
-         care of myself. This is my time for myself; something I
+         care of myself. This is my time for myself; something I
          deeply cherish. It’s also something which calms me down,
          brings me joy and helps me focus. This almost Zen-like
          feeling is also what empowers me to be my best, most
@@ -1282,15 +1284,7 @@
    });
   })(jQuery);
 
-  (function ($) {
-   $(window).resize(function () {
-    if ($(this).width() < 768) {
-     $(selector).mCustomScrollbar(); //apply scrollbar with your options 
-    } else {
-     $(selector).mCustomScrollbar("destroy"); //destroy scrollbar 
-    }
-   }).trigger("resize");
-  })(jQuery);
+
 
 
  </script>
