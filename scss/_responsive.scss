@@ -31,6 +31,18 @@
   align-items: center;
  }
 
+ .cookie-alert {
+  flex-direction: column;
+  text-align: center;
+  padding: 5px 0px 0px;
+  height: auto;
+  button {
+   margin: 10px;
+   padding: 0px 30px;
+   text-align: center;
+   width: auto;
+  }
+ }
  // .mobile-intro-bottle {
  //  img {
  //   width: 100px !important;

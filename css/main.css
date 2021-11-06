@@ -549,6 +549,30 @@ h3.bottom-margin {
 .mobile-menu-btn {
   top: 25px; }
 
+.cookie-alert {
+  display: flex;
+  background: #949394;
+  height: 42px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 30;
+  padding: 0px 20px; }
+  .cookie-alert button {
+    color: #0b1437;
+    background: #ffffff;
+    margin-left: 10px;
+    width: 57px;
+    height: 22px;
+    border: 0px;
+    cursor: pointer; }
+
 .accordion {
   padding: 0px; }
   .accordion button {
@@ -749,6 +773,17 @@ h3.bottom-margin {
     vertical-align: middle;
     align-content: center;
     align-items: center; }
+
+  .cookie-alert {
+    flex-direction: column;
+    text-align: center;
+    padding: 5px 0px 0px;
+    height: auto; }
+    .cookie-alert button {
+      margin: 10px;
+      padding: 0px 30px;
+      text-align: center;
+      width: auto; }
 
   .shop-price-quantity {
     justify-content: center;

@@ -721,3 +721,30 @@ h3.bottom-margin {
 .mobile-menu-btn {
  top: 25px;
 }
+
+.cookie-alert {
+ display: flex;
+ background: #949394;
+ height: 42px;
+ font-size: 14px;
+ line-height: 16px;
+ color: #ffffff;
+ align-content: center;
+ justify-content: center;
+ align-items: center;
+ position: fixed;
+ width: 100%;
+ bottom: 0;
+ z-index: 30;
+ padding: 0px 20px;
+
+ button {
+  color: #0b1437;
+  background: #ffffff;
+  margin-left: 10px;
+  width: 57px;
+  height: 22px;
+  border: 0px;
+  cursor: pointer;
+ }
+}
