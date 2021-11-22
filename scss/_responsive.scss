@@ -3,6 +3,16 @@
   overflow-x: hidden;
  }
 
+ .Philosophy-wrapper {
+  .mCustomScrollBox {
+   height: auto !important;
+   max-height: none !important;
+  }
+  .mCSB_1_scrollbar {
+   display: none;
+  }
+ }
+
  .ingredients {
   .ss-content {
    overflow: visible !important;
@@ -31,18 +41,6 @@
   align-items: center;
  }
 
- .cookie-alert {
-  flex-direction: column;
-  text-align: center;
-  padding: 5px 0px 0px;
-  height: auto;
-  button {
-   margin: 10px;
-   padding: 0px 30px;
-   text-align: center;
-   width: auto;
-  }
- }
  // .mobile-intro-bottle {
  //  img {
  //   width: 100px !important;
@@ -228,6 +226,7 @@
  .ms-tableCell-mobile-height .ms-tableCell {
   height: auto !important;
   padding: 35px;
+  padding-bottom: 124px;
  }
  .content-heading {
   width: 100%;
@@ -306,6 +305,22 @@
   .ss-scroll {
    display: none;
    top: 0px !important;
+  }
+ }
+ .footer-cookies-wrap {
+  padding: 15px;
+  flex-direction: column;
+  width: auto;
+  p {
+   text-align: center;
+   margin: 0px;
+   padding-top: 0px;
+  }
+  button {
+   width: 50%;
+   padding: 6px;
+   margin: 0px !important;
+   margin-bottom: 6px !important;
   }
  }
 }

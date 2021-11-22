@@ -1,0 +1,430 @@
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+ body {
+  overflow-x: hidden;
+ }
+
+ mobile-shop-cta {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  width: 150px;
+  order: 2;
+ }
+
+ #animation {
+  height: 100vh;
+  display: flex;
+  vertical-align: middle;
+  align-content: center;
+  align-items: center;
+ }
+
+ // .mobile-intro-bottle {
+ //  img {
+ //   width: 100px !important;
+ //   height: auto !important;
+ //  }
+ // }
+
+ .shop-price-quantity {
+  justify-content: center;
+  order: 2;
+ }
+
+ .mobile-shop-cta {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  width: 150px;
+  order: 2;
+ }
+
+ .accordion .accordion-content p {
+  padding-left: 25px;
+ }
+
+ .accordion button[aria-expanded="true"] + .accordion-content {
+  padding: 0px 10px;
+  left: -10px;
+  position: relative;
+ }
+
+ .content-desc {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0px 18px 0px 0px;
+ }
+
+ p {
+  line-height: 1.7rem;
+  font-size: 14px;
+ }
+
+ .mm-spn li {
+  margin-bottom: 15px;
+ }
+
+ .accordion button {
+  padding-bottom: 0px;
+ }
+
+ .mobile-shop-bottle {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  order: 1;
+  img {
+   max-width: 80%;
+  }
+ }
+
+ .shop-wrapper {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+  .item-description {
+   order: 4;
+  }
+ }
+
+ .shopify-buy-frame--product {
+  display: block;
+  order: 3;
+ }
+
+ .main-bottle-img {
+  width: 100%;
+  position: relative !important;
+  bottom: auto !important;
+  left: 0 !important;
+ }
+
+ .hide-on-mobile {
+  display: none !important;
+ }
+
+ .dark-section-mobile {
+  background: #c9cacc;
+ }
+
+ .ms-tableCell {
+  padding: 0px 20px;
+ }
+
+ .accordion-content {
+  p {
+   width: 90%;
+  }
+ }
+
+ .mobile-hero-bottle {
+  img {
+   width: 100%;
+  }
+ }
+
+ .medium-text {
+  font-size: 14px;
+
+  p {
+   margin: 10px 0px;
+   line-height: 20px;
+  }
+ }
+
+ .section-one-mobile .ms-tableCell {
+  vertical-align: bottom;
+  .content-center-wrapper {
+   padding-bottom: 60px;
+  }
+ }
+
+ .mobile-small-headings {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #0b1437;
+  margin-top: 5px;
+ }
+
+ .mobile-logo-center {
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 30px;
+  text-align: center;
+  display: none;
+ }
+
+ .small-space {
+  padding: 8px;
+  margin: 0px;
+  padding-left: 0px;
+  padding-bottom: 15px;
+  line-height: 16px;
+  font-size: 14px;
+ }
+
+ .content-center-wrapper {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .ss-content {
+  // width: calc(100% + -25px) !important;
+ }
+
+ h3 {
+  font-size: 15px;
+  line-height: 20px;
+  color: #0b1437;
+ }
+
+ .light-section-mobile {
+  background: #eef3fc;
+ }
+
+ .page-content {
+  width: 100%;
+  text-align: left;
+ }
+
+ .mobile-margin-top-20 {
+  margin-top: 20px;
+ }
+
+ .ms-tableCell-mobile-height .ms-tableCell {
+  height: auto !important;
+  padding: 35px;
+ }
+ .content-heading {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+ }
+
+ .ms-section.ms-table {
+  height: auto !important;
+ }
+
+ header .desktop-menu {
+  display: none !important;
+ }
+
+ .mobile-menu {
+  display: block;
+ }
+
+ .mobile-heading {
+  font-size: 22px;
+  text-align: left;
+  line-height: 22px;
+ }
+
+ .Philosophy-left .Philosophy-wrapper {
+  margin-top: 0px;
+ }
+
+ .accordion button .icon::after {
+  top: 8px;
+ }
+
+ .accordion button .icon::before {
+  top: 12px;
+ }
+
+ .accordion button .accordion-title {
+  padding: 1em 0 1em 2em;
+  font-size: 13px;
+  font-weight: 600;
+ }
+
+ footer #menu {
+  display: none !important;
+ }
+
+ .mm-spn.mm-spn--navbar ul {
+  top: 0 !important;
+ }
+
+ .ms-viewing-shop .main-bottle img {
+  position: absolute;
+  right: calc(70vw - 520px);
+  left: -30vw;
+ }
+
+ footer {
+  display: none;
+ }
+
+ body #myContainer .mobile-fix {
+  height: 0px !important;
+  display: flex !important;
+
+  .ms-tableCell {
+   height: 0px !important;
+  }
+ }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 9999px) {
+ .mobile-menu-btn {
+  display: none;
+ }
+
+ .ms-table.active {
+  .ms-tableCell {
+   animation: fade-content 1s;
+   opacity: 1;
+  }
+ }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+ .main-bottle img {
+  width: 100%;
+ }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1360px) {
+ .main-bottle img {
+  width: 62%;
+ }
+
+ .page-content {
+  width: auto;
+ }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+ .ms-viewing-shop .main-bottle img {
+  position: absolute;
+  right: calc(70vw - 520px);
+  left: -30vw;
+ }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+ .ms-viewing-shop .main-bottle img {
+  position: absolute;
+  right: calc(70vw - 520px);
+  left: -9vw;
+ }
+
+ .ms-tableCell {
+  padding: 0px 18%;
+ }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 2000px) {
+ .ms-viewing-shop .main-bottle img {
+  position: absolute;
+  right: calc(70vw - 520px);
+  left: 2vw;
+ }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 9000px) {
+ .hide-on-desktop {
+  display: none !important;
+ }
+
+ .rev_slider_wrapper {
+  position: relative;
+  top: -46px;
+  left: 12px;
+ }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+ .content-heading-medium {
+  font-size: 20px;
+  line-height: 26px;
+ }
+
+ .accordion button {
+  font-size: 15px;
+ }
+
+ .accordion button .icon {
+  top: 13px;
+ }
+
+ .content-center-wrapper {
+  padding: 0px 20px 0px 0px;
+ }
+
+ .content-heading {
+  font-size: 30px;
+ }
+
+ .ms-viewing-Philosophy .main-bottle img {
+  position: absolute;
+  left: calc(70vw - 330px);
+ }
+
+ .ms-viewing-shop .main-bottle img {
+  position: absolute;
+  right: calc(70vw - 608px);
+  left: -30vw;
+ }
+
+ h3.bottom-margin {
+  font-size: 18px;
+ }
+
+ .small-space {
+  font-size: 14px;
+  line-height: 18px;
+ }
+
+ .ms-tableCell {
+  padding: 0px 18%;
+ }
+
+ .content-desc {
+  font-size: 14px;
+ }
+
+ .medium-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: #0b1437;
+
+  #right3 .content-desc {
+   font-size: 13px;
+  }
+
+  p {
+   margin: 0px !important;
+  }
+ }
+}
+
+@media only screen and (min-height: 200px) and (max-height: 800px) {
+ footer ul {
+  padding: 10px 60px;
+ }
+
+ .ms-viewing-Philosophy .scroller-wrap {
+  // height: calc(100% - 26%) !important;
+  padding-top: 90px;
+  padding-bottom: 90px;
+ }
+
+ .ms-viewing-Philosophy .ms-tableCell {
+  height: 70%;
+ }
+}

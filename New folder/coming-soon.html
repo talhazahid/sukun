@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="css/main.css" />
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <title>Sukun</title>
+</head>
+
+<style>
+ .hide {
+  display: none;
+ }
+
+ html {
+  height: 100%;
+ }
+
+ .logo {
+  margin-bottom: 200px;
+ }
+
+ .logo img {
+  width: 268px;
+  height: 48px;
+ }
+
+ body {
+  background: #F0F6FF;
+
+
+ }
+
+ .coming-soon-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 75px auto 0px;
+  text-align: center;
+  position: relative;
+ }
+
+ .main-txt {
+  color: #0B1437;
+  font-size: 64px;
+  margin-bottom: 25px;
+  font-weight: 300;
+ }
+
+ .small-txt {
+  font-size: 24px;
+  line-height: 43px;
+  text-align: center;
+  color: #0B1437;
+  margin-bottom: 10px;
+ }
+
+ .email-row {
+  width: 100%;
+  margin-bottom: 20px;
+ }
+
+ .email-row input {
+
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #919191;
+  box-sizing: border-box;
+  height: 35px;
+  padding: 10px;
+  width: 330px;
+ }
+
+ .email-row button {
+  background: #0B1437;
+  border: 1px solid #919191;
+  box-sizing: border-box;
+  height: 35px;
+  color: white;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  left: -4px;
+ }
+
+ .free-sample-row {
+  width: 100%;
+ }
+
+ .img-bottle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+  top: 120px;
+ }
+
+
+ .message-row {
+  margin-top: 10px;
+ }
+
+ .success-msg {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 43px;
+  text-align: center;
+  color: #0B1437;
+ }
+
+ .failed-msg {
+  background: red;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: white;
+  display: table;
+  margin: auto;
+
+ }
+
+
+ @media screen and (max-width: 767px) {
+
+
+  .success-msg {
+   font-size: 16px;
+  }
+
+  .message-row {
+   margin-top: 0px;
+  }
+
+  .main-txt {
+   color: #0B1437;
+   font-size: 27px;
+   margin-bottom: 0px;
+  }
+
+  .small-txt {
+   font-size: 13px;
+   line-height: 20px;
+   text-align: center;
+   color: #0B1437;
+   margin-bottom: 0px;
+  }
+
+  .email-row input {
+   width: 300px;
+   margin: 15px 0px;
+  }
+
+
+ }
+
+
+
+ @media screen and (min-width: 768px) and (max-width: 900px) {
+  .main-txt {
+   color: #0B1437;
+   font-size: 54px;
+   margin-bottom: 25px;
+  }
+
+  .small-txt {
+   font-size: 18px;
+   line-height: 43px;
+   text-align: center;
+   color: #0B1437;
+   margin-bottom: 10px;
+  }
+ }
+</style>
+
+
+<body>
+
+ <div class="coming-soon-wrapper">
+  <div class="logo">
+   <img src="images/logo.svg" alt="Pure Sukun">
+  </div>
+
+  <div class="img-bottle">
+   <img src="images/bottle1.svg" alt="">
+  </div>
+
+  <div class="main-txt">
+   Something awesome is coming
+  </div>
+
+  <div class="small-txt">
+   It’s going to be amazing! Sign up to find out when it’s ready
+  </div>
+
+  <div class="email-row">
+   <input type="text" placeholder="Enter your email address">
+   <button>GET EARLY ACCESS</button>
+
+  </div>
+
+
+
+  <div class="message-row hide">
+   <div class="success-msg">
+    Thank you for your interest, We will notify you
+
+    <br>
+
+    <br>
+
+    <img src="images/tick.svg">
+   </div>
+
+   <div class="failed-msg" style="display: none;">
+    Message Successful
+   </div>
+
+
+  </div>
+
+  <div class="free-sample-row">
+   <input type="checkbox">
+   Yes, I would like free samples!
+  </div>
+
+ </div>
+
+
+ <script>
+  $("button").click(function () {
+   $('.small-txt, .email-row, .free-sample-row').toggleClass("hide");
+  });
+
+  $("button").click(function () {
+   $('.message-row').toggleClass("hide");
+  });
+
+
+ </script>
+
+</body>
+
+</html>
