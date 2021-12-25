@@ -30,6 +30,11 @@
 
  <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16" />
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css" />
+
+ <link rel="stylesheet" href="css/owl.carousel.css">
+ <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
  <link rel="preconnect" href="https://fonts.gstatic.com" />
  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 
@@ -49,6 +54,10 @@
 
  <script type="text/javascript" src="js/extensions/revolution.extension.slideanims.min.js"></script>
  <script type="text/javascript" src="js/extensions/revolution.extension.layeranimation.min.js"></script>
+
+
+ <script type="text/javascript" src="js/owl.carousel.js"></script>
+
 
  <!-- Primary Meta Tags -->
  <title>Pure Sukún: The Next Generation of Super Serum</title>
@@ -88,7 +97,7 @@
 
 </head>
 
-<body">
+<body class="blog">
  <!--onload="getCookieConsentStatus()"-->
 
 
@@ -285,22 +294,43 @@
    </div>
 
 
-   <div class="blog-rec-row">
-    <div class="popular-blog-box">
+   <div class="blog-rec-row owl-carousel">
+    <a href="#" class="popular-blog-box item">
      <div class="popular-blog-heading">Immunity boosting hacks</div>
      <div class="popular-blog-desc">Food, health - how to eat right to feel right (without being preachy)</div>
-    </div>
+    </a>
 
-    <div class="popular-blog-box">
+    <a href="#" class="popular-blog-box item">
      <div class="popular-blog-heading">Mental Health Corner</div>
-     <div class="popular-blog-desc">Focus on some healthy habits we can adopt for healthy and better mental health</div>
-    </div>
+     <div class="popular-blog-desc">Focus on some healthy habits we can adopt for healthy and better mental health
+     </div>
+    </a>
 
-    <div class="popular-blog-box">
+    <a href="#" class="popular-blog-box item">
      <div class="popular-blog-heading">Immunity boosting hacks</div>
      <div class="popular-blog-desc">Weekly column on getting an expert to talk about how to cope</div>
-    </div>
+    </a>
+
+    <a href="#" class="popular-blog-box item">
+     <div class="popular-blog-heading">Immunity boosting hacks</div>
+     <div class="popular-blog-desc">Food, health - how to eat right to feel right (without being preachy)</div>
+    </a>
+
+    <a href="#" class="popular-blog-box item">
+     <div class="popular-blog-heading">Mental Health Corner</div>
+     <div class="popular-blog-desc">Focus on some healthy habits we can adopt for healthy and better mental health
+     </div>
+    </a>
+
+    <a href="#" class="popular-blog-box item">
+     <div class="popular-blog-heading">Immunity boosting hacks</div>
+     <div class="popular-blog-desc">Weekly column on getting an expert to talk about how to cope</div>
+    </a>
+
+
    </div>
+
+
 
 
 
@@ -773,17 +803,7 @@
 // });
  </script>
 
- <script>
-  (function ($) {
-   $(window).on("load", function () {
-    $(".content").mCustomScrollbar();
-   });
-  })(jQuery);
 
-
-
-
- </script>
 
  <script>
   const items = document.querySelectorAll(".accordion button");
@@ -890,6 +910,33 @@
 
 
  </script>
+
+
+
+ <script>
+
+
+  $('.owl-carousel').owlCarousel({
+   loop: true,
+   margin: 20,
+   nav: true,
+   responsive: {
+    0: {
+     items: 1
+    },
+    768: {
+     items: 2
+    },
+    1000: {
+     items: 3
+    }
+   }
+  })
+
+ </script>
+
+
+
 
  <script type="text/javascript" src="js/mmenu-light.js"></script>
 
@@ -1100,6 +1147,6 @@
   });
  </script>
 
- </body>
+</body>
 
 </html>
