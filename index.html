@@ -10,23 +10,23 @@
 
  <link rel="stylesheet" type="text/css" href="css/mmenu-light.css" />
  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
-<!-- 
+ <!-- 
  <link rel="stylesheet" href="css/remodal.css">
  <link rel="stylesheet" href="css/remodal-default-theme.css"> -->
-  <style>
-    .remodal-bg.with-red-theme.remodal-is-opening,
-    .remodal-bg.with-red-theme.remodal-is-opened {
-      filter: none;
-    }
+ <style>
+  .remodal-bg.with-red-theme.remodal-is-opening,
+  .remodal-bg.with-red-theme.remodal-is-opened {
+   filter: none;
+  }
 
-    .remodal-overlay.with-red-theme {
-      background-color: #f44336;
-    }
+  .remodal-overlay.with-red-theme {
+   background-color: #f44336;
+  }
 
-    .remodal.with-red-theme {
-      background: #fff;
-    }
-  </style>
+  .remodal.with-red-theme {
+   background: #fff;
+  }
+ </style>
 
  <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16" />
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css" />
@@ -88,7 +88,8 @@
 
 </head>
 
-<body > <!--onload="getCookieConsentStatus()"-->
+<body>
+ <!--onload="getCookieConsentStatus()"-->
  <div id="animation">
   <!-- Start REVOLUTION SLIDER -->
 
@@ -324,7 +325,17 @@
 
      <li class="mobile-menu-copyright">
       <div>
-       © 2021 Pure Sukún All rights reserved
+       © 2021 Pure Sukún All rights reserved | <a href="#" id="myBtn2" style="font-size: 10px;
+              text-transform: capitalize;
+              letter-spacing: 1px;
+              gap: 0px;
+              display: inline-block !important;
+              padding: 1px !important;width: auto;">Privacy Policy</a> | <a href="#" id="myBtn4" style="font-size: 10px;
+              text-transform: capitalize;
+              letter-spacing: 1px;
+              gap: 0px;
+              display: inline-block !important;
+              padding: 1px !important;width: auto;">COVID-19 </a>
       </div>
      </li>
 
@@ -357,15 +368,23 @@
      <a href="#formula">Formula</a>
     </li>
 
+    <li data-menuanchor="third" class="desk-menu">
+     <a href="#ideal-for">Ideal For</a>
+    </li>
+
     <!-- <li data-menuanchor="shop" class="bottle-controller-third"><a href="#shop">Shop</a></li> -->
     <li data-menuanchor="first" class="bottle-controller-first desk-menu">
      <a href="#home"> <img src="images/logo.svg" class="main-logo" alt="pure sukún logo " /></a>
     </li>
     <li data-menuanchor="third" class="desk-menu">
-     <a href="#ideal-for">Ideal For</a>
+     <a href="#shop">SHOP NOW</a>
     </li>
     <li data-menuanchor="fourth" class="bottle-controller-fourth desk-menu">
      <a href="#how-to-use">How to Use</a>
+    </li>
+
+    <li data-menuanchor="fourth" class="bottle-controller-fourth desk-menu">
+     <a href="#how-to-use">Blog</a>
     </li>
     <!-- <li data-menuanchor="Philosophy" class="bottle-controller-second"><a href="#Philosophy">Philosophy</a></li>
    <li data-menuanchor="fourth" class="bottle-controller-fourth"><a href="#blogs">Blogs</a></li>
@@ -455,12 +474,16 @@
           Sukún comes from Urdu and means tranquility and calm.
          </h3> -->
 
-        <p>Sukún comes from Urdu and means tranquility and calm. Pure Sukún, hence, means complete and total calm. It
-         is the feeling of freshness and utter tranquility that we instantly achieve when we are at one with ourselves.
+        <p>Sukún comes from Urdu and means tranquility and calm. Pure Sukún, hence, means complete and total
+         calm. It
+         is the feeling of freshness and utter tranquility that we instantly achieve when we are at one with
+         ourselves.
         </p>
 
-        <p>In that moment of tranquility and relaxation, the human mind and body becomes one with nature. That's the
-         feeling of freshness we are trying to capture with our products. Our products are built around an ethical
+        <p>In that moment of tranquility and relaxation, the human mind and body becomes one with nature. That's
+         the
+         feeling of freshness we are trying to capture with our products. Our products are built around an
+         ethical
          philosophy – from sourcing sustainable ingredients to using environmentally-friendly recyclable and
          biodegradable packaging wherever possible.</p>
 
@@ -479,7 +502,8 @@
          Women wear a ton of hats and balancing those roles and
          still making time to do what we are passionate about takes
          a spine of steel, love, hard work and a lot of
-         determination. To me the best kind of self-care comes from the daily ritual of taking care of myself. This is my time for myself; something I
+         determination. To me the best kind of self-care comes from the daily ritual of taking care of myself.
+         This is my time for myself; something I
          deeply cherish. It’s also something which calms me down,
          brings me joy and helps me focus. This almost Zen-like
          feeling is also what empowers me to be my best, most
@@ -698,7 +722,7 @@
     </div>
 
 
-    <div class="ms-section dark-section  dark-section-mobile ms-tableCell-mobile-height" id="right3">
+    <div class="ms-section dark-section  dark-section-mobile ms-tableCell-mobile-height formula-wrapper" id="right3">
      <div class="scroller-wrap">
       <div class="malibu-scroll mCustomScrollbar" "data-mcs-theme=" dark">
        <div class="content-center-wrapper wrapper-center">
@@ -921,7 +945,8 @@
      </div>
 
      <div class="footer-copyright">
-      © 2021 Pure Sukún All rights reserved
+      © 2021 Pure Sukún All rights reserved | <a href="#" id="myBtn1">Privacy Policy</a> | <a href="#"
+       id="myBtn3">COVID-19</a>
      </div>
 
 
@@ -937,225 +962,659 @@
    </ul>
 
   </footer>
-  
+
  </div>
 
  <div class="footer-cookies-wrap" id="cookie-div" style="display: none;">
   <p>
-   This website uses cookies to improve user experience. By using the website you agree to the use of cookies. Got it <a href="#" id="myBtn">Learn More</a>
+   This website uses cookies to improve user experience. By using the website you agree to the use of cookies. Got it
+   <a href="#" id="myBtn">Learn More</a>
   </p>
   <button style="margin-right: 4px;" onclick="enableCookies()">OK</button>
   <!-- <button onclick="disableCookies()">Cancel</button> -->
-</div>
+ </div>
 
 
-<!--modal html-->
-<div id="myModal" class="modal">
+ <!--modal html-->
+ <div id="myModal" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="popup-scroller mCustomScrollbar" data-mcs-theme="dark">
-      <!-- <h2 id="modal1Title">Remodal</h2> -->
-      <h3>Privacy Policy for Pure Sukún</h3>
-      <p id="modal1Desc">
-        Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin
-        with declarative state notation and hash tracking.
-        <br/>
-        If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
-        <br/><br/>
-        This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Pure Sukún: The Next Generation of Super Serum. This policy is not applicable to any information collected offline or via channels other than this website.
-      </p>
-      <h3>Consent</h3>
-      <p>
-        By using our website, you hereby consent to our Privacy Policy and agree to its terms.
-      </p>
-      <h3>Information we collect</h3>
-      <p >
-        The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.
-        <br/>
-        If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.
-        <br/><br/>
-        When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.
-      </p>
-      <h3>How we use your information</h3>
-      <p>We use the information we collect in various ways, including to:</p>
-      <ul>
-        <li>Provide, operate, and maintain our website</li>
-        <li>Improve, personalize, and expand our website</li>
-        <li>Understand and analyze how you use our website</li>
-        <li>Develop new products, services, features, and functionality</li>
-        <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
-        <li>Send you emails</li>
-        <li>Find and prevent fraud</li>
-      </ul>
-      <h3>Log Files</h3>
-      <p>Pure Sukún: The Next Generation of Super Serum follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
-      <h3>Cookies and Web Beacons</h3>
-      <p>Like any other website, Pure Sukún: The Next Generation of Super Serum uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
-      <h3>Google DoubleClick DART Cookie</h3>
-      <p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL –  <a href="https://policies.google.com/technologies/ads" target="_blank" >https://policies.google.com/technologies/ads</a> </p>
-      <h3>Advertising Partners Privacy Policies</h3>
-      <p>You may consult this list to find the Privacy Policy for each of the advertising partners of Pure Sukún: The Next Generation of Super Serum.</p>
-      <p>
-        Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Pure Sukún: The Next Generation of Super Serum, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
-      </p>
-      <p>
-        Note that Pure Sukún: The Next Generation of Super Serum has no access to or control over these cookies that are used by third-party advertisers.
-      </p>
-      <h3>Third Party Privacy Policies</h3>
-      <p>
-        Pure Sukún: The Next Generation of Super Serum's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
-      </p>
-      <p>
-        You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.
-      </p>
-      <h3>CCPA Privacy Rights (Do Not Sell My Personal Information)</h3>
-      <p>
-        Under the CCPA, among other rights, California consumers have the right to:
-      </p>
-      <p>
-        Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.
-      </p>
-      <p>
-        Request that a business delete any personal data about the consumer that a business has collected.
-      </p>
-      <p>
-        Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
-      </p>
-      <p>
-        If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
-      </p>
-      <h3>
-        GDPR Data Protection Rights
-      </h3>
-      <p>
-        We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:
-      </p>
-      <p>
-        The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.
-      </p>
-      <p>
-        The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.
-      </p>
-      <p>
-        The right to erasure – You have the right to request that we erase your personal data, under certain conditions.
-      </p>
-      <p>
-        The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.
-      </p>
-      <p>
-        The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.
-      </p>
-      <p>
-        The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
-      </p>
-      <p>
-        If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
-      </p>
-      <h3>
-        Children's Information
-      </h3>
-      <p>
-        Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
-      </p>
-      <p>
-        Pure Sukún: The Next Generation of Super Serum does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
-      </p>
-      <h3>
-        Cookie Policy for Pure Sukún: The Next Generation of Super Serum
-      </h3>
-      <p>
-        This is the Cookie Policy for Pure Sukún: The Next Generation of Super Serum, accessible from <a href="https://www.puresukun.com" target="_blank">www.puresukun.com</a>
-      </p>
-      <h4>What Are Cookies</h4>
-      <p>
-        As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.
-      </p>
-      <h4>
-        How We Use Cookies
-      </h4>
-      <p>
-        We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.
-      </p>
-      <h4>
-        Disabling Cookies
-      </h4>
-      <p>
-        You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of this site. Therefore it is recommended that you do not disable cookies.
-      </p>
-      <h4>
-        The Cookies We Set
-      </h4>
-      <p>
-  
-      </p>
-      <ul>
-        <li>
-        Account related cookies
-          <br/><br/>
-          If you create an account with us then we will use cookies for the management of the signup process and general administration. These cookies will usually be deleted when you log out however in some cases they may remain afterwards to remember your site preferences when logged out.
-        </li>
-        <li>
-          Login related cookies
-          <br/><br/>
-          We use cookies when you are logged in so that we can remember this fact. This prevents you from having to log in every single time you visit a new page. These cookies are typically removed or cleared when you log out to ensure that you can only access restricted features and areas when logged in.
-        </li>
-        <li>
-          Orders processing related cookies
-          <br/><br/>
-          This site offers e-commerce or payment facilities and some cookies are essential to ensure that your order is remembered between pages so that we can process it properly.
-        </li>
-        <li>
-          Site preferences cookies
-          <br/><br/>
-          In order to provide you with a great experience on this site we provide the functionality to set your preferences for how this site runs when you use it. In order to remember your preferences we need to set cookies so that this information can be called whenever you interact with a page is affected by your preferences.
-        </li>
-      </ul>
-      <h3>
-        Third Party Cookies
-      </h3>
-      <p>
-        In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.
-      </p>
-      <ul>
-        <li>
-          This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.
-          <br/>
-          For more information on Google Analytics cookies, see the official Google Analytics page.
-        </li>
-        <li>
-          From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features these cookies may be used to ensure that you receive a consistent experience whilst on the site whilst ensuring we understand which optimizations our users appreciate the most.
-        </li>
-        <li>
-          The Google AdSense service we use to serve advertising uses a DoubleClick cookie to serve more relevant ads across the web and limit the number of times that a given ad is shown to you.
-          <br/>
-          For more information on Google AdSense see the official Google AdSense privacy FAQ.
-        </li>
-        <li>
-          We also use social media buttons and/or plugins on this site that allow you to connect with your social network in various ways. For these to work the following social media sites including; {List the social networks whose features you have integrated with your site?:12}, will set cookies through our site which may be used to enhance your profile on their site or contribute to the data they hold for various purposes outlined in their respective privacy policies.
-        </li>
-      </ul>
-      <h3>
-        More Information
-      </h3>
-      <p>
-        Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site.
-      </p>
-      <p>
-        However if you are still looking for more information, you can contact us through one of our preferred contact methods:
-      </p>
-      <ul>
-        <li>
-          Email: <a href="mailto:privacy@puresukun.com">privacy@puresukun.com</a> 
-        </li>
-      </ul>
-    </div>
+   <span class="close">&times;</span>
+   <div class="popup-scroller mCustomScrollbar" data-mcs-theme="dark">
+    <!-- <h2 id="modal1Title">Remodal</h2> -->
+    <h3>Privacy Policy for Pure Sukún</h3>
+    <p id="modal1Desc">
+     Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin
+     with declarative state notation and hash tracking.
+     <br />
+     If you have additional questions or require more information about our Privacy Policy, do not hesitate to
+     contact us.
+     <br /><br />
+     This Privacy Policy applies only to our online activities and is valid for visitors to our website with
+     regards to the information that they shared and/or collect in Pure Sukún: The Next Generation of Super Serum.
+     This policy is not applicable to any information collected offline or via channels other than this website.
+    </p>
+    <h3>Consent</h3>
+    <p>
+     By using our website, you hereby consent to our Privacy Policy and agree to its terms.
+    </p>
+    <h3>Information we collect</h3>
+    <p>
+     The personal information that you are asked to provide, and the reasons why you are asked to provide it, will
+     be made clear to you at the point we ask you to provide your personal information.
+     <br />
+     If you contact us directly, we may receive additional information about you such as your name, email address,
+     phone number, the contents of the message and/or attachments you may send us, and any other information you
+     may choose to provide.
+     <br /><br />
+     When you register for an Account, we may ask for your contact information, including items such as name,
+     company name, address, email address, and telephone number.
+    </p>
+    <h3>How we use your information</h3>
+    <p>We use the information we collect in various ways, including to:</p>
+    <ul>
+     <li>Provide, operate, and maintain our website</li>
+     <li>Improve, personalize, and expand our website</li>
+     <li>Understand and analyze how you use our website</li>
+     <li>Develop new products, services, features, and functionality</li>
+     <li>Communicate with you, either directly or through one of our partners, including for customer service, to
+      provide you with updates and other information relating to the website, and for marketing and promotional
+      purposes</li>
+     <li>Send you emails</li>
+     <li>Find and prevent fraud</li>
+    </ul>
+    <h3>Log Files</h3>
+    <p>Pure Sukún: The Next Generation of Super Serum follows a standard procedure of using log files. These files
+     log visitors when they visit websites. All hosting companies do this and a part of hosting services'
+     analytics. The information collected by log files include internet protocol (IP) addresses, browser type,
+     Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks.
+     These are not linked to any information that is personally identifiable. The purpose of the information is for
+     analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic
+     information.</p>
+    <h3>Cookies and Web Beacons</h3>
+    <p>Like any other website, Pure Sukún: The Next Generation of Super Serum uses 'cookies'. These cookies are used
+     to store information including visitors' preferences, and the pages on the website that the visitor accessed
+     or visited. The information is used to optimize the users' experience by customizing our web page content
+     based on visitors' browser type and/or other information.</p>
+    <h3>Google DoubleClick DART Cookie</h3>
+    <p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads
+     to our site visitors based upon their visit to www.website.com and other sites on the internet. However,
+     visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy
+     Policy at the following URL – <a href="https://policies.google.com/technologies/ads"
+      target="_blank">https://policies.google.com/technologies/ads</a> </p>
+    <h3>Advertising Partners Privacy Policies</h3>
+    <p>You may consult this list to find the Privacy Policy for each of the advertising partners of Pure Sukún: The
+     Next Generation of Super Serum.</p>
+    <p>
+     Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used
+     in their respective advertisements and links that appear on Pure Sukún: The Next Generation of Super Serum,
+     which are sent directly to users' browser. They automatically receive your IP address when this occurs. These
+     technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the
+     advertising content that you see on websites that you visit.
+    </p>
+    <p>
+     Note that Pure Sukún: The Next Generation of Super Serum has no access to or control over these cookies that
+     are used by third-party advertisers.
+    </p>
+    <h3>Third Party Privacy Policies</h3>
+    <p>
+     Pure Sukún: The Next Generation of Super Serum's Privacy Policy does not apply to other advertisers or
+     websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers
+     for more detailed information. It may include their practices and instructions about how to opt-out of certain
+     options.
+    </p>
+    <p>
+     You can choose to disable cookies through your individual browser options. To know more detailed information
+     about cookie management with specific web browsers, it can be found at the browsers' respective websites.
+    </p>
+    <h3>CCPA Privacy Rights (Do Not Sell My Personal Information)</h3>
+    <p>
+     Under the CCPA, among other rights, California consumers have the right to:
+    </p>
+    <p>
+     Request that a business that collects a consumer's personal data disclose the categories and specific pieces
+     of personal data that a business has collected about consumers.
+    </p>
+    <p>
+     Request that a business delete any personal data about the consumer that a business has collected.
+    </p>
+    <p>
+     Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
+    </p>
+    <p>
+     If you make a request, we have one month to respond to you. If you would like to exercise any of these rights,
+     please contact us.
+    </p>
+    <h3>
+     GDPR Data Protection Rights
+    </h3>
+    <p>
+     We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled
+     to the following:
+    </p>
+    <p>
+     The right to access – You have the right to request copies of your personal data. We may charge you a small
+     fee for this service.
+    </p>
+    <p>
+     The right to rectification – You have the right to request that we correct any information you believe is
+     inaccurate. You also have the right to request that we complete the information you believe is incomplete.
+    </p>
+    <p>
+     The right to erasure – You have the right to request that we erase your personal data, under certain
+     conditions.
+    </p>
+    <p>
+     The right to restrict processing – You have the right to request that we restrict the processing of your
+     personal data, under certain conditions.
+    </p>
+    <p>
+     The right to object to processing – You have the right to object to our processing of your personal data,
+     under certain conditions.
+    </p>
+    <p>
+     The right to data portability – You have the right to request that we transfer the data that we have collected
+     to another organization, or directly to you, under certain conditions.
+    </p>
+    <p>
+     If you make a request, we have one month to respond to you. If you would like to exercise any of these rights,
+     please contact us.
+    </p>
+    <h3>
+     Children's Information
+    </h3>
+    <p>
+     Another part of our priority is adding protection for children while using the internet. We encourage parents
+     and guardians to observe, participate in, and/or monitor and guide their online activity.
+    </p>
+    <p>
+     Pure Sukún: The Next Generation of Super Serum does not knowingly collect any Personal Identifiable
+     Information from children under the age of 13. If you think that your child provided this kind of information
+     on our website, we strongly encourage you to contact us immediately and we will do our best efforts to
+     promptly remove such information from our records.
+    </p>
+    <h3>
+     Cookie Policy for Pure Sukún: The Next Generation of Super Serum
+    </h3>
+    <p>
+     This is the Cookie Policy for Pure Sukún: The Next Generation of Super Serum, accessible from <a
+      href="https://www.puresukun.com" target="_blank">www.puresukun.com</a>
+    </p>
+    <h4>What Are Cookies</h4>
+    <p>
+     As is common practice with almost all professional websites this site uses cookies, which are tiny files that
+     are downloaded to your computer, to improve your experience. This page describes what information they gather,
+     how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these
+     cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.
+    </p>
+    <h4>
+     How We Use Cookies
+    </h4>
+    <p>
+     We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry
+     standard options for disabling cookies without completely disabling the functionality and features they add to
+     this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in
+     case they are used to provide a service that you use.
+    </p>
+    <h4>
+     Disabling Cookies
+    </h4>
+    <p>
+     You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for
+     how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites
+     that you visit. Disabling cookies will usually result in also disabling certain functionality and features of
+     this site. Therefore it is recommended that you do not disable cookies.
+    </p>
+    <h4>
+     The Cookies We Set
+    </h4>
+    <p>
+
+    </p>
+    <ul>
+     <li>
+      Account related cookies
+      <br /><br />
+      If you create an account with us then we will use cookies for the management of the signup process and
+      general administration. These cookies will usually be deleted when you log out however in some cases they
+      may remain afterwards to remember your site preferences when logged out.
+     </li>
+     <li>
+      Login related cookies
+      <br /><br />
+      We use cookies when you are logged in so that we can remember this fact. This prevents you from having to
+      log in every single time you visit a new page. These cookies are typically removed or cleared when you log
+      out to ensure that you can only access restricted features and areas when logged in.
+     </li>
+     <li>
+      Orders processing related cookies
+      <br /><br />
+      This site offers e-commerce or payment facilities and some cookies are essential to ensure that your order
+      is remembered between pages so that we can process it properly.
+     </li>
+     <li>
+      Site preferences cookies
+      <br /><br />
+      In order to provide you with a great experience on this site we provide the functionality to set your
+      preferences for how this site runs when you use it. In order to remember your preferences we need to set
+      cookies so that this information can be called whenever you interact with a page is affected by your
+      preferences.
+     </li>
+    </ul>
+    <h3>
+     Third Party Cookies
+    </h3>
+    <p>
+     In some special cases we also use cookies provided by trusted third parties. The following section details
+     which third party cookies you might encounter through this site.
+    </p>
+    <ul>
+     <li>
+      This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the
+      web for helping us to understand how you use the site and ways that we can improve your experience. These
+      cookies may track things such as how long you spend on the site and the pages that you visit so we can
+      continue to produce engaging content.
+      <br />
+      For more information on Google Analytics cookies, see the official Google Analytics page.
+     </li>
+     <li>
+      From time to time we test new features and make subtle changes to the way that the site is delivered. When
+      we are still testing new features these cookies may be used to ensure that you receive a consistent
+      experience whilst on the site whilst ensuring we understand which optimizations our users appreciate the
+      most.
+     </li>
+     <li>
+      The Google AdSense service we use to serve advertising uses a DoubleClick cookie to serve more relevant ads
+      across the web and limit the number of times that a given ad is shown to you.
+      <br />
+      For more information on Google AdSense see the official Google AdSense privacy FAQ.
+     </li>
+     <li>
+      We also use social media buttons and/or plugins on this site that allow you to connect with your social
+      network in various ways. For these to work the following social media sites including; {List the social
+      networks whose features you have integrated with your site?:12}, will set cookies through our site which may
+      be used to enhance your profile on their site or contribute to the data they hold for various purposes
+      outlined in their respective privacy policies.
+     </li>
+    </ul>
+    <h3>
+     More Information
+    </h3>
+    <p>
+     Hopefully that has clarified things for you and as was previously mentioned if there is something that you
+     aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with
+     one of the features you use on our site.
+    </p>
+    <p>
+     However if you are still looking for more information, you can contact us through one of our preferred contact
+     methods:
+    </p>
+    <ul>
+     <li>
+      Email: <a href="mailto:privacy@puresukun.com">privacy@puresukun.com</a>
+     </li>
+    </ul>
+   </div>
   </div>
 
-</div>
+ </div>
 
- 
+ <!--load page modal-->
+ <div class="modal modal1 fade" id="myModal1" style="display: none;">
+  <div class="modal-dialog modal-lg modal-dialog-centered1" role="document">
+   <div class="modal-content happy-holidays-modal">
+    <div class="bg-modal">
+     <div class="info-content">
+      <div class="modal-header">
+       <h4 class="modal-title">Happy Holidays</h4>
+       <span>from Pure Sukún!</span>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><img src="images/close-btn-x.svg" alt=""></span>
+       </button>
+      </div>
+      <div class="modal-body">
+       <h5>
+        To spread some holiday cheer,
+        we are offering <strong>free gifts*</strong>
+        and <strong>free shipping</strong> on orders
+        over $100
+       </h5>
+       <a href="#shop" class="order-now-btn">Order Now</a>
+       <p style="font-size: 10px;margin: 0;margin-top: 10px;color: #ffffffad;">* Only till supplies last, no code
+        required.
+       </p>
+      </div>
+     </div>
+     <div class="img-cart-wrap">
+      <img src="images/Bottle-and-Bag.png" alt="">
+     </div>
+    </div>
+
+    <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">Close</button>
+          </div> -->
+   </div>
+  </div>
+ </div>
+
+
+ <!--Covid-19 modal-->
+ <div id="myModal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+   <span class="close close1">&times;</span>
+
+   <!-- <h2 id="modal1Title">Remodal</h2> -->
+   <h3>COVID-19 Measures</h3>
+   <p id="modal1Desc">
+    Returns for items purchased have been suspended amid the coronavirus outbreak.
+   </p>
+  </div>
+
+ </div>
+
+ <script type="text/javascript">
+
+
+  //  Block Region Code Start
+
+  var continent = {
+   "AD": "Europe",
+   "AE": "Asia",
+   "AF": "Asia",
+   "AG": "North America",
+   "AI": "North America",
+   "AL": "Europe",
+   "AM": "Asia",
+   "AN": "North America",
+   "AO": "Africa",
+   "AQ": "Antarctica",
+   "AR": "South America",
+   "AS": "Australia",
+   "AT": "Europe",
+   "AU": "Australia",
+   "AW": "North America",
+   "AZ": "Asia",
+   "BA": "Europe",
+   "BB": "North America",
+   "BD": "Asia",
+   "BE": "Europe",
+   "BF": "Africa",
+   "BG": "Europe",
+   "BH": "Asia",
+   "BI": "Africa",
+   "BJ": "Africa",
+   "BM": "North America",
+   "BN": "Asia",
+   "BO": "South America",
+   "BR": "South America",
+   "BS": "North America",
+   "BT": "Asia",
+   "BW": "Africa",
+   "BY": "Europe",
+   "BZ": "North America",
+   "CA": "North America",
+   "CC": "Asia",
+   "CD": "Africa",
+   "CF": "Africa",
+   "CG": "Africa",
+   "CH": "Europe",
+   "CI": "Africa",
+   "CK": "Australia",
+   "CL": "South America",
+   "CM": "Africa",
+   "CN": "Asia",
+   "CO": "South America",
+   "CR": "North America",
+   "CU": "North America",
+   "CV": "Africa",
+   "CX": "Asia",
+   "CY": "Asia",
+   "CZ": "Europe",
+   "DE": "Europe",
+   "DJ": "Africa",
+   "DK": "Europe",
+   "DM": "North America",
+   "DO": "North America",
+   "DZ": "Africa",
+   "EC": "South America",
+   "EE": "Europe",
+   "EG": "Africa",
+   "EH": "Africa",
+   "ER": "Africa",
+   "ES": "Europe",
+   "ET": "Africa",
+   "FI": "Europe",
+   "FJ": "Australia",
+   "FK": "South America",
+   "FM": "Australia",
+   "FO": "Europe",
+   "FR": "Europe",
+   "GA": "Africa",
+   "GB": "Europe",
+   "GD": "North America",
+   "GE": "Asia",
+   "GF": "South America",
+   "GG": "Europe",
+   "GH": "Africa",
+   "GI": "Europe",
+   "GL": "North America",
+   "GM": "Africa",
+   "GN": "Africa",
+   "GP": "North America",
+   "GQ": "Africa",
+   "GR": "Europe",
+   "GS": "Antarctica",
+   "GT": "North America",
+   "GU": "Australia",
+   "GW": "Africa",
+   "GY": "South America",
+   "HK": "Asia",
+   "HN": "North America",
+   "HR": "Europe",
+   "HT": "North America",
+   "HU": "Europe",
+   "ID": "Asia",
+   "IE": "Europe",
+   "IL": "Asia",
+   "IM": "Europe",
+   "IN": "Asia",
+   "IO": "Asia",
+   "IQ": "Asia",
+   "IR": "Asia",
+   "IS": "Europe",
+   "IT": "Europe",
+   "JE": "Europe",
+   "JM": "North America",
+   "JO": "Asia",
+   "JP": "Asia",
+   "KE": "Africa",
+   "KG": "Asia",
+   "KH": "Asia",
+   "KI": "Australia",
+   "KM": "Africa",
+   "KN": "North America",
+   "KP": "Asia",
+   "KR": "Asia",
+   "KW": "Asia",
+   "KY": "North America",
+   "KZ": "Asia",
+   "LA": "Asia",
+   "LB": "Asia",
+   "LC": "North America",
+   "LI": "Europe",
+   "LK": "Asia",
+   "LR": "Africa",
+   "LS": "Africa",
+   "LT": "Europe",
+   "LU": "Europe",
+   "LV": "Europe",
+   "LY": "Africa",
+   "MA": "Africa",
+   "MC": "Europe",
+   "MD": "Europe",
+   "ME": "Europe",
+   "MG": "Africa",
+   "MH": "Australia",
+   "MK": "Europe",
+   "ML": "Africa",
+   "MM": "Asia",
+   "MN": "Asia",
+   "MO": "Asia",
+   "MP": "Australia",
+   "MQ": "North America",
+   "MR": "Africa",
+   "MS": "North America",
+   "MT": "Europe",
+   "MU": "Africa",
+   "MV": "Asia",
+   "MW": "Africa",
+   "MX": "North America",
+   "MY": "Asia",
+   "MZ": "Africa",
+   "NA": "Africa",
+   "NC": "Australia",
+   "NE": "Africa",
+   "NF": "Australia",
+   "NG": "Africa",
+   "NI": "North America",
+   "NL": "Europe",
+   "NO": "Europe",
+   "NP": "Asia",
+   "NR": "Australia",
+   "NU": "Australia",
+   "NZ": "Australia",
+   "OM": "Asia",
+   "PA": "North America",
+   "PE": "South America",
+   "PF": "Australia",
+   "PG": "Australia",
+   "PH": "Asia",
+   "PK": "Asia",
+   "PL": "Europe",
+   "PM": "North America",
+   "PN": "Australia",
+   "PR": "North America",
+   "PS": "Asia",
+   "PT": "Europe",
+   "PW": "Australia",
+   "PY": "South America",
+   "QA": "Asia",
+   "RE": "Africa",
+   "RO": "Europe",
+   "RS": "Europe",
+   "RU": "Europe",
+   "RW": "Africa",
+   "SA": "Asia",
+   "SB": "Australia",
+   "SC": "Africa",
+   "SD": "Africa",
+   "SE": "Europe",
+   "SG": "Asia",
+   "SH": "Africa",
+   "SI": "Europe",
+   "SJ": "Europe",
+   "SK": "Europe",
+   "SL": "Africa",
+   "SM": "Europe",
+   "SN": "Africa",
+   "SO": "Africa",
+   "SR": "South America",
+   "ST": "Africa",
+   "SV": "North America",
+   "SY": "Asia",
+   "SZ": "Africa",
+   "TC": "North America",
+   "TD": "Africa",
+   "TF": "Antarctica",
+   "TG": "Africa",
+   "TH": "Asia",
+   "TJ": "Asia",
+   "TK": "Australia",
+   "TM": "Asia",
+   "TN": "Africa",
+   "TO": "Australia",
+   "TR": "Asia",
+   "TT": "North America",
+   "TV": "Australia",
+   "TW": "Asia",
+   "TZ": "Africa",
+   "UA": "Europe",
+   "UG": "Africa",
+   "US": "North America",
+   "UY": "South America",
+   "UZ": "Asia",
+   "VC": "North America",
+   "VE": "South America",
+   "VG": "North America",
+   "VI": "North America",
+   "VN": "Asia",
+   "VU": "Australia",
+   "WF": "Australia",
+   "WS": "Australia",
+   "YE": "Asia",
+   "YT": "Africa",
+   "ZA": "Africa",
+   "ZM": "Africa",
+   "ZW": "Africa"
+  }
+
+  $(document).ready(OnloadFunction);
+
+  function OnloadFunction() {
+   $('body').hide();
+   checkLocation();
+  }
+
+  function checkLocation() {
+
+   const blockedRegion = ["Europe"];
+   var countryObj;
+   $.ajax({
+    url: 'https://api.freegeoip.app/json/?apikey=42500440-5733-11ec-b575-bdf275ee545e',
+    beforeSend: function (xhr) {
+    }, success: function (data) {
+     continentObj = continent[data.country_code];
+     console.log(data);
+     var timezoneCheck = false;
+     var tmp;
+     blockedRegion.forEach(element => ((data.time_zone.includes(element)) ? timezoneCheck = true : tmp));
+
+     if (timezoneCheck || blockedRegion.includes(continentObj)) {
+      window.stop();
+      location.replace("error.html");
+     }
+     else {
+      $('body').show();
+     }
+    }
+   })
+   return countryObj;
+  }
+
+  //  Block Region Code End
+
+
+  jQuery(document).ready(function () {
+   jQuery(".close, a").click(function () {
+    setCookie("popup-disabled", "true", 1);
+    document.getElementById("myModal1").style.display = "none";
+    jQuery(".modal1").toggleClass("close-modal");
+   });
+  });
+
+  jQuery(document).ready(function () {
+   jQuery(".close1").click(function () {
+    document.getElementById("myModal3").style.display = "none";
+   });
+  });
+
+
+ </script>
+
+
  <script type="text/javascript">
   /*<![CDATA[*/
   (function () {
@@ -1497,7 +1956,6 @@
 // });
  </script>
 
-
  <script>
   (function ($) {
    $(window).on("load", function () {
@@ -1509,7 +1967,6 @@
 
 
  </script>
-
 
  <script>
   const items = document.querySelectorAll(".accordion button");
@@ -1530,11 +1987,6 @@
  </script>
 
  <script type="text/javascript">
-
-
-
-
-
 
   $(document).ready(function () {
    $("#myContainer").multiscroll({
@@ -1683,79 +2135,80 @@
 
  <script>
 
-// Start Cookies
-function setCookie(cname, cvalue, exdays) {
-  const cdate = new Date();
-  cdate.setTime(cdate.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  let expires = "expires=" + cdate.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
- }
+  // Start Cookies
+  function setCookie(cname, cvalue, exdays) {
+   const cdate = new Date();
+   cdate.setTime(cdate.getTime() + (exdays * 24 * 60 * 60 * 1000));
+   let expires = "expires=" + cdate.toUTCString();
+   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
 
- function getCookie(cname) {
+  function getCookie(cname) {
    let name = cname + "=";
    let decodedCookie = decodeURIComponent(document.cookie);
    let cookieArray = decodedCookie.split(';');
-   for(let i=0;i<cookieArray.length;i++) {
-     let cookieObj = cookieArray[i];
-     while(cookieObj.charAt(0) == ' ') {
-       cookieObj = cookieObj.substring(1);
-     }
-     if (cookieObj.indexOf(name) == 0) {
-       return cookieObj.substring(name.length, cookieObj.length)
-     }
+   for (let i = 0; i < cookieArray.length; i++) {
+    let cookieObj = cookieArray[i];
+    while (cookieObj.charAt(0) == ' ') {
+     cookieObj = cookieObj.substring(1);
+    }
+    if (cookieObj.indexOf(name) == 0) {
+     return cookieObj.substring(name.length, cookieObj.length)
+    }
 
    }
    return "";
- }
+  }
 
- $(document).ready(function () {
-  
-  try{
-    if(getCookieConsentStatus()==null ) {
-      var cookieDiv = document.getElementById("cookie-div");
-      cookieDiv.style.display = 'flex';
+  $(document).ready(function () {
+
+   try {
+    if (getCookieConsentStatus() == null) {
+     var cookieDiv = document.getElementById("cookie-div");
+     cookieDiv.style.display = 'flex';
     }
 
-  }
-  catch(e) {
+   }
+   catch (e) {
     var cookieDiv = document.getElementById("cookie-div");
-      cookieDiv.style.display = 'flex';
- }}
+    cookieDiv.style.display = 'flex';
+   }
+  }
   )
- function getCookieConsentStatus(){
-  return localStorage.getItem('cookies_enabled');
- }
+  function getCookieConsentStatus() {
+   return localStorage.getItem('cookies_enabled');
+  }
 
-//  function checkCookie() {
-//    if(getCookieConsentStatus()==1){
-//         let username = getCookie("username");
-//       if (username != "") {
-//       alert("Welcome again " + username);
-//       } else {
-//         username = prompt("Please enter your name:", "");
-//         if (username != "" && username != null) {
-//           setCookie("username", username, 365);
-//         }
-//       }
-//    }
+  //  function checkCookie() {
+  //    if(getCookieConsentStatus()==1){
+  //         let username = getCookie("username");
+  //       if (username != "") {
+  //       alert("Welcome again " + username);
+  //       } else {
+  //         username = prompt("Please enter your name:", "");
+  //         if (username != "" && username != null) {
+  //           setCookie("username", username, 365);
+  //         }
+  //       }
+  //    }
 
-// }
+  // }
 
   function enableCookies() {
-    localStorage.setItem('cookies_enabled',1);
+   localStorage.setItem('cookies_enabled', 1);
 
-    var cookieDiv = document.getElementById("cookie-div");
-    cookieDiv.style.display = 'none';
+   var cookieDiv = document.getElementById("cookie-div");
+   cookieDiv.style.display = 'none';
   }
 
   function disableCookies() {
-    localStorage.setItem('cookies_enabled',0);
+   localStorage.setItem('cookies_enabled', 0);
 
-    var cookieDiv = document.getElementById("cookie-div");
-    cookieDiv.style.display = 'none';
+   var cookieDiv = document.getElementById("cookie-div");
+   cookieDiv.style.display = 'none';
   }
-   
-// END Cookie
+
+  // END Cookie
 
   var n = localStorage.getItem('on_load_counter');
   if (n === null) {
@@ -1767,33 +2220,69 @@ function setCookie(cname, cvalue, exdays) {
   localStorage.setItem("on_load_counter", n);
  </script>
 
-<script>
+ <script>
   // Get the modal
   var modal = document.getElementById("myModal");
-  
+  var modal3 = document.getElementById("myModal3");
+
   // Get the button that opens the modal
   var btn = document.getElementById("myBtn");
-  
+  var btn1 = document.getElementById("myBtn1");
+  var btn2 = document.getElementById("myBtn2");
+  var btn3 = document.getElementById("myBtn3");
+  var btn4 = document.getElementById("myBtn4");
+
+
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
-  
+
   // When the user clicks the button, open the modal 
-  btn.onclick = function() {
-    modal.style.display = "block";
+  btn.onclick = function () {
+   modal.style.display = "block";
   }
-  
+
+  btn1.onclick = function () {
+   modal.style.display = "block";
+  }
+  btn2.onclick = function () {
+   modal.style.display = "block";
+  }
+
+  btn3.onclick = function () {
+   modal3.style.display = "block";
+  }
+
+  btn4.onclick = function () {
+   modal3.style.display = "block";
+  }
+
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
+  span.onclick = function () {
+   modal.style.display = "none";
   }
-  
+
   // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
+  window.onclick = function (event) {
+   if (event.target == modal) {
+    modal.style.display = "none";
+   };
+   if (event.target == modal3) {
+    modal3.style.display = "none";
+   }
   }
-  </script>
+ </script>
+
+ <script type="text/javascript">
+  $(window).on('load', function () {
+   var delayMs = 1500; // delay in milliseconds
+   if (getCookie("popup-disabled") != "true") {
+    setTimeout(function () {
+     document.getElementById("myModal1").style.display = "block";
+    }, delayMs);
+   }
+  });
+ </script>
+
 </body>
 
 </html>

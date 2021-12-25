@@ -3,16 +3,6 @@
   overflow-x: hidden;
  }
 
- .Philosophy-wrapper {
-  .mCustomScrollBox {
-   height: auto !important;
-   max-height: none !important;
-  }
-  .mCSB_1_scrollbar {
-   display: none;
-  }
- }
-
  .ingredients {
   .ss-content {
    overflow: visible !important;
@@ -226,7 +216,7 @@
  .ms-tableCell-mobile-height .ms-tableCell {
   height: auto !important;
   padding: 35px;
-  padding-bottom: 124px;
+  padding-bottom: 90px;
  }
  .content-heading {
   width: 100%;
@@ -297,6 +287,15 @@
    height: 0px !important;
   }
  }
+ .formula-wrapper {
+    .mCustomScrollBox {
+     height: auto !important;
+     max-height: none !important;
+    }
+    .mCSB_1_scrollbar {
+     display: none !important;
+    }
+   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -308,21 +307,71 @@
   }
  }
  .footer-cookies-wrap {
-  padding: 15px;
-  flex-direction: column;
-  width: auto;
-  p {
-   text-align: center;
-   margin: 0px;
-   padding-top: 0px;
-  }
-  button {
-   width: 50%;
-   padding: 6px;
-   margin: 0px !important;
-   margin-bottom: 6px !important;
-  }
+     padding: 15px;
+     flex-direction: column;
+     width: auto;
+     p {
+         text-align: center;
+         margin: 0px;
+         padding-top: 0px;
+     }
+     button {
+        width: 50%;
+        padding: 6px;
+        margin: 0px !important;
+    margin-bottom: 6px!important;
+     }
+
  }
+ .happy-holidays-modal {
+    width: 86%;
+    .bg-modal {
+        width: 100%;
+        flex-direction: column; 
+        .info-content {
+            order: 2;
+            h4 {
+                font-size: 30px;
+        line-height: 36px;
+        margin-top: 6px;
+            }
+           h5 {
+            line-height: 1.2rem;
+            font-size: 15.5px;
+           } 
+           .modal-body {
+               margin-bottom: 10px;
+           }
+        }
+
+    }
+
+    
+
+    .img-cart-wrap {
+        img {
+            width: 65%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 0px auto;
+        }
+
+    }
+ }
+
+ .founder {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+ }
+
+ #myModal3 {
+    .modal-content {
+        width: 80%;
+    }
+}
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -487,3 +536,4 @@
   height: 70%;
  }
 }
+
