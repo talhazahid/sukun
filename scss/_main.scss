@@ -1185,3 +1185,25 @@ h3.bottom-margin {
   top: 0px;
  }
 }
+
+.blog-post-img {
+ text-align: center;
+}
+
+.blog footer {
+ position: relative;
+ display: block;
+ z-index: 15;
+ bottom: 0px;
+ width: 100%;
+}
+
+body.blog {
+ overflow-y: scroll;
+}
+
+body.blog {
+ .post-content {
+  max-height: inherit;
+ }
+}
