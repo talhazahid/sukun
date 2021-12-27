@@ -968,7 +968,7 @@ h3.bottom-margin {
 }
 
 .blog-wrapper {
- margin-top: 150px;
+ margin-top: 110px;
  margin-left: 40px;
  margin-right: 40px;
 }
@@ -976,14 +976,14 @@ h3.bottom-margin {
 .blog-hero-container {
  margin: 0 auto;
  display: grid;
- grid-template-columns: 40% 1fr;
+ grid-template-columns: 390px 1fr;
  max-width: 1200px;
  grid-gap: 60px;
 }
 
 .blog-hero-left {
  img {
-  max-width: 500px;
+  max-width: 380px;
  }
 }
 .blog-hero-right {
@@ -1159,7 +1159,7 @@ h3.bottom-margin {
 }
 
 .post-content {
- max-height: 400px;
+ max-height: 180px;
 }
 
 .owl-nav {
@@ -1190,20 +1190,33 @@ h3.bottom-margin {
  text-align: center;
 }
 
-.blog footer {
- position: relative;
- display: block;
- z-index: 15;
- bottom: 0px;
- width: 100%;
-}
+// .blog footer {
+//  position: relative;
+//  display: block;
+//  z-index: 15;
+//  bottom: 0px;
+//  width: 100%;
+// }
 
-body.blog {
- overflow-y: scroll;
-}
+// body.blog {
+//  overflow-y: scroll;
+// }
 
-body.blog {
- .post-content {
-  max-height: inherit;
+// body.blog {
+//  .post-content {
+//   max-height: inherit;
+//  }
+// }
+
+// .blog footer {
+//  background: #cbccce;
+// }
+
+.blog-sidebar {
+ max-height: 470px;
+ .mCSB_container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
  }
 }
