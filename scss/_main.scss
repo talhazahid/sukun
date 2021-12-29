@@ -47,7 +47,7 @@ header {
 #menu {
  position: fixed;
  top: 20px;
- left: -2px;
+ left: -15px;
  z-index: 70;
  width: 100%;
  padding: 0;
@@ -330,6 +330,7 @@ h3 {
  max-height: 600px;
  display: flex;
  position: relative;
+ flex-direction: column;
  .wrapper-center {
   justify-content: flex-start;
  }
@@ -1089,6 +1090,7 @@ h3.bottom-margin {
  line-height: 29px;
  color: #171f41;
  position: relative;
+ width: 90%;
 
  &::after {
   position: absolute;
@@ -1158,10 +1160,6 @@ h3.bottom-margin {
  }
 }
 
-.post-content {
- max-height: 180px;
-}
-
 .owl-nav {
  position: absolute;
  width: 100%;
@@ -1213,10 +1211,54 @@ h3.bottom-margin {
 // }
 
 .blog-sidebar {
- max-height: 470px;
+ max-height: 640px;
+
+ .popular-blog-box:last-child {
+  padding-bottom: 30px;
+ }
  .mCSB_container {
   display: flex;
   flex-direction: column;
   gap: 70px;
+ }
+}
+
+.blog-page {
+ height: 750px;
+}
+
+.blog-scroller-wrap {
+ max-height: 690px;
+ display: flex;
+ position: relative;
+ flex-direction: column;
+}
+
+// .blog-post-scroll-wrap {
+//  height: 600px;
+// }
+
+.post-content {
+ max-height: 640px;
+}
+
+.blog-page-home {
+ margin-top: 200px;
+}
+
+.blog-rec-row {
+ .owl-item {
+  position: relative;
+
+  &::after {
+   position: absolute;
+   content: "";
+   width: 1px;
+   background: white;
+   height: 250px;
+   display: block;
+   top: 0;
+   right: 1px;
+  }
  }
 }

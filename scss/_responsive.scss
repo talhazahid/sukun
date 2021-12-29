@@ -3,6 +3,15 @@
   overflow-x: hidden;
  }
 
+ .blog-scroller-wrap {
+  max-height: initial;
+ }
+
+ .blog-sidebar {
+  max-height: inherit;
+  margin-bottom: 20px;
+ }
+
  .blog footer {
   .bottle-controller-second,
   .bottle-controller-third {
@@ -318,10 +327,14 @@
   overflow-y: scroll;
  }
 
+ .blog-rec-row .owl-item::after {
+  display: none;
+ }
+
  .blog-post-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 65px;
+  grid-gap: 30px;
   margin: 0 auto;
  }
 
@@ -452,7 +465,7 @@
  .blog-post-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 65px;
+  grid-gap: 45px;
   max-width: 1200px;
   margin: 0 auto;
  }
@@ -524,8 +537,10 @@
   overflow-y: scroll;
  }
 
- .post-content {
-  max-height: initial;
+ .blog-post-heading-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
  }
 
  .blog-hero-container {
@@ -543,9 +558,20 @@
   max-width: 350px;
  }
 
+ .blog-scroller-wrap {
+  max-height: 500px;
+ }
+ .post-content {
+  max-height: 510px;
+ }
+
  .blog-heading {
   font-size: 35px;
   line-height: 45px;
+  order: 2;
+ }
+ .blog-post-img {
+  order: 1;
  }
 
  .main-bottle img {
