@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- Primary Meta Tags -->
+    <title>Email Signature</title>
+    <meta name="title" content="Email Signature">
+    <meta name="description" content="Email Signature">
+
+
+</head>
+
+<body>
+
+    <table cellpadding="0" cellspacing="0"
+        style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+        <tbody>
+            <tr>
+                <td style="vertical-align: middle;">
+                    <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW"
+                        style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+                        <tbody>
+
+                            <tr>
+                                <!-- ngIf: showField('logo') -->
+                                <td ng-if="showField('logo')" width="155"
+                                    style="text-align:center' font-size: 10pt; font-family: Arial, sans-serif; width: 293px; vertical-align:top;"
+                                    valign="top" align="center" class="ng-scope">
+                                    <!-- ngIf: showField('logoURL') --><a ng-if="showField('logoURL')"
+                                        href="https://puresukun.com/" target="_blank" class="ng-scope"><img
+                                            border="0" alt="Logo" width="155" style="width:155px; height:auto; border:0px;"
+                                            ng-src="https://www.puresukun.com/images/emailsignature/PS-logo.png"
+                                            src="https://www.puresukun.com/images/emailsignature/PS-logo.png"></a>
+                                    <!-- end ngIf: showField('logoURL') -->
+                                    <!-- ngIf: !showField('logoURL') -->
+                                </td><!-- end ngIf: showField('logo') -->
+                                <!-- ngIf: !showField('logo') -->
+                                <td style="padding-left:15px;" valign="middle">
+                                    <table cellpadding="15" cellspacing="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td style="font-size: 9pt; font-family: Arial, sans-serif; vertical-align: top; line-height:15px;padding-bottom: 4px;"
+                                                    valign="top">
+
+                                                    <!-- ngIf: showField('phone') --><span ng-if="showField('phone')"
+                                                        class="ng-scope"><span
+                                                            style="color: #000000; font-family: Arial, sans-serif; font-size:16px"
+                                                            class="ng-binding"><strong>Ayesha Khan</strong><br></span></span>
+                                                    <!-- end ngIf: showField('phone') -->
+                                                    <!-- ngIf: showField('mobile') --><span ng-if="showField('mobile')"
+                                                        class="ng-scope"><span
+                                                            style="color: #7d7f7e; font-family: Arial, sans-serif; font-size:13px;line-height: 16px;"
+                                                            class="ng-binding">Founder<br><br/></span></span>
+                                                    <!-- end ngIf: showField('mobile') -->
+                                                    <!-- ngIf: showField('email') --><span ng-if="showField('email')"
+                                                        class="ng-scope"><span
+                                                            style="color: #000000; font-family: Arial, sans-serif; font-size:12px; line-height: 14px;"
+                                                            class="ng-binding">925 123 4567<br>
+                                                            <a ng-if="showField('logoURL')"
+                                        href="mailto:ayesha@puresukun.com/" target="_blank" style="color: #000000; font-family: Arial, sans-serif; font-size:12px; line-height: 15px;text-decoration: none;">ayesha@puresukun.com</a><br>
+                                        <a ng-if="showField('logoURL')"
+                                        href="https://puresukun.com/" target="_blank" style="color: #000000; font-family: Arial, sans-serif; font-size:12px; line-height: 14px;text-decoration: none;">www.puresukun.com</a></span></span>
+                                                    <!-- end ngIf: showField('email') -->
+
+                                                   
+
+                                                </td>
+                                            </tr>
+                                            <!-- ngIf: isAnyFieldEntered('facebookURL,twitterURL,youtubeURL,linkedinURL,instagramURL') -->
+                                            <tr ng-if="isAnyFieldEntered('facebookURL,twitterURL,youtubeURL,linkedinURL,instagramURL')"
+                                                class="ng-scope">
+                                                <td style="vertical-align: top; padding-top:0px;padding-bottom: 0px;" valign="top">
+                                                    <!-- ngIf: showField('facebookURL') --><span
+                                                        ng-if="showField('facebookURL')" class="ng-scope"><a
+                                                            href="https://www.instagram.com/puresukunlife/" target="_blank"
+                                                            rel="noopener"><img border="0" width="20"
+                                                                ng-src="https://www.puresukun.com/images/emailsignature/insta-icon.png"
+                                                                alt="Instagram"
+                                                                style="border:0; height:20px; width:20px; font-size: 11px;"
+                                                                src="https://www.puresukun.com/images/emailsignature/insta-icon.png"></a><!--&nbsp;--></span>
+                                                    <!-- end ngIf: showField('facebookURL') -->
+                                                    <!-- ngIf: showField('twitterURL') --><span
+                                                        ng-if="showField('twitterURL')" class="ng-scope"><a
+                                                            href="http://facebook.com/puresukunlife" target="_blank"
+                                                            rel="noopener"><img border="0" width="20"
+                                                                ng-src="https://www.puresukun.com/images/emailsignature/facebook-icon.png"
+                                                                alt="Facebook"
+                                                                style="border:0; height:20px; width:20px;font-size: 11px;"
+                                                                src="https://www.puresukun.com/images/emailsignature/facebook-icon.png"></a><!--&nbsp;--></span>
+                                                    <!-- end ngIf: showField('twitterURL') -->
+                                                    <!-- ngIf: showField('youtubeURL') --><span
+                                                        ng-if="showField('youtubeURL')" class="ng-scope"><a
+                                                            href="https://twitter.com/puresukunlife"
+                                                            target="_blank" rel="noopener"><img border="0" width="20"
+                                                                ng-src="https://www.puresukun.com/images/emailsignature/twitter-icon.png"
+                                                                alt="Twitter"
+                                                                style="border:0; height:20px; width:20px;font-size: 11px;"
+                                                                src="https://www.puresukun.com/images/emailsignature/twitter-icon.png"></a><!--&nbsp;--></span>
+                                                    <!-- end ngIf: showField('youtubeURL') -->
+                                                    <!-- ngIf: showField('linkedinURL') --><span
+                                                        ng-if="showField('linkedinURL')" class="ng-scope"><a
+                                                            href="mailto:info@puresukun.com"
+                                                            target="_blank" rel="noopener"><img border="0" width="20"
+                                                                ng-src="https://www.puresukun.com/images/emailsignature/email-icon.png"
+                                                                alt="Email"
+                                                                style="border:0; height:20px; width:20p;font-size: 11px;"
+                                                                src="https://www.puresukun.com/images/emailsignature/email-icon.png"></a><!--&nbsp;--></span>
+                                                    <!-- end ngIf: showField('linkedinURL') -->
+                                                    <!-- ngIf: showField('instagramURL') --><span
+                                                        ng-if="showField('instagramURL')" class="ng-scope"><a
+                                                            href="https://www.pinterest.com/thepuresukunlife"
+                                                            target="_blank" rel="noopener"><img border="0" width="20"
+                                                                ng-src="https://www.puresukun.com/images/emailsignature/pintrest-icon.png"
+                                                                alt="Pinterest"
+                                                                style="border:0; height:20px; width:20px;font-size: 11px;"
+                                                                src="https://www.puresukun.com/images/emailsignature/pintrest-icon.png"></a><!--&nbsp;--></span>
+                                                    <!-- end ngIf: showField('instagramURL') -->
+                                                    <!-- ngIf: showField('pinterestURL') --><span
+                                                        ng-if="showField('pinterestURL')" class="ng-scope"><a
+                                                            href="https://www.youtube.com/channel/UCNeDdhUcvN9112ZYJJAzatQ" target="_blank"
+                                                            rel="noopener"><img border="0" width="20"
+                                                                ng-src="https://www.puresukun.com/images/emailsignature/youtube-icon.png"
+                                                                alt="Youtube"
+                                                                style="border:0; height:20px; width:20px;font-size: 11px;"
+                                                                src="https://www.puresukun.com/images/emailsignature/youtube-icon.png"></a><!--&nbsp;--></span>
+                                                    <!-- end ngIf: showField('pinterestURL') -->
+                                                </td>
+                                            </tr>
+                                            <!-- end ngIf: isAnyFieldEntered('facebookURL,twitterURL,youtubeURL,linkedinURL,instagramURL') -->
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
